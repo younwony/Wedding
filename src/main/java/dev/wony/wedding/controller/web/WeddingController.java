@@ -1,4 +1,4 @@
-package dev.wony.wedding.controller;
+package dev.wony.wedding.controller.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
