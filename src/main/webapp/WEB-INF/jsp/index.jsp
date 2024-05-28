@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DDang & BBo</title>
+    <title>한상은 ❤️ 윤원희 결혼합니다.</title>
     <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="/css/index.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -13,8 +13,17 @@
 
 <div class="container">
     <!-- 첫 인사 문구 -->
-    <div class="text-center my-5">
-        <h1>Welcome to DDang & BBo's Wedding!</h1>
+    <!-- 첫 인사 문구 -->
+    <div class="text-center my-5 welcome-section">
+        <div class="date-text">
+            <h1>2024년 9월 28일</h1>
+            <h2>토요일 결혼합니다.</h2>
+        </div>
+        <div class="image-container">
+            <img src="/img/main.jpg" class="main-image" alt="결혼 이미지">
+            <canvas id="petalsCanvas"></canvas>
+        </div>
+
     </div>
 
     <!-- 웨딩 사진 슬라이드 -->
@@ -141,5 +150,6 @@
 
 <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="/js/index.js"></script>
+<script src="/js/sakura.js"></script>
 </body>
 </html>
