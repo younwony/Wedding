@@ -3,8 +3,11 @@ package dev.wony.wedding.controller.api;
 import dev.wony.wedding.dto.GuestMessageDto;
 import dev.wony.wedding.request.GuestMessageRequest;
 import dev.wony.wedding.response.GuestMessageResponse;
+import dev.wony.wedding.response.GuestMessageResponses;
 import dev.wony.wedding.service.GuestMessageService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,12 +19,12 @@ import java.util.List;
 public class GuestMessageController {
 
     private final GuestMessageService guestMessageService;
+
     @GetMapping
-    public ResponseEntity<List<GuestMessageResponse>> getGuestMessages() {
-        List<GuestMessageResponse> guestMessageRespons = guestMessageService.getGuestMessages().stream()
-                .map(GuestMessageResponse::fromDto)
-                .toList();
-        return ResponseEntity.ok(guestMessageRespons);
+    public ResponseEntity<GuestMessageResponses> getGuestMessages(Pageable pageable) {
+        Page<GuestMessageDto> guestMessages = guestMessageService.getGuestMessages(pageable);
+        GuestMessageResponses guestMessageResponses = GuestMessageResponses.fromDto(guestMessages.getContent(), guestMessages.getTotalPages());
+        return ResponseEntity.ok(guestMessageResponses);
     }
 
     @PostMapping

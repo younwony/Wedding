@@ -7,6 +7,7 @@
     <title>DDang & BBo</title>
     <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="/css/index.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
@@ -116,19 +117,24 @@
     <!-- 축하 메시지 -->
     <div class="mb-5">
         <h2>축하 메시지</h2>
-        <form id="guestbookForm">
+        <form id="guestMessageForm">
             <div class="mb-3">
-                <label for="guestName" class="form-label">이름</label>
-                <input type="text" class="form-control" id="guestName" required>
+                <label for="author" class="form-label">이름</label>
+                <input type="text" name="author" class="form-control" id="author" required>
+                <label for="password" class="form-label">비밀번호</label>
+                <input type="password" class="form-control" id="password" required>
             </div>
             <div class="mb-3">
-                <label for="guestMessage" class="form-label">메시지</label>
-                <textarea class="form-control" id="guestMessage" rows="3" required></textarea>
+                <label for="content" class="form-label">메시지</label>
+                <textarea class="form-control" id="content" rows="3" required></textarea>
             </div>
-            <button type="submit" class="btn btn-success">등록</button>
+            <button type="button" id="guestMessageAddBtn" class="btn btn-success">등록</button>
         </form>
-        <div id="guestbookEntries" class="mt-3">
+        <div id="guestMessageList" class="mt-3">
             <!-- 축하 메시지 리스트 -->
+        </div>
+        <div id="pagination" class="mt-3">
+            <!-- 페이지 버튼 -->
         </div>
     </div>
 </div>

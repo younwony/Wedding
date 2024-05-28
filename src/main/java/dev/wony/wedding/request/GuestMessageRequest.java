@@ -2,9 +2,15 @@ package dev.wony.wedding.request;
 
 
 import dev.wony.wedding.dto.GuestMessageDto;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class GuestMessageRequest {
 
     private String title;

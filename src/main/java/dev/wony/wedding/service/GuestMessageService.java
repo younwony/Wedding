@@ -1,9 +1,12 @@
 package dev.wony.wedding.service;
 
+import dev.wony.wedding.domain.GuestMessage;
 import dev.wony.wedding.dto.GuestMessageDto;
 import dev.wony.wedding.repository.GuestMessageRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,10 +18,9 @@ public class GuestMessageService {
 
     private final GuestMessageRepository guestMessageRepository;
 
-    public List<GuestMessageDto> getGuestMessages() {
-        return guestMessageRepository.findAll().stream()
-                .map(GuestMessageDto::fromEntity)
-                .toList();
+    public Page<GuestMessageDto> getGuestMessages(Pageable pageable) {
+        return guestMessageRepository.findAll(pageable)
+                .map(GuestMessageDto::fromEntity);
 
     }
 
