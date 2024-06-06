@@ -2,14 +2,14 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     background-color: #f8f9fa;
     color: #212529;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 .welcome-section {
@@ -101,30 +101,12 @@ body {
     object-fit: contain;
 }
 
-.gallery-title {
-    font-size: 2rem;
-    color: #6c757d;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 15px;
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
     border-radius: 10px;
-}
-
-.gallery-more {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.gallery-more a {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #guestMessageForm {

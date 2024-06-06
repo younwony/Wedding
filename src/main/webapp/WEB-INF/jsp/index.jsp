@@ -7,6 +7,8 @@
     <title>한상은 ❤️ 윤원희 결혼합니다.</title>
     <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="/css/index.css" rel="stylesheet">
+    <link href="/css/gallery.css" rel="stylesheet">
+    <link href="/css/swiper-bundle.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
@@ -26,45 +28,93 @@
 
     </div>
 
-    <!-- 웨딩 사진 슬라이드 -->
-    <div id="weddingCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="/img/wedding1.jpg" class="d-block w-100" alt="웨딩 사진 1">
-            </div>
-            <div class="carousel-item">
-                <img src="/img/wedding2.jpg" class="d-block w-100" alt="웨딩 사진 2">
-            </div>
-            <div class="carousel-item">
-                <img src="/img/wedding3.jpg" class="d-block w-100" alt="웨딩 사진 3">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#weddingCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#weddingCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
     <!-- 웨딩 사진 갤러리 -->
-    <div class="gallery">
+    <div class="container">
         <h2 class="gallery-title">Gallery</h2>
-        <div class="row">
-            <div class="col-4">
-                <img src="/img/wedding1.jpg" alt="웨딩 사진 1">
-            </div>
-            <div class="col-4">
-                <img src="/img/wedding2.jpg" alt="웨딩 사진 2">
-            </div>
-            <div class="col-4">
-                <img src="/img/wedding3.jpg" alt="웨딩 사진 3">
-            </div>
+        <div class="gallery">
+            <img src="/img/wedding/1.jpg" alt="웨딩 사진 1" data-index="0">
+            <img src="/img/wedding/2.jpg" alt="웨딩 사진 2" data-index="1">
+            <img src="/img/wedding/3.jpg" alt="웨딩 사진 3" data-index="2">
+            <img src="/img/wedding/4.jpg" alt="웨딩 사진 4" data-index="3">
+            <img src="/img/wedding/5.jpg" alt="웨딩 사진 5" data-index="4">
+            <img src="/img/wedding/6.jpg" alt="웨딩 사진 6" data-index="5" class="hidden">
+            <img src="/img/wedding/7.jpg" alt="웨딩 사진 7" data-index="6" class="hidden">
+            <img src="/img/wedding/8.jpg" alt="웨딩 사진 8" data-index="7" class="hidden">
+            <img src="/img/wedding/9.jpg" alt="웨딩 사진 9" data-index="8" class="hidden">
+            <img src="/img/wedding/10.jpg" alt="웨딩 사진 10" data-index="9" class="hidden">
+            <img src="/img/wedding/11.jpg" alt="웨딩 사진 11" data-index="10" class="hidden">
+            <img src="/img/wedding/12.jpg" alt="웨딩 사진 12" data-index="11" class="hidden">
+            <img src="/img/wedding/13.jpg" alt="웨딩 사진 13" data-index="12" class="hidden">
+            <img src="/img/wedding/14.jpg" alt="웨딩 사진 14" data-index="13" class="hidden">
+            <img src="/img/wedding/15.jpg" alt="웨딩 사진 15" data-index="14" class="hidden">
+            <img src="/img/wedding/16.jpg" alt="웨딩 사진 16" data-index="15" class="hidden">
+            <img src="/img/wedding/17.jpg" alt="웨딩 사진 17" data-index="16" class="hidden">
+            <img src="/img/wedding/18.jpg" alt="웨딩 사진 18" data-index="17" class="hidden">
+            <img src="/img/wedding/19.jpg" alt="웨딩 사진 19" data-index="18" class="hidden">
+            <img src="/img/wedding/20.jpg" alt="웨딩 사진 20" data-index="19" class="hidden">
         </div>
         <div class="gallery-more">
-            <a href="#">사진 더보기 +</a>
+            <a href="#" id="loadMore">사진 더보기 +</a>
+        </div>
+    </div>
+
+    <%--<div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/img/wedding/1.jpg" alt="웨딩 사진 1"></div>
+            <div class="swiper-slide"><img src="/img/wedding/2.jpg" alt="웨딩 사진 2"></div>
+            <div class="swiper-slide"><img src="/img/wedding/3.jpg" alt="웨딩 사진 3"></div>
+            <div class="swiper-slide"><img src="/img/wedding/4.jpg" alt="웨딩 사진 4"></div>
+            <div class="swiper-slide"><img src="/img/wedding/5.jpg" alt="웨딩 사진 5"></div>
+            <div class="swiper-slide"><img src="/img/wedding/6.jpg" alt="웨딩 사진 6"></div>
+            <div class="swiper-slide"><img src="/img/wedding/7.jpg" alt="웨딩 사진 7"></div>
+            <div class="swiper-slide"><img src="/img/wedding/8.jpg" alt="웨딩 사진 8"></div>
+            <div class="swiper-slide"><img src="/img/wedding/9.jpg" alt="웨딩 사진 9"></div>
+            <div class="swiper-slide"><img src="/img/wedding/10.jpg" alt="웨딩 사진 10"></div>
+            <div class="swiper-slide"><img src="/img/wedding/11.jpg" alt="웨딩 사진 11"></div>
+            <div class="swiper-slide"><img src="/img/wedding/12.jpg" alt="웨딩 사진 12"></div>
+            <div class="swiper-slide"><img src="/img/wedding/13.jpg" alt="웨딩 사진 13"></div>
+            <div class="swiper-slide"><img src="/img/wedding/14.jpg" alt="웨딩 사진 14"></div>
+            <div class="swiper-slide"><img src="/img/wedding/15.jpg" alt="웨딩 사진 15"></div>
+            <div class="swiper-slide"><img src="/img/wedding/16.jpg" alt="웨딩 사진 16"></div>
+            <div class="swiper-slide"><img src="/img/wedding/17.jpg" alt="웨딩 사진 17"></div>
+            <div class="swiper-slide"><img src="/img/wedding/18.jpg" alt="웨딩 사진 18"></div>
+            <div class="swiper-slide"><img src="/img/wedding/19.jpg" alt="웨딩 사진 19"></div>
+            <div class="swiper-slide"><img src="/img/wedding/20.jpg" alt="웨딩 사진 20"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>--%>
+
+    <!-- Swiper Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/img/wedding/1.jpg" alt="웨딩 사진 1"></div>
+                <div class="swiper-slide"><img src="/img/wedding/2.jpg" alt="웨딩 사진 2"></div>
+                <div class="swiper-slide"><img src="/img/wedding/3.jpg" alt="웨딩 사진 3"></div>
+                <div class="swiper-slide"><img src="/img/wedding/4.jpg" alt="웨딩 사진 4"></div>
+                <div class="swiper-slide"><img src="/img/wedding/5.jpg" alt="웨딩 사진 5"></div>
+                <div class="swiper-slide"><img src="/img/wedding/6.jpg" alt="웨딩 사진 6"></div>
+                <div class="swiper-slide"><img src="/img/wedding/7.jpg" alt="웨딩 사진 7"></div>
+                <div class="swiper-slide"><img src="/img/wedding/8.jpg" alt="웨딩 사진 8"></div>
+                <div class="swiper-slide"><img src="/img/wedding/9.jpg" alt="웨딩 사진 9"></div>
+                <div class="swiper-slide"><img src="/img/wedding/10.jpg" alt="웨딩 사진 10"></div>
+                <div class="swiper-slide"><img src="/img/wedding/11.jpg" alt="웨딩 사진 11"></div>
+                <div class="swiper-slide"><img src="/img/wedding/12.jpg" alt="웨딩 사진 12"></div>
+                <div class="swiper-slide"><img src="/img/wedding/13.jpg" alt="웨딩 사진 13"></div>
+                <div class="swiper-slide"><img src="/img/wedding/14.jpg" alt="웨딩 사진 14"></div>
+                <div class="swiper-slide"><img src="/img/wedding/15.jpg" alt="웨딩 사진 15"></div>
+                <div class="swiper-slide"><img src="/img/wedding/16.jpg" alt="웨딩 사진 16"></div>
+                <div class="swiper-slide"><img src="/img/wedding/17.jpg" alt="웨딩 사진 17"></div>
+                <div class="swiper-slide"><img src="/img/wedding/18.jpg" alt="웨딩 사진 18"></div>
+                <div class="swiper-slide"><img src="/img/wedding/19.jpg" alt="웨딩 사진 19"></div>
+                <div class="swiper-slide"><img src="/img/wedding/20.jpg" alt="웨딩 사진 20"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
 
@@ -95,8 +145,8 @@
     <div class="text-center my-5">
         <h2>우리의 이야기</h2>
         <video controls>
-            <source src="video/our_story.mp4" type="video/mp4">
-            브라우저가 비디오 태그를 지원하지 않습니다.
+<%--            <source src="/video/movie.mp4" type="video/mp4">--%>
+<%--            브라우저가 비디오 태그를 지원하지 않습니다.--%>
         </video>
     </div>
 
@@ -109,6 +159,35 @@
     <div class="mb-5">
         <h2>웨딩홀 위치</h2>
         <div id="map" style="width: 100%; height: 300px;"></div>
+    </div>
+
+    <!--지도 오는 길-->
+    <div id="weddingCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/map/1.jpg" class="d-block w-100" alt="지도 1">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/map/2.jpg" class="d-block w-100" alt="지도 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/map/3.jpg" class="d-block w-100" alt="지도 3">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/map/4.jpg" class="d-block w-100" alt="지도 4">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/map/5.jpg" class="d-block w-100" alt="지도 5">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#weddingCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#weddingCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <!-- 연락 -->
@@ -157,8 +236,10 @@
     </div>
 </div>
 
+<script src="/js/swiper-bundle.min.js"></script>
 <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="/js/index.js"></script>
+<script src="/js/gallery.js"></script>
 <script src="/js/sakura.js"></script>
 </body>
 </html>
