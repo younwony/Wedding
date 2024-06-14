@@ -1,12 +1,18 @@
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/test
-    driver-class-name: org.h2.Driver
-    username: sa
+    url: jdbc:mysql://ec2-43-200-125-37.ap-northeast-2.compute.amazonaws.com:3306/ddangbbo
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: wony
+    password: ENC(i47xn1yWuGTFwz65qahHJydFMrc2O9ZR)
   jpa:
     show-sql: true
     hibernate:
       ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+        dialect: org.hibernate.dialect.MySQLDialect
   mvc:
     view:
       prefix: /WEB-INF/jsp/
@@ -17,3 +23,7 @@ server:
     jsp:
       init-parameters:
         development: true
+
+jasypt:
+  encryptor:
+    password: ddangbbo
