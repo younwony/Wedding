@@ -6,12 +6,20 @@ on:
       - main  # 배포를 트리거할 브랜치를 지정합니다.
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+
+      - name: Build with Gradle
+        run: ./gradlew build
 
       - name: Set up SSH key
         run: |
@@ -29,4 +37,4 @@ jobs:
 
       - name: Run deployment script on EC2
         run: |
-          ssh -i ~/.ssh/id_rsa ec2-user@43.200.125.37 'bash -s' < ./deploy.sh
+          ssh -i ~/.ssh/id_rsa ec2-user@43.200.125.37 'bash -s' < /home/ec2-user/.deploy.sh
