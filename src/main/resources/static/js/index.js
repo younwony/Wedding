@@ -13,9 +13,8 @@ function shareToInstagram() {
 function getGuestMessageList(page = 0, size = 5) {
     $.ajax({
         type: 'GET',
-        url: `/api/guest-messages?page=${page}&size=${size}`,
+        url: `/api/guest-messages?page=${page}&size=${size}&sort=createdAt,desc`,
         success: function(data) {
-            console.log(data);
             var guestMessageListDiv = $('#guestMessageList');
             guestMessageListDiv.empty();  // 기존 내용을 지움
 
