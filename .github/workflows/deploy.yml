@@ -24,6 +24,10 @@ jobs:
     - name: Checkout source code
       uses: actions/checkout@v2
 
+      # (2) Gradle wrapper에 실행 권한 부여
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+
     # (2) JDK 17 세팅
     - name: Set up JDK 17
       uses: actions/setup-java@v3
