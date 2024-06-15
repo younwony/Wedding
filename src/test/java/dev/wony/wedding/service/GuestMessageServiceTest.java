@@ -59,6 +59,8 @@ class GuestMessageServiceTest {
         GuestMessageDto updateGuestMessageDto = GuestMessageDto.builder()
                 .title("update title")
                 .content("update content")
+                .author("update author")
+                .password("update password")
                 .build();
 
         // when
