@@ -1,40 +1,48 @@
-name: Deploy to EC2
+name: Deploy to Amazon EC2
 
 on:
   push:
     branches:
-      - main  # 배포를 트리거할 브랜치를 지정합니다.
+      - main
+
+permissions:
+  contents: read
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout source code
+      uses: actions/checkout@v2
 
-      - name: Set up JDK 17
-        uses: actions/setup-java@v2
-        with:
-          java-version: '17'
+    # (2) JDK 17 세팅
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: '17'
 
-      - name: Build with Gradle
-        run: ./gradlew build
+    - name: Build with Gradle
+      uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
+      with:
+        arguments: clean build -x test
 
-      - name: Set up SSH key
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.AWS_EC2_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
+    - name: Set up SSH key
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.AWS_EC2_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
 
-      - name: Add EC2 IP to known hosts
-        run: |
-          ssh-keyscan -H 43.200.125.37 >> ~/.ssh/known_hosts
+    - name: Add EC2 IP to known hosts
+      run: |
+        ssh-keyscan -H 43.200.125.37 >> ~/.ssh/known_hosts
 
-      - name: Copy WAR file to EC2
-        run: |
-          scp -i ~/.ssh/id_rsa build/libs/wedding-0.0.1-SNAPSHOT.war ec2-user@43.200.125.37:/home/ec2-user/wedding-0.0.1-SNAPSHOT.war
+    - name: Copy WAR file to EC2
+      run: |
+        scp -i ~/.ssh/id_rsa build/libs/wedding-0.0.1-SNAPSHOT.war ec2-user@43.200.125.37:/home/ec2-user/wedding-0.0.1-SNAPSHOT.war
 
-      - name: Run deployment script on EC2
-        run: |
-          ssh -i ~/.ssh/id_rsa ec2-user@43.200.125.37 'bash -s' < /home/ec2-user/.deploy.sh
+    - name: Run deployment script on EC2
+      run: |
+        ssh -i ~/.ssh/id_rsa ec2-user@43.200.125.37 'bash -s' < /home/ec2-user/.deploy.sh
+   
