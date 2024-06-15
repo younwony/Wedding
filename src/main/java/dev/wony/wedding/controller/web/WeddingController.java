@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class WeddingController {
 
-    @GetMapping
+    @GetMapping("/wedding")
     public String index() {
         return "index";
     }
