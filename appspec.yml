@@ -1,21 +1,30 @@
 version: 0.0
 os: linux
 files:
-  - source: wedding-0.0.1-SNAPSHOT.war
+#  인스턴스에 복사할 디렉터리 경로
+  - source: /
+#    인스턴스에서 파일이 복사되는 위치
     destination: /home/ec2-user/build
+#    복사할 위치에 파일이 있는경오 대체
     overwrite: true
 
 permissions:
-  - object: /home/ec2-user/build/wedding-0.0.1-SNAPSHOT.war
+#  권한이 지정되는 파일 또는 티렉터리
+  - object: /
+#    매칭되는 패턴에만 권한 부여
+    pattern: "**"
+#   object 소유자
     owner: ec2-user
+#   object 그룹 소유자
     group: ec2-user
 
 hooks:
-  BeforeInstall:
-    - location: scripts/before_install.sh
-      timeout: 300
+  AfterInstall:
+    - location: scripts/stop.sh
+      timeout: 60
       runas: ec2-user
+
   ApplicationStart:
-    - location: scripts/deploy.sh
+    - location: scripts/start.sh
       timeout: 300
       runas: ec2-user

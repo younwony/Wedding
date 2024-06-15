@@ -2,7 +2,7 @@
 
 # 애플리케이션 실행할 WAR 파일 경로 설정
 PROJECT_ROOT="/home/ec2-user/build"
-WAR_FILE="$PROJECT_ROOT/wedding-0.0.1-SNAPSHOT.war"
+WAR_FILE="$PROJECT_ROOT/build/libs/wedding-0.0.1-SNAPSHOT.war"
 
 APP_LOG="$PROJECT_ROOT/application.log"
 ERROR_LOG="$PROJECT_ROOT/error.log"
