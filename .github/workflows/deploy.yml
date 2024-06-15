@@ -43,11 +43,7 @@ jobs:
 
       - name: Upload to AWS S3
         run: |
-          aws deploy push \
-            --application-name ${{ env.CODE_DEPLOY_APPLICATION_NAME }} \
-            --ignore-hidden-files \
-            --s3-location s3://$S3_BUCKET_NAME/$GITHUB_SHA.war \
-            --source .
+          aws s3 cp build/libs/wedding-0.0.1-SNAPSHOT.war s3://$S3_BUCKET_NAME/wedding-0.0.1-SNAPSHOT.war
 
       - name: Deploy to AWS EC2 from S3
         run: |
@@ -55,4 +51,4 @@ jobs:
             --application-name ${{ env.CODE_DEPLOY_APPLICATION_NAME }} \
             --deployment-config-name CodeDeployDefault.AllAtOnce \
             --deployment-group-name ${{ env.CODE_DEPLOY_DEPLOYMENT_GROUP_NAME }} \
-            --s3-location bucket=$S3_BUCKET_NAME,key=$GITHUB_SHA.war,bundleType=zip
+            --s3-location bucket=$S3_BUCKET_NAME,key=wedding-0.0.1-SNAPSHOT.war,bundleType=zip
