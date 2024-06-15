@@ -13,36 +13,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout source code
-      uses: actions/checkout@v2
+      - name: Checkout source code
+        uses: actions/checkout@v2
 
-    # (2) JDK 17 세팅
-    - name: Set up JDK 17
-      uses: actions/setup-java@v3
-      with:
-        distribution: 'temurin'
-        java-version: '17'
+      # (2) JDK 17 세팅
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
 
-    - name: Build with Gradle
-      uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
-      with:
-        arguments: clean build -x test
+      - name: Grant execute permission for gradlew
+        run: chmod +x ./gradlew
 
-    - name: Set up SSH key
-      run: |
-        mkdir -p ~/.ssh
-        echo "${{ secrets.AWS_EC2_KEY }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
+      - name: Build with Gradle
+        run: ./gradlew clean build -x test
 
-    - name: Add EC2 IP to known hosts
-      run: |
-        ssh-keyscan -H 43.200.125.37 >> ~/.ssh/known_hosts
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.AWS_EC2_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
 
-    - name: Copy WAR file to EC2
-      run: |
-        scp -i ~/.ssh/id_rsa build/libs/wedding-0.0.1-SNAPSHOT.war ec2-user@43.200.125.37:/home/ec2-user/wedding-0.0.1-SNAPSHOT.war
+      - name: Add EC2 IP to known hosts
+        run: |
+          ssh-keyscan -H 43.200.125.37 >> ~/.ssh/known_hosts
 
-    - name: Run deployment script on EC2
-      run: |
-        ssh -i ~/.ssh/id_rsa ec2-user@43.200.125.37 'bash -s' < /home/ec2-user/.deploy.sh
-   
+      - name: Copy WAR file to EC2
+        run: |
+          scp -i ~/.ssh/id_rsa build/libs/wedding-0.0.1-SNAPSHOT.war ec2-user@43.200.125.37:/home/ec2-user/wedding-0.0.1-SNAPSHOT.war
+
+      - name: Run deployment script on EC2
+        run: |
+          ssh -i ~/.ssh/id_rsa ec2-user@43.200.125.37 'bash -s' < /home/ec2-user/.deploy.sh
