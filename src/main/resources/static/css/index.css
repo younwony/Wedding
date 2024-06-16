@@ -20,17 +20,14 @@ body {
     height: 100vh; /* 한 화면에 꽉 차도록 설정 */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* 상단에 더 가깝게 배치 */
+    justify-content: center; /* 중앙에 배치 */
     align-items: center;
     text-align: center;
-    padding-top: 2rem; /* 상단 여백 조정 */
-    padding-bottom: 5rem; /* 하단 여백 추가 */
+    box-sizing: border-box; /* 패딩 포함하여 높이 계산 */
 }
 
 .image-container {
-    margin-top: 2rem; /* 상단 여백 감소 */
-    margin-bottom: 2rem; /* 하단 여백 조정 */
-    padding-bottom: 50px;
+    margin: 2rem 0; /* 상단과 하단 여백 조정 */
     position: relative;
     max-width: 600px;
     width: 100%;
@@ -40,12 +37,18 @@ body {
     border-top-right-radius: 70% 40%;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-image {
     width: 100%;
     height: auto;
+    object-fit: cover; /* 이미지 잘림 방지 */
+    object-position: center; /* 이미지 중앙 배치 */
 }
+
 
 .date-text h1, .date-text h2, .date-text h3 {
     margin: 0;
@@ -235,4 +238,12 @@ canvas {
 
 .nanum-gothic {
     color: #34495e; /* 짙은 블루 계열의 글자색 */
+}
+
+
+/* 반응형 디자인 - 모바일 장치 */
+@media (max-width: 768px) {
+    .main-image {
+        object-fit: contain; /* 모바일에서 이미지 잘림 방지 */
+    }
 }
