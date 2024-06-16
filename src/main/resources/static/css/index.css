@@ -235,7 +235,6 @@ canvas {
     color: #2c3e50; /* 다크 블루 계열의 글자색 */
     margin-bottom: 1.5rem;
     margin-top: 4rem;
-    letter-spacing: 0.1em;
     line-height: 3;
 }
 
@@ -263,12 +262,11 @@ canvas {
     flex-direction: column;
     gap: 10px;
     width: 25rem;
-    margin-left: 5rem;
 }
 .name-group {
     display: flex;
     justify-content: center; /* 각 그룹 내부 요소를 중앙 정렬 */
-    width: 80%; /* 전체 그룹의 너비 */
+    width: 100%; /* 전체 그룹의 너비 */
     align-items: center; /* 이미지와 텍스트를 세로로 중앙 정렬 */
 }
 .name {
