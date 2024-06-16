@@ -29,7 +29,7 @@
         </div>
         <div class="date-text">
             <h2 class="nanum-gothic">2024.09.28. 토요일 17:00 PM</h2>
-            <h3 class="nanum-myeongjo">양재 엘블레스</h3>
+            <h3 class="nanum-myeongjo">양재 엘블레스 B1 다이아몬드홀</h3>
         </div>
     </div>
 
@@ -46,10 +46,32 @@
             저희 두 사람의 새로운 시작을 함께하시어 <br>
             축복해 주시면 감사하겠습니다. <br>
         </p>
-        <p class="nanum-gothic">
-            김영수 · 박미숙 의 아들 정훈<br>
-            이성호 · 최미경 의 딸 유진
-        </p>
+        <div class="name-container">
+            <div class="names">
+                <div class="name-group">
+                    <div class="name-father">
+                        <div class="name-img"><img class="empty"/></div>
+                        윤재성
+                    </div>
+                    <div class="separator">·</div>
+                    <div class="name">장선자</div>
+                    <div class="relation">의</div>
+                    <div class="role">장남</div>
+                    <div class="person">원희</div>
+                </div>
+                <div class="name-group">
+                    <div class="name-father">
+                        <div class="name-img"><img src="/img/d.jpg" alt="국화꽃 아이콘" style="width: 20px; vertical-align: middle;"></div>
+                        한재영
+                    </div>
+                    <div class="separator">·</div>
+                    <div class="name">김묘숙</div>
+                    <div class="relation">의</div>
+                    <div class="role">장녀</div>
+                    <div class="person">상은</div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- 웨딩 사진 갤러리 -->

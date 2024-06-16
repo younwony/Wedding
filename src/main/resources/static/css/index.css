@@ -212,6 +212,7 @@ canvas {
     background-color: #f0f8f7; /* 연한 그린 배경색 */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .invitation-title {
@@ -231,15 +232,79 @@ canvas {
 .invitation-text {
     font-family: 'Noto Serif KR', serif;
     font-size: 1.1rem;
-    line-height: 1.6;
     color: #2c3e50; /* 다크 블루 계열의 글자색 */
     margin-bottom: 1.5rem;
+    margin-top: 4rem;
+    letter-spacing: 0.1em;
+    line-height: 3;
 }
 
 .nanum-gothic {
+    font-family: 'Nanum Gothic', sans-serif;
     color: #34495e; /* 짙은 블루 계열의 글자색 */
 }
 
+.invitation img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.name-container {
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 25rem;
+    margin-left: 5rem;
+}
+.name-group {
+    display: flex;
+    justify-content: center; /* 각 그룹 내부 요소를 중앙 정렬 */
+    width: 80%; /* 전체 그룹의 너비 */
+    align-items: center; /* 이미지와 텍스트를 세로로 중앙 정렬 */
+}
+.name {
+    flex: 4; /* 각 요소의 너비를 동일하게 설정 */
+    display: flex;
+    align-items: center;
+    text-align: center; /* 중앙 정렬 */
+    justify-content: center; /* 중앙 정렬 */
+}
+
+.name-father {
+    flex: 5; /* 각 요소의 너비를 동일하게 설정 */
+    display: flex;
+    align-items: center;
+    text-align: center; /* 중앙 정렬 */
+    justify-content: center; /* 중앙 정렬 */
+}
+.name-img {
+    margin-right: 5px; /* 이미지와 이름 사이의 간격 */
+}
+.name-img img {
+    width: 20px;
+    height: 20px; /* 이미지의 크기를 고정 */
+    vertical-align: middle; /* 이미지 수직 정렬 */
+}
+.name-img img.empty {
+    visibility: hidden; /* 빈 이미지가 영역을 차지하도록 설정 */
+}
+.role, .person {
+    flex: 4; /* 각 요소의 너비를 동일하게 설정 */
+    text-align: center; /* 중앙 정렬 */
+}
+.separator, .relation {
+    flex: 1; /* separator와 relation 영역을 더 작게 설정 */
+    text-align: center; /* 중앙 정렬 */
+}
 
 /* 반응형 디자인 - 모바일 장치 */
 @media (max-width: 768px) {
