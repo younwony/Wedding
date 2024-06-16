@@ -42,9 +42,6 @@
 }
 
 @media (max-width: 400px) {
-    .container {
-        max-width: 300px;
-    }
     .gallery img {
         width: 100%;
         height: auto;

@@ -8,24 +8,48 @@
     <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="/css/index.css" rel="stylesheet">
     <link href="/css/gallery.css" rel="stylesheet">
+    <link href="/css/font.css" rel="stylesheet">
     <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Gowun+Batang&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
-<div class="container">
+<div class="main-container">
     <!-- 첫 인사 문구 -->
     <!-- 첫 인사 문구 -->
-    <div class="text-center my-5 welcome-section">
+    <div class="text-center" id="first-content">
+        <h1 class="dancing-script">We're Getting Married</h1>
         <div class="date-text">
-            <h1>2024년 9월 28일</h1>
-            <h2>토요일 결혼합니다.</h2>
+            <h1 class="nanum-myeongjo">윤원희 & 한상은</h1>
         </div>
         <div class="image-container">
             <img src="/img/main.jpg" class="main-image" alt="결혼 이미지">
             <canvas id="petalsCanvas"></canvas>
         </div>
+        <div class="date-text">
+            <h2 class="nanum-gothic">2024.09.28. 토요일 17:00 PM</h2>
+            <h3 class="nanum-myeongjo">양재 엘블레스</h3>
+        </div>
+    </div>
 
+    <!-- 초대 메세지 -->
+    <div class="invitation text-center">
+        <h2 class="invitation-title">INVITATION</h2>
+        <p class="invitation-text noto-serif-kr">
+            오래전 작은 인연이 <br>
+            저희를 연인으로 만들었고, <br>
+            지금 그 인연으로 <br>
+            그 사람의 손을 꼭 잡고 결혼합니다. <br>
+            늘 그 인연을 생각하며 <br>
+            서로 아껴주고 사랑하며 살겠습니다. <br>
+            저희 두 사람의 새로운 시작을 함께하시어 <br>
+            축복해 주시면 감사하겠습니다. <br>
+        </p>
+        <p class="nanum-gothic">
+            김영수 · 박미숙 의 아들 정훈<br>
+            이성호 · 최미경 의 딸 유진
+        </p>
     </div>
 
     <!-- 웨딩 사진 갤러리 -->
@@ -57,34 +81,6 @@
             <a href="#" id="loadMore">사진 더보기 +</a>
         </div>
     </div>
-
-    <%--<div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="/img/wedding/1.jpg" alt="웨딩 사진 1"></div>
-            <div class="swiper-slide"><img src="/img/wedding/2.jpg" alt="웨딩 사진 2"></div>
-            <div class="swiper-slide"><img src="/img/wedding/3.jpg" alt="웨딩 사진 3"></div>
-            <div class="swiper-slide"><img src="/img/wedding/4.jpg" alt="웨딩 사진 4"></div>
-            <div class="swiper-slide"><img src="/img/wedding/5.jpg" alt="웨딩 사진 5"></div>
-            <div class="swiper-slide"><img src="/img/wedding/6.jpg" alt="웨딩 사진 6"></div>
-            <div class="swiper-slide"><img src="/img/wedding/7.jpg" alt="웨딩 사진 7"></div>
-            <div class="swiper-slide"><img src="/img/wedding/8.jpg" alt="웨딩 사진 8"></div>
-            <div class="swiper-slide"><img src="/img/wedding/9.jpg" alt="웨딩 사진 9"></div>
-            <div class="swiper-slide"><img src="/img/wedding/10.jpg" alt="웨딩 사진 10"></div>
-            <div class="swiper-slide"><img src="/img/wedding/11.jpg" alt="웨딩 사진 11"></div>
-            <div class="swiper-slide"><img src="/img/wedding/12.jpg" alt="웨딩 사진 12"></div>
-            <div class="swiper-slide"><img src="/img/wedding/13.jpg" alt="웨딩 사진 13"></div>
-            <div class="swiper-slide"><img src="/img/wedding/14.jpg" alt="웨딩 사진 14"></div>
-            <div class="swiper-slide"><img src="/img/wedding/15.jpg" alt="웨딩 사진 15"></div>
-            <div class="swiper-slide"><img src="/img/wedding/16.jpg" alt="웨딩 사진 16"></div>
-            <div class="swiper-slide"><img src="/img/wedding/17.jpg" alt="웨딩 사진 17"></div>
-            <div class="swiper-slide"><img src="/img/wedding/18.jpg" alt="웨딩 사진 18"></div>
-            <div class="swiper-slide"><img src="/img/wedding/19.jpg" alt="웨딩 사진 19"></div>
-            <div class="swiper-slide"><img src="/img/wedding/20.jpg" alt="웨딩 사진 20"></div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>--%>
 
     <!-- Swiper Modal -->
     <div id="myModal" class="modal">
