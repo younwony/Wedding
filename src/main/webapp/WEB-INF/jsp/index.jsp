@@ -10,8 +10,13 @@
     <link href="/css/gallery.css" rel="stylesheet">
     <link href="/css/font.css" rel="stylesheet">
     <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="/css/calendar.css" rel="stylesheet">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Gowun+Batang&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js'></script>
+
 </head>
 <body>
 
@@ -75,6 +80,18 @@
         </div>
     </div>
 
+    <!-- 정보 -->
+    <div class="mb-5 text-center" id="wedding-info">
+        <div class="date-text">
+            <h2 class="wedding-title">Wedding Day</h2>
+            <h2 class="wedding-date">2024.09.28. 토요일 17:00 PM</h2>
+            <h3 class="wedding-location">양재 엘블레스 B1 다이아몬드홀</h3>
+        </div>
+    </div>
+    <div class="calendar-container" id="calendar"></div>
+
+
+
     <!-- 웨딩 사진 갤러리 -->
     <div class="container">
         <h2 class="gallery-title">Gallery</h2>
@@ -135,29 +152,6 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-    </div>
-
-    <!-- 정보 -->
-    <div class="mb-5">
-        <h2>결혼식 정보</h2>
-        <p>날짜: 2024년 9월 28일</p>
-        <p>부부 이름: 한상은 & 윤원희</p>
-        <p>웨딩홀: 양재 엘블레스</p>
-        <div id="calendar"></div>
-    </div>
-
-    <!-- 인사 문구 -->
-    <div class="text-center my-5">
-        <p>
-            오래전 작은 인연이 <br>
-            저희를 연인으로 만들었고, <br>
-            지금 그 인연으로 <br>
-            그 사람의 손을 꼭 잡고 결혼합니다. <br>
-            늘 그 인연을 생각하며 <br>
-            서로 아껴주고 사랑하며 살겠습니다. <br>
-            저희 두 사람의 새로운 시작을 함께하시어 <br>
-            축복해 주시면 감사하겠습니다. <br>
-        </p>
     </div>
 
     <!-- 영상 (Optional) -->
@@ -260,5 +254,6 @@
 <script src="/js/index.js"></script>
 <script src="/js/gallery.js"></script>
 <script src="/js/sakura.js"></script>
+<script src="/js/calendar.js"></script>
 </body>
 </html>

@@ -209,7 +209,7 @@ canvas {
 .invitation {
     margin: 2rem 0;
     padding: 2rem;
-    background-color: #f0f8f7; /* 연한 그린 배경색 */
+    background-color: #ffe6e9; /* 연한 핑크 배경색 */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -217,7 +217,7 @@ canvas {
 
 .invitation-title {
     font-family: 'Nanum Gothic', sans-serif;
-    color: #5d737e; /* 초록색 계열의 글자색 */
+    color: #c7747b; /* 핑크 계열의 글자색 */
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -225,14 +225,14 @@ canvas {
 .invitee-name {
     font-family: 'Nanum Myeongjo', serif;
     font-size: 1.5rem;
-    color: #4b5d67; /* 다소 어두운 초록색 */
+    color: #b35562; /* 다소 어두운 핑크색 */
     margin-bottom: 1rem;
 }
 
 .invitation-text {
     font-family: 'Noto Serif KR', serif;
     font-size: 1.1rem;
-    color: #2c3e50; /* 다크 블루 계열의 글자색 */
+    color: #913543; /* 다크 핑크 계열의 글자색 */
     margin-bottom: 1.5rem;
     margin-top: 4rem;
     line-height: 3;
@@ -304,6 +304,37 @@ canvas {
     text-align: center; /* 중앙 정렬 */
 }
 
+/* wedding info */
+.date-text {
+    margin-bottom: 2rem;
+}
+
+.wedding-title {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 2rem;
+    color: #d9534f;
+}
+
+.wedding-date {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.5rem;
+    color: #5d5d5d;
+}
+
+.wedding-location {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.25rem;
+    color: #5d5d5d;
+}
+
+.fc-sun, .fc-red {
+    color: red !important;
+}
+
+.calendar-container canvas {
+    width: 100%;
+    height: auto;
+}
 /* 반응형 디자인 - 모바일 장치 */
 @media (max-width: 768px) {
     .main-image {
