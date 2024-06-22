@@ -16,7 +16,8 @@ $(document).ready(function() {
         },
         events: [
             {
-                title: 'Wedding',
+                // title 하트로
+                title: '♥',
                 start: '2024-09-28',
                 color: '#ff6666' // 이벤트 색상 변경
             }

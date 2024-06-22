@@ -33,8 +33,8 @@ body {
     width: 100%;
     height: auto;
     overflow: hidden;
-    border-top-left-radius: 70% 40%;
-    border-top-right-radius: 70% 40%;
+    border-top-left-radius: 50% 40%;
+    border-top-right-radius: 50% 40%;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     display: flex;
@@ -311,19 +311,19 @@ canvas {
 
 .wedding-title {
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #d9534f;
 }
 
 .wedding-date {
     font-family: 'Nanum Myeongjo', serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #5d5d5d;
 }
 
 .wedding-location {
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     color: #5d5d5d;
 }
 
@@ -339,5 +339,9 @@ canvas {
 @media (max-width: 768px) {
     .main-image {
         object-fit: contain; /* 모바일에서 이미지 잘림 방지 */
+    }
+
+    #first-content {
+        height: auto; /* 모바일에서 높이를 자동으로 조정 */
     }
 }

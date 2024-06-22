@@ -43,6 +43,10 @@ jobs:
         run: |
           scp -i ~/.ssh/id_rsa build/libs/wedding-0.0.1-SNAPSHOT.war ec2-user@43.200.125.37:/home/ec2-user/wedding-0.0.1-SNAPSHOT.war
 
-      - name: Run deployment script on EC2
+      - name: Stop application on EC2
         run: |
-          ssh -i ~/.ssh/id_rsa ec2-user@43.200.125.37 'bash /home/ec2-user/deploy.sh'
+          ssh -i ~/.ssh/id_rsa ec2-user@43.200.125.37 'bash /home/ec2-user/deploy.sh stop'
+
+      - name: Start application on EC2
+        run: |
+          ssh -i ~/.ssh/id_rsa ec2-user@43.200.125.37 'bash /home/ec2-user/deploy.sh start'

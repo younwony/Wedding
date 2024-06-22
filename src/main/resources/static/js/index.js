@@ -14,11 +14,11 @@ function getGuestMessageList(page = 0, size = 5) {
     $.ajax({
         type: 'GET',
         url: `/api/guest-messages?page=${page}&size=${size}&sort=createdAt,desc`,
-        success: function(data) {
+        success: function (data) {
             var guestMessageListDiv = $('#guestMessageList');
             guestMessageListDiv.empty();  // 기존 내용을 지움
 
-            data.content.forEach(function(message) {
+            data.content.forEach(function (message) {
                 var messageTemplate = `
                     <div class="guestbook-entry">
                         <strong>${message.author}</strong>
@@ -53,7 +53,7 @@ function getGuestMessageList(page = 0, size = 5) {
     });
 }
 
-document.getElementById('guestMessageAddBtn').addEventListener('click', function() {
+document.getElementById('guestMessageAddBtn').addEventListener('click', function () {
 
     const formData = {
         author: document.getElementById('author').value,
@@ -66,7 +66,7 @@ document.getElementById('guestMessageAddBtn').addEventListener('click', function
         url: '/api/guest-messages',
         contentType: 'application/json',
         data: JSON.stringify(formData),
-        success: function(data) {
+        success: function (data) {
             alert('메시지가 성공적으로 전송되었습니다.');
             getGuestMessageList();
         },
@@ -97,7 +97,16 @@ function loadKakaoMapScript() {
     document.head.appendChild(script);
 }
 
-window.onload = function() {
+function setFullHeight() {
+    const firstContent = document.getElementById('first-content');
+    firstContent.style.height = window.innerHeight + 'px';
+}
+
+window.addEventListener('resize', setFullHeight);
+window.addEventListener('load', setFullHeight);
+window.onload = function () {
     loadKakaoMapScript();
     getGuestMessageList();
+    setFullHeight();
 }
+
