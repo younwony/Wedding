@@ -3,7 +3,7 @@ $(document).ready(function() {
         header: {
             left: '',
             center: 'title',
-            right: ''
+            right: '',
         },
         defaultDate: '2024-09-28',
         editable: false,

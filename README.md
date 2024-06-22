@@ -37,3 +37,4 @@
 | 파스텔무비           |https://pastelletters.com/card?cardId=3tlUpw74YT|
 | 파스텔무비           |https://pastelletters.com/card?cardId=BPm8qUcwVe|
 | *ourfirstletter |https://ourfirstletter.com/w/natural-green-ZKSP|
+| *small-square   |http://small-square.com/sample/07/index.html?v=2|

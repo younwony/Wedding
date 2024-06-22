@@ -8,6 +8,7 @@
     <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="/css/index.css" rel="stylesheet">
     <link href="/css/gallery.css" rel="stylesheet">
+    <link href="/css/timer.css" rel="stylesheet">
     <link href="/css/font.css" rel="stylesheet">
     <link href="/css/swiper-bundle.min.css" rel="stylesheet">
     <link href="/css/calendar.css" rel="stylesheet">
@@ -88,7 +89,14 @@
         </div>
     </div>
     <div class="calendar-container" id="calendar"></div>
-
+    <div class="timer-contain">
+        <div class="timer-overlay"></div>
+        <div class="timer">
+            <h2>D-DAY COUNT</h2>
+            <h2>상은 & 원희의 결혼식까지</h2>
+            <h1 id="countdown" class="countdown">D-0 00:00:00</h1>
+        </div>
+    </div>
 
 
     <!-- 웨딩 사진 갤러리 -->
@@ -252,6 +260,7 @@
 <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="/js/index.js"></script>
 <script src="/js/gallery.js"></script>
+<script src="/js/timer.js"></script>
 <script src="/js/sakura.js"></script>
 <script src="/js/calendar.js"></script>
 </body>
