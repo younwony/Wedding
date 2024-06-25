@@ -337,9 +337,6 @@ canvas {
 }
 /* 반응형 디자인 - 모바일 장치 */
 @media (max-width: 768px) {
-    .main-image {
-        object-fit: contain; /* 모바일에서 이미지 잘림 방지 */
-    }
 
     #first-content {
         height: auto; /* 모바일에서 높이를 자동으로 조정 */
