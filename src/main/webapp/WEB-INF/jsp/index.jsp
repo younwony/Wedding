@@ -28,13 +28,13 @@
             <img src="/img/main.jpg" alt="배경 이미지" class="background-image">
             <canvas id="petalsCanvas"></canvas>
             <div class="text-overlay">
-                <h1 class="dancing-script">We're Getting Married</h1>
+                <h1 class="dancing-script" style="font-size: 1.3rem">We're Getting Married</h1>
                 <div class="date-text">
-                    <h1 class="nanum-myeongjo ft-2rem">윤원희 & 한상은</h1>
+                    <h1 class="nanum-myeongjo" style="font-size: 1.8rem">윤원희 & 한상은</h1>
                 </div>
                 <div class="date-text">
                     <h2 class="nanum-gothic" style="font-size: 1.3rem;">2024.09.28. 토요일 17:00 PM</h2>
-                    <h3 class="nanum-myeongjo" style="font-size: 1.3rem;">양재 엘블레스 B1 다이아몬드홀</h3>
+                    <h3 class="nanum-myeongjo" style="font-size: 1.0rem;">양재 엘블레스 B1 다이아몬드홀</h3>
                 </div>
             </div>
         </div>
