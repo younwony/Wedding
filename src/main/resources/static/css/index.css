@@ -20,10 +20,37 @@ body {
     height: 100vh; /* 한 화면에 꽉 차도록 설정 */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* 중앙에 배치 */
+    justify-content: flex-start; /* 상단에 배치 */
     align-items: center;
     text-align: center;
     box-sizing: border-box; /* 패딩 포함하여 높이 계산 */
+    position: relative; /* 텍스트를 이미지 위에 겹치도록 설정 */
+    overflow: hidden;
+}
+
+.background-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지가 전체를 덮도록 설정 */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 20%; /* 상단에서 20% 위치에 배치 */
+    left: 50%;
+    transform: translate(-50%, -20%);
+    color: white; /* 텍스트 색상을 흰색으로 설정 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 텍스트에 그림자 추가 */
 }
 
 .image-container {
@@ -125,7 +152,6 @@ canvas {
 .main-container {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -236,11 +262,6 @@ canvas {
     margin-bottom: 1.5rem;
     margin-top: 4rem;
     line-height: 3;
-}
-
-.nanum-gothic {
-    font-family: 'Nanum Gothic', sans-serif;
-    color: #34495e; /* 짙은 블루 계열의 글자색 */
 }
 
 .invitation img {

@@ -24,17 +24,18 @@
 <div class="main-container">
     <!-- 첫 인사 문구 -->
     <div class="text-center" id="first-content">
-        <h1 class="dancing-script">We're Getting Married</h1>
-        <div class="date-text">
-            <h1 class="nanum-myeongjo ft-2rem">윤원희 & 한상은</h1>
-        </div>
-        <div class="image-container">
-            <img src="/img/main.jpg" class="main-image" alt="결혼 이미지">
-            <canvas id="petalsCanvas"></canvas>
-        </div>
-        <div class="date-text">
-            <h2 class="nanum-gothic" style="font-size: 1.3rem;">2024.09.28. 토요일 17:00 PM</h2>
-            <h3 class="nanum-myeongjo" style="font-size: 1.5rem;">양재 엘블레스 B1 다이아몬드홀</h3>
+        <div class="background-image-container">
+            <img src="/img/main.jpg" alt="배경 이미지" class="background-image">
+            <div class="text-overlay">
+                <h1 class="dancing-script">We're Getting Married</h1>
+                <div class="date-text">
+                    <h1 class="nanum-myeongjo ft-2rem">윤원희 & 한상은</h1>
+                </div>
+                <div class="date-text">
+                    <h2 class="nanum-gothic" style="font-size: 1.3rem;">2024.09.28. 토요일 17:00 PM</h2>
+                    <h3 class="nanum-myeongjo" style="font-size: 1.3rem;">양재 엘블레스 B1 다이아몬드홀</h3>
+                </div>
+            </div>
         </div>
     </div>
 
