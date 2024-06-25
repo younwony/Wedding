@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+$(document).ready(function() {
     const canvas = document.getElementById('petalsCanvas');
     const ctx = canvas.getContext('2d');
     let petalsArray = [];
@@ -78,4 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
             init();
         }, 500); // orientation change 후 크기 재설정을 위한 약간의 지연 시간 추가
     });
+
+    // 초기화 및 애니메이션 시작
+    setCanvasSize();
+    init();
+    animate();
 });

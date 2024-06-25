@@ -26,6 +26,7 @@
     <div class="text-center" id="first-content">
         <div class="background-image-container">
             <img src="/img/main.jpg" alt="배경 이미지" class="background-image">
+            <canvas id="petalsCanvas"></canvas>
             <div class="text-overlay">
                 <h1 class="dancing-script">We're Getting Married</h1>
                 <div class="date-text">
