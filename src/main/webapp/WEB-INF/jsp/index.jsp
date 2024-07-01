@@ -10,6 +10,7 @@
     <link href="/css/gallery.css" rel="stylesheet">
     <link href="/css/timer.css" rel="stylesheet">
     <link href="/css/font.css" rel="stylesheet">
+    <link href="/css/tab.css" rel="stylesheet">
     <link href="/css/swiper-bundle.min.css" rel="stylesheet">
     <link href="/css/calendar.css" rel="stylesheet">
     <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' rel='stylesheet' />
@@ -102,7 +103,7 @@
 
 
     <!-- 웨딩 사진 갤러리 -->
-    <div class="container">
+    <div class="container" id="gallery-container">
         <h2 class="gallery-title">Gallery</h2>
         <div class="gallery">
             <img src="/img/wedding/1.jpg" alt="웨딩 사진 0" data-index="0">
@@ -164,52 +165,64 @@
     </div>
 
     <!-- 지도 -->
-    <div class="mb-5">
-        <h2>웨딩홀 위치</h2>
+    <div id="location" class="mb-5">
+        <h2 id="location-title">오시는 길</h2>
+        <p id="location-description">양재 엘블레스</p>
+        <p id="location-details">1층 레터홀<br>제주특별자치도 서귀포시 중앙로 105</p>
         <div id="map" style="width: 100%; height: 300px;"></div>
+        <div>
+            <img src="/img/location/location.jpg" alt="오시는 길 1" class="location-image">
+        </div>
     </div>
 
-    <!--지도 오는 길-->
-    <div id="weddingCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="/img/map/1.jpg" class="d-block w-100" alt="지도 1">
-            </div>
-            <div class="carousel-item">
-                <img src="/img/map/2.jpg" class="d-block w-100" alt="지도 2">
-            </div>
-            <div class="carousel-item">
-                <img src="/img/map/3.jpg" class="d-block w-100" alt="지도 3">
-            </div>
-            <div class="carousel-item">
-                <img src="/img/map/4.jpg" class="d-block w-100" alt="지도 4">
-            </div>
-            <div class="carousel-item">
-                <img src="/img/map/5.jpg" class="d-block w-100" alt="지도 5">
+
+    <div class="tabs">
+        <button class="tab-link active" data-tab="tab1">오시는 길 안내</button>
+        <button class="tab-link" data-tab="tab2">주차 안내</button>
+        <button class="tab-link" data-tab="tab3">식사 안내</button>
+    </div>
+
+    <div id="tab1" class="tab-content active">
+        <h2>오시는 길 안내</h2>
+        <p>웨딩홀의 주소와 오시는 길에 대한 안내 내용이 여기에 들어갑니다.</p>
+        <img src="/img/location/location.jpg" alt="오시는 길 안내">
+    </div>
+
+    <div id="tab2" class="tab-content">
+        <h2>주차 안내</h2>
+        <p>웨딩홀 주차장 및 주차 가능 구역에 대한 안내 내용이 여기에 들어갑니다.</p>
+        <img src="/img/parking/parking.jpg" alt="주차 안내">
+    </div>
+
+    <div id="tab3" class="tab-content">
+        <h2>식사 안내</h2>
+        <p>웨딩홀에서 제공되는 식사 메뉴와 시간에 대한 안내 내용이 여기에 들어갑니다.</p>
+        <img src="/img/meal/meal.jpg" alt="식사 안내">
+    </div>
+
+    <!-- 마음 전하실 곳 -->
+    <div class="message-container">
+        <h2>마음 전하실 곳</h2>
+        <p>필요하신 분들을 위해<br>안내드리니 양해 부탁드립니다.<br>참석하지 못하시더라도 축복해주시는 그 마음 감사히 간직하겠습니다.</p>
+    </div>
+
+    <div class="accordion">
+        <div class="card">
+            <button class="accordion-btn" type="button">
+                신랑측 <span class="icon">&#9660;</span>
+            </button>
+            <div class="content">
+                <p>계좌번호: 123-456-789<br>은행: 행복은행</p>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#weddingCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#weddingCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <!-- 연락 -->
-    <div class="mb-5">
-        <h2>연락처</h2>
-        <p>카톡: <a href="https://open.kakao.com/o/some_link">DDang & BBo</a></p>
-        <p>전화: <a href="tel:010-1234-5678">010-1234-5678</a></p>
-    </div>
-
-    <!-- 축의금 계좌 -->
-    <div class="mb-5">
-        <h2>축의금 계좌</h2>
-        <p>계좌번호: 123-456-789</p>
-        <p>은행: 행복은행</p>
+        <div class="card">
+            <button class="accordion-btn" type="button">
+                신부측 <span class="icon">&#9660;</span>
+            </button>
+            <div class="content">
+                <p>계좌번호: 987-654-321<br>은행: 행복은행</p>
+            </div>
+        </div>
     </div>
 
     <!-- 공유하기 -->
@@ -249,6 +262,7 @@
 <script src="/js/index.js"></script>
 <script src="/js/gallery.js"></script>
 <script src="/js/timer.js"></script>
+<script src="/js/tab.js"></script>
 <script src="/js/sakura.js"></script>
 <script src="/js/calendar.js"></script>
 </body>

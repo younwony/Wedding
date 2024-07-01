@@ -1,0 +1,39 @@
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.tabs button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    color: #777;
+    flex: 1; /* 탭 버튼을 동일한 너비로 설정 */
+    text-align: center; /* 텍스트를 중앙 정렬 */
+}
+.tabs button.active {
+    color: #333;
+    border-bottom: 2px solid #d9534f;
+}
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.tab-content.active {
+    display: block;
+}
+.tab-content img {
+    max-width: 100%;
+    border-radius: 10px;
+}
