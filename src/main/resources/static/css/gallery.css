@@ -1,22 +1,23 @@
 .gallery {
-    column-count: 3;
-    column-gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3열로 설정 */
+    gap: 15px;
 }
 
 .gallery img {
     width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+    height: 300px; /* 모든 이미지의 높이를 200px로 고정 */
+    object-fit: cover; /* 이미지를 프레임에 맞추어 자름 */
     border-radius: 10px;
-    display: block;
     cursor: pointer;
 }
 
 .gallery-title {
     font-size: 2rem;
-    color: #6c757d;
+    color: rgba(217, 83, 79, 0.75);
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .gallery-more {
@@ -41,10 +42,23 @@
     background: linear-gradient(to top, white, rgba(255, 255, 255, 0));
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 모바일에서 2열로 조정 */
+    }
+
     .gallery img {
-        width: 100%;
-        height: auto;
+        height: 150px; /* 모바일에서 이미지 높이를 150px로 조정 */
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery {
+        grid-template-columns: 1fr; /* 작은 화면에서 1열로 조정 */
+    }
+
+    .gallery img {
+        height: 150px; /* 작은 화면에서 이미지 높이를 150px로 조정 */
     }
 }
 
@@ -106,4 +120,14 @@
     .close {
         font-size: 30px;
     }
+}
+
+.hidden {
+    display: none !important;
+}
+
+#loadMore {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }

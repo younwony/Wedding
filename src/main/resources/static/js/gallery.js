@@ -1,12 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
-    let hiddenElements = document.querySelectorAll('.gallery img.hidden');
+    let allImages = document.querySelectorAll('.gallery img');
+    let hiddenElements = Array.from(allImages).slice(10); // 초기 10개 이후의 이미지만 hidden으로 설정
+    hiddenElements.forEach(function(el) {
+        el.classList.add('hidden');
+    });
+
     let loadMoreBtn = document.getElementById('loadMore');
 
     loadMoreBtn.addEventListener('click', function (e) {
         e.preventDefault();
         let shownCount = 0;
         hiddenElements.forEach(function (el, index) {
-            if (shownCount < 10) {
+            if (shownCount < 9) {
                 el.classList.remove('hidden');
                 shownCount++;
             }

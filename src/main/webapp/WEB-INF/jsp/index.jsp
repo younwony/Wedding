@@ -105,16 +105,16 @@
     <div class="container">
         <h2 class="gallery-title">Gallery</h2>
         <div class="gallery">
-            <img src="/img/wedding/1.jpg" alt="웨딩 사진 1" data-index="0">
-            <img src="/img/wedding/2.jpg" alt="웨딩 사진 2" data-index="1">
-            <img src="/img/wedding/3.jpg" alt="웨딩 사진 3" data-index="2">
-            <img src="/img/wedding/4.jpg" alt="웨딩 사진 4" data-index="3">
-            <img src="/img/wedding/5.jpg" alt="웨딩 사진 5" data-index="4">
-            <img src="/img/wedding/6.jpg" alt="웨딩 사진 6" data-index="5" class="hidden">
-            <img src="/img/wedding/7.jpg" alt="웨딩 사진 7" data-index="6" class="hidden">
-            <img src="/img/wedding/8.jpg" alt="웨딩 사진 8" data-index="7" class="hidden">
-            <img src="/img/wedding/9.jpg" alt="웨딩 사진 9" data-index="8" class="hidden">
-            <img src="/img/wedding/10.jpg" alt="웨딩 사진 10" data-index="9" class="hidden">
+            <img src="/img/wedding/1.jpg" alt="웨딩 사진 0" data-index="0">
+            <img src="/img/wedding/2.jpg" alt="웨딩 사진 1" data-index="1">
+            <img src="/img/wedding/3.jpg" alt="웨딩 사진 2" data-index="2">
+            <img src="/img/wedding/4.jpg" alt="웨딩 사진 3" data-index="3">
+            <img src="/img/wedding/5.jpg" alt="웨딩 사진 4" data-index="4">
+            <img src="/img/wedding/6.jpg" alt="웨딩 사진 5" data-index="5">
+            <img src="/img/wedding/7.jpg" alt="웨딩 사진 6" data-index="6">
+            <img src="/img/wedding/8.jpg" alt="웨딩 사진 7" data-index="7" >
+            <img src="/img/wedding/9.jpg" alt="웨딩 사진 8" data-index="8" >
+            <img src="/img/wedding/10.jpg" alt="웨딩 사진 9" data-index="9" class="hidden">
             <img src="/img/wedding/11.jpg" alt="웨딩 사진 11" data-index="10" class="hidden">
             <img src="/img/wedding/12.jpg" alt="웨딩 사진 12" data-index="11" class="hidden">
             <img src="/img/wedding/13.jpg" alt="웨딩 사진 13" data-index="12" class="hidden">
@@ -127,7 +127,7 @@
             <img src="/img/wedding/20.jpg" alt="웨딩 사진 20" data-index="19" class="hidden">
         </div>
         <div class="gallery-more">
-            <a href="#" id="loadMore">사진 더보기 +</a>
+            <a href="#" id="loadMore">더보기 +</a>
         </div>
     </div>
 
@@ -161,20 +161,6 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-    </div>
-
-    <!-- 영상 (Optional) -->
-    <div class="text-center my-5">
-        <h2>우리의 이야기</h2>
-        <video controls>
-<%--            <source src="/video/movie.mp4" type="video/mp4">--%>
-<%--            브라우저가 비디오 태그를 지원하지 않습니다.--%>
-        </video>
-    </div>
-
-    <!-- 마지막 인사 문구 -->
-    <div class="text-center my-5">
-        <p>결혼식장에서 만나요!</p>
     </div>
 
     <!-- 지도 -->
