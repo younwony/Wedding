@@ -30,7 +30,7 @@
             <div class="text-overlay">
                 <h1 class="dancing-script" style="font-size: 1.3rem">We're Getting Married</h1>
                 <div class="date-text">
-                    <h1 class="nanum-myeongjo" style="font-size: 1.8rem">윤원희 & 한상은</h1>
+                    <h1 class="nanum-myeongjo" style="font-size: 1.5rem">윤원희 & 한상은</h1>
                 </div>
                 <div class="date-text">
                     <h2 class="nanum-gothic" style="font-size: 1.3rem;">2024.09.28. 토요일 17:00 PM</h2>
@@ -94,8 +94,8 @@
     <div class="timer-contain">
         <div class="timer-overlay"></div>
         <div class="timer">
-            <h2>D-DAY COUNT</h2>
-            <h2>상은 & 원희의 결혼식까지</h2>
+            <h2>상은 ❤️ 원희</h2>
+            <h2>결혼식까지</h2>
             <h1 id="countdown" class="countdown">D-0 00:00:00</h1>
         </div>
     </div>

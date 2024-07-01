@@ -4,7 +4,8 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     background-color: #f8f9fa;
     color: #212529;
-    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 !important;
 }
 

@@ -38,3 +38,6 @@
 | 파스텔무비           |https://pastelletters.com/card?cardId=BPm8qUcwVe|
 | *ourfirstletter |https://ourfirstletter.com/w/natural-green-ZKSP|
 | *small-square   |http://small-square.com/sample/07/index.html?v=2|
+| *salondeletter  |https://salondeletter.com/w/sample1_1|
+| *salondeletter2 |https://salondeletter.com/w/sample2_1|
+| *salondeletter3 |https://smartstore.naver.com/salondeletter/products/7750185108?site_preference=device|

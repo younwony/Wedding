@@ -8,6 +8,7 @@
     background-color: #ffe6e9; /* 배경색 추가 */
     background: url('/img/timer.jpg') no-repeat center center;
     background-size: cover; /* 배경 이미지의 크기를 80%로 설정 */
+    margin-bottom: 100px;
 }
 
 .timer-overlay {
