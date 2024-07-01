@@ -1,6 +1,7 @@
 package dev.wony.wedding.service;
 
 import dev.wony.wedding.domain.GuestMessage;
+import dev.wony.wedding.dto.DeleteGuestMessageDto;
 import dev.wony.wedding.dto.GuestMessageDto;
 import dev.wony.wedding.repository.GuestMessageRepository;
 import jakarta.transaction.Transactional;
@@ -37,7 +38,14 @@ public class GuestMessageService {
                 .orElseThrow(() -> new IllegalArgumentException("해당 리뷰가 존재하지 않습니다."));
     }
 
-    public void deleteGuestMessage(Long id) {
+    public void deleteGuestMessage(Long id, DeleteGuestMessageDto deleteGuestMessageDto) {
+        GuestMessage guestMessage = guestMessageRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("해당 리뷰가 존재하지 않습니다."));
+
+        if (!guestMessage.getPassword().equals(deleteGuestMessageDto.getPassword())) {
+            throw new IllegalArgumentException("비밀번호가 일치하지 않습니다.");
+        }
+
         guestMessageRepository.deleteById(id);
     }
 }

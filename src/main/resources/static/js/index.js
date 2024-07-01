@@ -8,8 +8,39 @@ function shareToInstagram() {
     alert("인스타그램으로 공유하기 기능을 추가하세요.");
 }
 
-
 // guestMessageList
+function showDeleteModal(messageId) {
+    const modal = document.getElementById('deleteModal');
+    modal.style.display = 'block';
+    document.getElementById('deleteMessageId').value = messageId;
+}
+
+function hideDeleteModal() {
+    const modal = document.getElementById('deleteModal');
+    modal.style.display = 'none';
+}
+
+document.getElementById('deleteMessageBtn').addEventListener('click', function () {
+    const id = document.getElementById('deleteMessageId').value;
+    const author = document.getElementById('deleteAuthor').value;
+    const password = document.getElementById('deletePassword').value;
+
+    $.ajax({
+        type: 'DELETE',
+        url: `/api/guest-messages/${id}`,
+        contentType: 'application/json',
+        data: JSON.stringify({ author: author, password: password }),
+        success: function () {
+            alert('메시지가 성공적으로 삭제되었습니다.');
+            hideDeleteModal();
+            getGuestMessageList();
+        },
+        error: function () {
+            alert('메시지 삭제에 실패했습니다. 이름과 비밀번호를 확인하세요.');
+        }
+    });
+});
+
 function getGuestMessageList(page = 0, size = 5) {
     $.ajax({
         type: 'GET',
@@ -20,9 +51,11 @@ function getGuestMessageList(page = 0, size = 5) {
 
             data.content.forEach(function (message) {
                 var messageTemplate = `
-                    <div class="guestbook-entry">
+                    <div class="guestbook-entry" data-id="${message.id}">
                         <strong>${message.author}</strong>
                         <p>${message.content}</p>
+                        <small>${new Date(message.createdAt).toLocaleString()}</small>
+                        <button class="delete-btn" onclick="showDeleteModal('${message.id}')">삭제</button>
                     </div>
                 `;
                 guestMessageListDiv.append(messageTemplate);
@@ -52,6 +85,7 @@ function getGuestMessageList(page = 0, size = 5) {
         },
     });
 }
+
 
 document.getElementById('guestMessageAddBtn').addEventListener('click', function () {
 
@@ -123,4 +157,3 @@ window.onload = function () {
     });
 
 }
-

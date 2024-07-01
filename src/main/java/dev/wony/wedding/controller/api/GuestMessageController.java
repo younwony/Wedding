@@ -1,5 +1,6 @@
 package dev.wony.wedding.controller.api;
 
+import dev.wony.wedding.request.DeleteGuestMessageRequest;
 import dev.wony.wedding.dto.GuestMessageDto;
 import dev.wony.wedding.request.GuestMessageRequest;
 import dev.wony.wedding.response.GuestMessageResponse;
@@ -10,8 +11,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -35,15 +34,15 @@ public class GuestMessageController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<GuestMessageResponse> updateGuestMessage(@PathVariable Long id, @RequestBody GuestMessageRequest guestMessageRequest) {
+    public ResponseEntity<GuestMessageResponse> updateGuestMessage(@PathVariable("id") Long id, @RequestBody GuestMessageRequest guestMessageRequest) {
         GuestMessageDto guestMessageDto = guestMessageService.updateGuestMessage(id, guestMessageRequest.toDto());
         GuestMessageResponse guestMessageResponse = GuestMessageResponse.fromDto(guestMessageDto);
         return ResponseEntity.ok(guestMessageResponse);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteGuestMessage(@PathVariable Long id) {
-        guestMessageService.deleteGuestMessage(id);
+    public ResponseEntity<Void> deleteGuestMessage(@PathVariable("id") Long id, @RequestBody DeleteGuestMessageRequest deleteGuestMessageRequest) {
+        guestMessageService.deleteGuestMessage(id, deleteGuestMessageRequest.toDto());
         return ResponseEntity.noContent().build();
     }
 }

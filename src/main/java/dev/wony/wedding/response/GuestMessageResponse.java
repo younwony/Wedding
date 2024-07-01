@@ -13,6 +13,7 @@ public class GuestMessageResponse {
     private String content;
     private String author;
     private String password;
+    private String createdAt;
 
     public static GuestMessageResponse fromDto(GuestMessageDto guestMessageDto) {
         return GuestMessageResponse.builder()
@@ -21,6 +22,7 @@ public class GuestMessageResponse {
                 .content(guestMessageDto.getContent())
                 .author(guestMessageDto.getAuthor())
                 .password(guestMessageDto.getPassword())
+                .createdAt(guestMessageDto.getCreatedAt())
                 .build();
     }
 }

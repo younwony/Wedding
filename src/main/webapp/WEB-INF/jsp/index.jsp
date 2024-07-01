@@ -255,6 +255,25 @@
             <!-- 페이지 버튼 -->
         </div>
     </div>
+
+    <!-- 삭제 확인 모달 -->
+    <div id="deleteModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="hideDeleteModal()">&times;</span>
+            <h2>메시지 삭제</h2>
+            <input type="hidden" id="deleteMessageId">
+            <div class="mb-3">
+                <label for="deleteAuthor" class="form-label">이름</label>
+                <input type="text" name="deleteAuthor" class="form-control" id="deleteAuthor" required>
+            </div>
+            <div class="mb-3">
+                <label for="deletePassword" class="form-label">비밀번호</label>
+                <input type="password" class="form-control" id="deletePassword" required>
+            </div>
+            <button type="button" id="deleteMessageBtn" class="btn btn-danger">삭제</button>
+        </div>
+    </div>
+
 </div>
 
 <script src="/js/swiper-bundle.min.js"></script>
