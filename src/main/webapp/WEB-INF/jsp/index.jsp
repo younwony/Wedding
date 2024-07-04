@@ -34,8 +34,9 @@
                     <h1 class="nanum-myeongjo" style="font-size: 1.5rem">윤원희 & 한상은</h1>
                 </div>
                 <div class="date-text">
-                    <h2 class="nanum-gothic" style="font-size: 1.3rem;">2024.09.28. 토요일 17:00 PM</h2>
-                    <h3 class="nanum-myeongjo" style="font-size: 1.0rem;">양재 엘블레스 B1 다이아몬드홀</h3>
+                    <h2 class="nanum-gothic" style="font-size: 15px; padding: 0 !important;">2024.09.28.</h2>
+                    <h2 class="nanum-gothic" style="font-size: 14px; padding: 5px 0 !important;">토요일 17:00 PM</h2>
+                    <h3 class="nanum-myeongjo" style="font-size: 13px;">양재 엘블레스 B1 다이아몬드홀</h3>
                 </div>
             </div>
         </div>

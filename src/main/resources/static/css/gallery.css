@@ -43,20 +43,12 @@
 }
 
 @media (max-width: 600px) {
-    .gallery {
-        grid-template-columns: repeat(2, 1fr); /* 모바일에서 2열로 조정 */
-    }
-
     .gallery img {
         height: 150px; /* 모바일에서 이미지 높이를 150px로 조정 */
     }
 }
 
 @media (max-width: 400px) {
-    .gallery {
-        grid-template-columns: 1fr; /* 작은 화면에서 1열로 조정 */
-    }
-
     .gallery img {
         height: 150px; /* 작은 화면에서 이미지 높이를 150px로 조정 */
     }

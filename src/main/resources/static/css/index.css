@@ -268,11 +268,11 @@ canvas {
 
 .invitation-text {
     font-family: 'Noto Serif KR', serif;
-    font-size: 1.1rem;
+    font-size: 15px;
     color: #913543; /* 다크 핑크 계열의 글자색 */
     margin-bottom: 1.5rem;
     margin-top: 4rem;
-    line-height: 3;
+    line-height: 2.5;
 }
 
 .invitation img {
@@ -343,19 +343,19 @@ canvas {
 
 .wedding-title {
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 1.5rem;
+    font-size: 25px;
     color: #d9534f;
 }
 
 .wedding-date {
     font-family: 'Nanum Myeongjo', serif;
-    font-size: 1.3rem;
+    font-size: 20px;
     color: #5d5d5d;
 }
 
 .wedding-location {
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 1.1rem;
+    font-size: 17px;
     color: #5d5d5d;
 }
 
