@@ -13,11 +13,15 @@
     <link href="/css/tab.css" rel="stylesheet">
     <link href="/css/swiper-bundle.min.css" rel="stylesheet">
     <link href="/css/calendar.css" rel="stylesheet">
+    <link href="/css/splide.min.css" rel="stylesheet">
+    <link href="/css/splide-core.min.css" rel="stylesheet">
+    <link href="/css/splide-sea-green.min.css" rel="stylesheet">
     <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Gowun+Batang&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js'></script>
+
 
 </head>
 <body>
@@ -106,62 +110,50 @@
     <!-- 웨딩 사진 갤러리 -->
     <div class="container" id="gallery-container">
         <h2 class="gallery-title">Gallery</h2>
-        <div class="gallery">
-            <img src="/img/wedding/1.jpg" alt="웨딩 사진 0" data-index="0">
-            <img src="/img/wedding/2.jpg" alt="웨딩 사진 1" data-index="1">
-            <img src="/img/wedding/3.jpg" alt="웨딩 사진 2" data-index="2">
-            <img src="/img/wedding/4.jpg" alt="웨딩 사진 3" data-index="3">
-            <img src="/img/wedding/5.jpg" alt="웨딩 사진 4" data-index="4">
-            <img src="/img/wedding/6.jpg" alt="웨딩 사진 5" data-index="5">
-            <img src="/img/wedding/7.jpg" alt="웨딩 사진 6" data-index="6">
-            <img src="/img/wedding/8.jpg" alt="웨딩 사진 7" data-index="7" >
-            <img src="/img/wedding/9.jpg" alt="웨딩 사진 8" data-index="8" >
-            <img src="/img/wedding/10.jpg" alt="웨딩 사진 9" data-index="9" class="hidden">
-            <img src="/img/wedding/11.jpg" alt="웨딩 사진 11" data-index="10" class="hidden">
-            <img src="/img/wedding/12.jpg" alt="웨딩 사진 12" data-index="11" class="hidden">
-            <img src="/img/wedding/13.jpg" alt="웨딩 사진 13" data-index="12" class="hidden">
-            <img src="/img/wedding/14.jpg" alt="웨딩 사진 14" data-index="13" class="hidden">
-            <img src="/img/wedding/15.jpg" alt="웨딩 사진 15" data-index="14" class="hidden">
-            <img src="/img/wedding/16.jpg" alt="웨딩 사진 16" data-index="15" class="hidden">
-            <img src="/img/wedding/17.jpg" alt="웨딩 사진 17" data-index="16" class="hidden">
-            <img src="/img/wedding/18.jpg" alt="웨딩 사진 18" data-index="17" class="hidden">
-            <img src="/img/wedding/19.jpg" alt="웨딩 사진 19" data-index="18" class="hidden">
-            <img src="/img/wedding/20.jpg" alt="웨딩 사진 20" data-index="19" class="hidden">
-        </div>
-        <div class="gallery-more">
-            <a href="#" id="loadMore">더보기 +</a>
-        </div>
-    </div>
 
-    <!-- Swiper Modal -->
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="/img/wedding/1.jpg" alt="웨딩 사진 1"></div>
-                <div class="swiper-slide"><img src="/img/wedding/2.jpg" alt="웨딩 사진 2"></div>
-                <div class="swiper-slide"><img src="/img/wedding/3.jpg" alt="웨딩 사진 3"></div>
-                <div class="swiper-slide"><img src="/img/wedding/4.jpg" alt="웨딩 사진 4"></div>
-                <div class="swiper-slide"><img src="/img/wedding/5.jpg" alt="웨딩 사진 5"></div>
-                <div class="swiper-slide"><img src="/img/wedding/6.jpg" alt="웨딩 사진 6"></div>
-                <div class="swiper-slide"><img src="/img/wedding/7.jpg" alt="웨딩 사진 7"></div>
-                <div class="swiper-slide"><img src="/img/wedding/8.jpg" alt="웨딩 사진 8"></div>
-                <div class="swiper-slide"><img src="/img/wedding/9.jpg" alt="웨딩 사진 9"></div>
-                <div class="swiper-slide"><img src="/img/wedding/10.jpg" alt="웨딩 사진 10"></div>
-                <div class="swiper-slide"><img src="/img/wedding/11.jpg" alt="웨딩 사진 11"></div>
-                <div class="swiper-slide"><img src="/img/wedding/12.jpg" alt="웨딩 사진 12"></div>
-                <div class="swiper-slide"><img src="/img/wedding/13.jpg" alt="웨딩 사진 13"></div>
-                <div class="swiper-slide"><img src="/img/wedding/14.jpg" alt="웨딩 사진 14"></div>
-                <div class="swiper-slide"><img src="/img/wedding/15.jpg" alt="웨딩 사진 15"></div>
-                <div class="swiper-slide"><img src="/img/wedding/16.jpg" alt="웨딩 사진 16"></div>
-                <div class="swiper-slide"><img src="/img/wedding/17.jpg" alt="웨딩 사진 17"></div>
-                <div class="swiper-slide"><img src="/img/wedding/18.jpg" alt="웨딩 사진 18"></div>
-                <div class="swiper-slide"><img src="/img/wedding/19.jpg" alt="웨딩 사진 19"></div>
-                <div class="swiper-slide"><img src="/img/wedding/20.jpg" alt="웨딩 사진 20"></div>
+        <div id="main-slider" class="splide" style="padding: 0 !important;">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="/img/wedding/1.jpg" alt="Image 1"></li>
+                    <li class="splide__slide"><img src="/img/wedding/2.jpg" alt="Image 2"></li>
+                    <li class="splide__slide"><img src="/img/wedding/3.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="/img/wedding/4.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="/img/wedding/5.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="/img/wedding/6.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="/img/wedding/7.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="/img/wedding/8.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="/img/wedding/9.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="/img/wedding/10.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="/img/wedding/11.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="/img/wedding/12.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="/img/wedding/13.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="/img/wedding/14.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="/img/wedding/15.jpg" alt="Image 3"></li>
+                </ul>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Thumbnail Slider -->
+        <div id="thumbnail-slider" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/1.jpg" alt="Thumbnail 1"></li>
+                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/2.jpg" alt="Thumbnail 2"></li>
+                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/3.jpg" alt="Thumbnail 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/4.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/5.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/6.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/7.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/8.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/9.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/10.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/11.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/12.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/13.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/14.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/15.jpg" alt="Image 3"></li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -192,13 +184,13 @@
     <div id="tab2" class="tab-content">
         <h2>주차 안내</h2>
         <p>웨딩홀 주차장 및 주차 가능 구역에 대한 안내 내용이 여기에 들어갑니다.</p>
-        <img src="/img/parking/parking.jpg" alt="주차 안내">
+        <img src="/img/location/location.jpg" alt="주차 안내">
     </div>
 
     <div id="tab3" class="tab-content">
         <h2>식사 안내</h2>
         <p>웨딩홀에서 제공되는 식사 메뉴와 시간에 대한 안내 내용이 여기에 들어갑니다.</p>
-        <img src="/img/meal/meal.jpg" alt="식사 안내">
+        <img src="/img/location/location.jpg" alt="식사 안내">
     </div>
 
     <!-- 마음 전하실 곳 -->
@@ -279,6 +271,7 @@
 
 <script src="/js/swiper-bundle.min.js"></script>
 <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="/js/splide.min.js"></script>
 <script src="/js/index.js"></script>
 <script src="/js/gallery.js"></script>
 <script src="/js/timer.js"></script>
