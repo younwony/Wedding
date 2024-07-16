@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>한상은 ❤️ 윤원희 결혼합니다.</title>
+    <title>윤원희 ❤️ 한상은 결혼합니다.</title>
     <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="/css/index.css" rel="stylesheet">
     <link href="/css/gallery.css" rel="stylesheet">
@@ -33,14 +33,14 @@
             <img src="/img/main.jpg" alt="배경 이미지" class="background-image">
             <canvas id="petalsCanvas"></canvas>
             <div class="text-overlay">
-                <h1 class="dancing-script" style="font-size: 1.3rem">We're Getting Married</h1>
+                <h1 class="title-message">We're Getting Married</h1>
                 <div class="date-text">
-                    <h1 class="nanum-myeongjo" style="font-size: 1.5rem">윤원희 & 한상은</h1>
+                    <h1 class="title-name">윤원희 & 한상은</h1>
                 </div>
                 <div class="date-text">
-                    <h2 class="nanum-gothic" style="font-size: 15px; padding: 0 !important;">2024.09.28.</h2>
-                    <h2 class="nanum-gothic" style="font-size: 14px; padding: 5px 0 !important;">토요일 17:00 PM</h2>
-                    <h3 class="nanum-myeongjo" style="font-size: 13px;">양재 엘블레스 B1 다이아몬드홀</h3>
+                    <h2 class="title-loc-date">2024.09.28.</h2>
+                    <h2 class="title-loc-date-time">토요일 17:00 PM</h2>
+                    <h3 class="title-loc" style="font-size: 13px;">양재 엘블레스 B1 다이아몬드홀</h3>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
     <!-- 초대 메세지 -->
     <div class="invitation text-center">
         <h2 class="invitation-title">INVITATION</h2>
-        <p class="invitation-text noto-serif-kr">
+        <p class="invitation-text">
             오래전 작은 인연이 <br>
             저희를 연인으로 만들었고, <br>
             지금 그 인연으로 <br>

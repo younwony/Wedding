@@ -1,52 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700&family=Noto+Serif+KR:wght@400;700&display=swap');
+@font-face {
+    font-family: 'iceJaram-Rg'; /* 인천교육자람체 */
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
-.nanum-gothic {
-    font-family: 'Nanum Gothic', sans-serif;
+@font-face {
+    font-family: 'KCC-Ahnchangho'; /* KCC 안창호체 */
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/KCC-Ahnchangho.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Makgeolli'; /* 포천막걸리체 */
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/Makgeolli.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light'; /* 에스코어드림 */
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MangoDdobak-B'; /* 망고보드 또박체 */
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
     font-weight: 700;
+    font-style: normal;
 }
 
-.nanum-myeongjo {
-    font-family: 'Nanum Myeongjo', serif;
+@font-face {
+    font-family: 'ChosunGu'; /* 조선굴림체 */
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF'; /* 넥슨 Lv.1 고딕 */
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EarlyFontDiary'; /* 다이어리체 */
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HancomMalangMalang-Regular'; /* 한컴 말랑말랑 */
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/HancomMalangMalang-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HancomMalangMalang-Regular'; /* 온글잎 경영체 */
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/HancomMalangMalang-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* title info */
+.title-message {
+    font-family: 'Makgeolli', sans-serif;
     font-weight: 700;
+    font-size: 1.3rem
 }
 
-.noto-sans-kr {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 400;
-}
-
-.lora {
-    font-family: 'Lora', serif;
-    font-weight: 400;
-}
-
-.merriweather {
-    font-family: 'Merriweather', serif;
+.title-name {
+    font-family: 'S-CoreDream-3Light', sans-serif;
     font-weight: 700;
+    font-size: 1.5rem;
 }
 
-/* 둥글 둥글 한 느낌 */
-.nanum-pen-script {
-    font-family: 'Nanum Pen Script', cursive;
+.title-loc-date {
+    font-family: 'S-CoreDream-3Light', sans-serif;
     font-weight: 400;
+    font-size: 15px;
+    padding: 0 !important;
 }
 
-.gowun-batang {
-    font-family: 'Gowun Batang', serif;
+.title-loc-date-time {
+    font-family: 'S-CoreDream-3Light', sans-serif;
     font-weight: 400;
+    font-size: 14px;
+    padding: 5px 0 !important;
 }
 
-.dancing-script {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 700;
-    font-size: 1.7rem;
-}
-
-.noto-serif-kr {
-    font-family: 'Noto Serif KR', serif;
+.title-loc-date {
+    font-family: 'S-CoreDream-3Light', sans-serif;
     font-weight: 400;
+    font-size: 13px;
 }
 
-.ft-2rem {
-    font-size: 2rem;
+/* invitation info */
+
+.invitation-title {
+    font-family: 'ChosunGu', sans-serif;
+    font-weight: 400;
+    color: #c7747b; /* 핑크 계열의 글자색 */
+    font-size: 1.5rem;
+}
+
+.invitation-text {
+    font-family: 'ChosunGu', serif;
+    font-size: 15px;
+    color: #913543; /* 다크 핑크 계열의 글자색 */
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
+    line-height: 2.5;
+}
+
+/* wedding calender info */
+.date-text {
+    margin-bottom: 2rem;
+}
+
+.wedding-title {
+    font-family: 'S-CoreDream-3Light', sans-serif;
+    font-size: 25px;
+    color: #d9534f;
+}
+
+.wedding-date {
+    font-family: 'S-CoreDream-3Light', sans-serif;
+    font-size: 20px;
+    color: #5d5d5d;
+}
+
+.wedding-location {
+    font-family: 'S-CoreDream-3Light', sans-serif;
+    font-size: 17px;
+    color: #5d5d5d;
 }
