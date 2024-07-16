@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
         cover       : false,
         breakpoints : {
             600: {
-                fixedWidth : 66,
-                fixedHeight: 50,
+                fixedWidth : 100,
+                fixedHeight: 150,
             },
         },
     }).mount();
