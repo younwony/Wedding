@@ -1,21 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700&family=Noto+Serif+KR:wght@400;700&display=swap');
 @font-face {
-    font-family: 'iceJaram-Rg'; /* 인천교육자람체 */
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'KCC-Ahnchangho'; /* KCC 안창호체 */
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/KCC-Ahnchangho.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Makgeolli'; /* 포천막걸리체 */
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/Makgeolli.woff') format('woff');
+    font-family: 'GowunDodum-Regular'; /* 고운돋움 */
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -28,34 +14,6 @@
 }
 
 @font-face {
-    font-family: 'MangoDdobak-B'; /* 망고보드 또박체 */
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ChosunGu'; /* 조선굴림체 */
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NEXON Lv1 Gothic OTF'; /* 넥슨 Lv.1 고딕 */
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'EarlyFontDiary'; /* 다이어리체 */
-    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'HancomMalangMalang-Regular'; /* 한컴 말랑말랑 */
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/HancomMalangMalang-Regular.woff2') format('woff2');
     font-weight: 400;
@@ -63,43 +21,31 @@
 }
 
 @font-face {
-    font-family: 'HancomMalangMalang-Regular'; /* 온글잎 경영체 */
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/HancomMalangMalang-Regular.woff2') format('woff2');
-    font-weight: 400;
+    font-family: 'Meddon';
+    src: url('./Meddon.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
 }
 
+
 /* title info */
 .title-message {
-    font-family: 'Makgeolli', sans-serif;
-    font-weight: 700;
-    font-size: 1.3rem
+    font-family: 'Meddon';
+    font-weight: 400;
+    font-size: 2.8rem;
+    text-align: right;
+    padding : 0 10px;
+    color: #ff7373; /* 파스텔 핑크 색상 적용 */
+}
+
+.small-font {
+    font-size: 1.3rem; /* 원하는 크기로 설정 */
 }
 
 .title-name {
-    font-family: 'S-CoreDream-3Light', sans-serif;
-    font-weight: 700;
+    font-family: 'GowunDodum-Regular', sans-serif;
+    font-weight: 300;
     font-size: 1.5rem;
-}
-
-.title-loc-date {
-    font-family: 'S-CoreDream-3Light', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    padding: 0 !important;
-}
-
-.title-loc-date-time {
-    font-family: 'S-CoreDream-3Light', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    padding: 5px 0 !important;
-}
-
-.title-loc-date {
-    font-family: 'S-CoreDream-3Light', sans-serif;
-    font-weight: 400;
-    font-size: 13px;
 }
 
 /* invitation info */

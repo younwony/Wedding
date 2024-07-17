@@ -33,15 +33,12 @@
             <img src="/img/main.jpg" alt="배경 이미지" class="background-image">
             <canvas id="petalsCanvas"></canvas>
             <div class="text-overlay">
-                <h1 class="title-message">We're Getting Married</h1>
                 <div class="date-text">
-                    <h1 class="title-name">윤원희 & 한상은</h1>
+                    <h1 class="title-name">윤원희 <span class="small-font">그리고</span> 한상은</h1>
                 </div>
-                <div class="date-text">
-                    <h2 class="title-loc-date">2024.09.28.</h2>
-                    <h2 class="title-loc-date-time">토요일 17:00 PM</h2>
-                    <h3 class="title-loc" style="font-size: 13px;">양재 엘블레스 B1 다이아몬드홀</h3>
-                </div>
+            </div>
+            <div class="text-overlay-bottom">
+                <h1 class="title-message">We are getting married!</h1>
             </div>
         </div>
     </div>
@@ -75,7 +72,7 @@
                 </div>
                 <div class="name-group">
                     <div class="name-father">
-                        <div class="name-img"><img src="/img/d.jpg" alt="국화꽃 아이콘" style="width: 20px; vertical-align: middle;"></div>
+                        <div class="name-img"><img src="/img/d.png" alt="국화꽃 아이콘" style="width: 20px; vertical-align: middle;"></div>
                         한재영
                     </div>
                     <div class="separator">·</div>
