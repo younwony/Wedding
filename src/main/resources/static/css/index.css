@@ -258,80 +258,70 @@ canvas {
     color: #ffffff;
     border-color: #007bff;
 }
-
-/* invitation */
-.invitation {
-    margin: 2rem 0;
-    padding: 2rem;
-    background-color: #ffe6e9; /* 연한 핑크 배경색 */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.names {
     text-align: center;
-}
-
-
-
-.invitation img {
-    width: 20px;
-    vertical-align: middle;
+    margin: 20px 0;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .name-container {
     display: flex;
-    justify-content: center; /* 수평 중앙 정렬 */
-    align-items: center; /* 수직 중앙 정렬 */
-    width: 100%;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.names {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 25rem;
-}
 .name-group {
     display: flex;
-    justify-content: center; /* 각 그룹 내부 요소를 중앙 정렬 */
-    width: 100%; /* 전체 그룹의 너비 */
-    align-items: center; /* 이미지와 텍스트를 세로로 중앙 정렬 */
-}
-.name {
-    flex: 4; /* 각 요소의 너비를 동일하게 설정 */
-    display: flex;
     align-items: center;
-    text-align: center; /* 중앙 정렬 */
-    justify-content: center; /* 중앙 정렬 */
+    gap: 5px;
+    justify-content: center;
 }
 
-.name-father {
-    flex: 5; /* 각 요소의 너비를 동일하게 설정 */
+.name-father, .name-mother, .name {
     display: flex;
     align-items: center;
-    text-align: center; /* 중앙 정렬 */
-    justify-content: center; /* 중앙 정렬 */
+    gap: 5px;
 }
+
 .name-img {
-    margin-right: 5px; /* 이미지와 이름 사이의 간격 */
-}
-.name-img img {
-    width: 20px;
-    height: 20px; /* 이미지의 크기를 고정 */
-    vertical-align: middle; /* 이미지 수직 정렬 */
-}
-.name-img img.empty {
-    visibility: hidden; /* 빈 이미지가 영역을 차지하도록 설정 */
-}
-.role, .person {
-    flex: 4; /* 각 요소의 너비를 동일하게 설정 */
-    text-align: center; /* 중앙 정렬 */
-}
-.separator, .relation {
-    flex: 1; /* separator와 relation 영역을 더 작게 설정 */
-    text-align: center; /* 중앙 정렬 */
+    display: flex;
+    align-items: center;
 }
 
+.separator {
+    margin: 0 5px;
+}
+
+.relation, .role, .person {
+    display: block;
+    text-align: center;
+}
+
+.name-group .person {
+    margin-left: 5px;
+}
+
+.name-group .role {
+    margin-left: 5px;
+}
+
+.name-group:nth-child(2), .name-group:nth-child(4) {
+    justify-content: center;
+}
+
+.name-group:nth-child(2) .separator, .name-group:nth-child(4) .separator {
+    display: none;
+}
+
+.name-group:nth-child(2) .role, .name-group:nth-child(4) .role {
+    display: none;
+}
+
+.name-group:nth-child(2) .person, .name-group:nth-child(4) .person {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 
 
 .fc-sun, .fc-red {

@@ -16,6 +16,7 @@
     <link href="/css/splide.min.css" rel="stylesheet">
     <link href="/css/splide-core.min.css" rel="stylesheet">
     <link href="/css/splide-sea-green.min.css" rel="stylesheet">
+    <link href="/css/invitation.css" rel="stylesheet">
     <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Gowun+Batang&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -45,47 +46,67 @@
 
     <!-- 초대 메세지 -->
     <div class="invitation text-center">
-        <h2 class="invitation-title">INVITATION</h2>
-        <p class="invitation-text">
-            오래전 작은 인연이 <br>
-            저희를 연인으로 만들었고, <br>
-            지금 그 인연으로 <br>
-            그 사람의 손을 꼭 잡고 결혼합니다. <br>
-            늘 그 인연을 생각하며 <br>
-            서로 아껴주고 사랑하며 살겠습니다. <br>
-            저희 두 사람의 새로운 시작을 <br>
-            함께하시어 축복해 주시면 <br>
-            감사하겠습니다. <br>
-        </p>
-        <div class="name-container">
-            <div class="names">
-                <div class="name-group">
-                    <div class="name-father">
-                        <div class="name-img"><img class="empty"/></div>
-                        윤재성
-                    </div>
-                    <div class="separator">·</div>
-                    <div class="name">장선자</div>
-                    <div class="relation">의</div>
-                    <div class="role">장남</div>
-                    <div class="person">원희</div>
-                </div>
-                <div class="name-group">
-                    <div class="name-father">
-                        <div class="name-img"><img src="/img/d.png" alt="국화꽃 아이콘" style="width: 20px; vertical-align: middle;"></div>
-                        한재영
-                    </div>
-                    <div class="separator">·</div>
-                    <div class="name">김묘숙</div>
-                    <div class="relation">의</div>
-                    <div class="role">장녀</div>
-                    <div class="person">상은</div>
-                </div>
+        <div class="invitation-header">
+            <h1>2024년 9월 28일 토요일 오후 5시<br>양재 엘블레스 B1, 다이아몬드홀</h1>
+        </div>
+        <div class="invitation-img">
+            <img src="/img/letter.jpg" alt="Invitation Envelope">
+            <div class="invitation-text">
+                <div class="korean">소중한 분들을 초대합니다.</div>
             </div>
+        </div>
+        <div class="invitation-img-1">
+            <img src="/img/invi1.jpg" alt="invitaion-1">
+        </div>
+        <p class="invitation-text">
+            사랑이란 별다른 것이 아니라 <br>
+            그 사람과 함께 늙어가고 싶은 것이다. <br>
+            평생을 함께 하고 싶은 사람을 만났습니다. <br>
+            저희 두 사람이 함께 하는 새로운 시작에 <br>
+            귀한 발걸음으로 축복해 주시면 감사하겠습니다. <br>
+        </p>
+        <div class="invitation-text-from">신랑 원희 · 신부 상은 올림</div>
+        <div class="invitation-img-2">
+            <img src="/img/invi2.jpg" alt="invitaion-2">
         </div>
     </div>
 
     <!-- 정보 -->
+    <div class="names">
+        <div class="name-container">
+            <div class="name-group">
+                <div class="name-img"><img class="empty"/></div>
+                <div class="name-father">
+                    윤재성
+                </div>
+                <div class="separator">·</div>
+                <div class="name">장선자</div>
+                <div class="relation">의</div>
+                <div class="role">장남</div>
+                <div class="person"></div>
+            </div>
+            <div class="name-group">
+                <div class="separator">신랑</div>
+                <div class="person">윤원희</div>
+            </div>
+            <div class="name-group">
+                <div class="name-img"><img src="/img/d.png" alt="국화꽃 아이콘" style="width: 20px; vertical-align: middle;"></div>
+                <div class="name-father">
+                    한재영
+                </div>
+                <div class="separator">·</div>
+                <div class="name">김묘숙</div>
+                <div class="relation">의</div>
+                <div class="role">장녀</div>
+                <div class="person"> </div>
+            </div>
+            <div class="name-group">
+                <div class="separator">신부</div>
+                <div class="person">한상은</div>
+            </div>
+        </div>
+    </div>
+
     <div class="mb-5 text-center" id="wedding-info">
         <div class="date-text">
             <h2 class="wedding-title">Wedding Day</h2>

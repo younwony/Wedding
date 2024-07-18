@@ -27,6 +27,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Ownglyph_jooreeletter-Rg'; /* 온글리프 주리레터 */
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_jooreeletter-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OwnglyphMoogungChae'; /* 온글리프 무궁채 */
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/OwnglyphMoogungChae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* title info */
 .title-message {
@@ -46,24 +60,6 @@
     font-family: 'GowunDodum-Regular', sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
-}
-
-/* invitation info */
-
-.invitation-title {
-    font-family: 'ChosunGu', sans-serif;
-    font-weight: 400;
-    color: #c7747b; /* 핑크 계열의 글자색 */
-    font-size: 1.5rem;
-}
-
-.invitation-text {
-    font-family: 'ChosunGu', serif;
-    font-size: 15px;
-    color: #913543; /* 다크 핑크 계열의 글자색 */
-    margin-bottom: 1.5rem;
-    margin-top: 4rem;
-    line-height: 2.5;
 }
 
 /* wedding calender info */
