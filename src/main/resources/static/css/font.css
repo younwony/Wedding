@@ -75,19 +75,26 @@
 }
 
 .wedding-title {
-    font-family: 'S-CoreDream-3Light', sans-serif;
+    font-family: 'OoohBaby-Regular', sans-serif;
+    font-weight: 400;
     font-size: 25px;
-    color: #d9534f;
+    color: #000000;
 }
 
 .wedding-date {
     font-family: 'S-CoreDream-3Light', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
+    color: #5d5d5d;
+}
+
+.wedding-time {
+    font-family: 'S-CoreDream-3Light', sans-serif;
+    font-size: 15px;
     color: #5d5d5d;
 }
 
 .wedding-location {
     font-family: 'S-CoreDream-3Light', sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     color: #5d5d5d;
 }

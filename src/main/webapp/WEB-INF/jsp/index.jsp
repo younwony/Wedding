@@ -149,9 +149,8 @@
 
     <!-- 메이킹 필름 영상 영역 -->
     <div class="container" id="making-film-container">
-        <h2 class="film-title">Making Film</h2>
         <div class="video-container">
-            <video>
+            <video controls playsinline controlsList="nodownload">
                 <source src="/video/making.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -160,11 +159,13 @@
 
     <div class="mb-5 text-center" id="wedding-info">
         <div class="date-text">
-            <h2 class="wedding-title">Wedding Day</h2>
-            <h2 class="wedding-date">2024.09.28. 토요일 17:00 PM</h2>
+            <h2 class="wedding-title">WEDDING DAY</h2>
+            <h2 class="wedding-date">2024.09.28.</h2>
+            <h2 class="wedding-time">토요일 17:00 PM</h2>
             <h3 class="wedding-location">양재 엘블레스 B1 다이아몬드홀</h3>
         </div>
     </div>
+
     <div class="calendar-container" id="calendar"></div>
     <div class="timer-contain">
         <div class="timer-overlay"></div>
