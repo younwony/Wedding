@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctx = canvas.getContext('2d');
     let petalsArray = [];
     const petalImage = new Image();
-    petalImage.src = '/img/sakura.png'; // 투명한 배경의 하얀 벚꽃 이미지 경로
+    petalImage.src = 'https://dwp9wba2tw70x.cloudfront.net/img/sakura.png'; // 투명한 배경의 하얀 벚꽃 이미지 경로
 
     function setCanvasSize() {
         canvas.width = canvas.offsetWidth;

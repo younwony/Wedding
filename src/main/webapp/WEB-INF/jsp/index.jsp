@@ -32,7 +32,7 @@
     <!-- 첫 인사 문구 -->
     <div class="text-center" id="first-content">
         <div class="background-image-container">
-            <img src="/img/main.jpg" alt="배경 이미지" class="background-image">
+            <img src="https://dwp9wba2tw70x.cloudfront.net/img/main.jpg" alt="배경 이미지" class="background-image">
             <canvas id="petalsCanvas"></canvas>
             <div class="text-overlay">
                 <div class="date-text">
@@ -54,13 +54,13 @@
             <h1>2024년 9월 28일 토요일 오후 5시<br>양재 엘블레스 B1, 다이아몬드홀</h1>
         </div>
         <div class="invitation-img">
-            <img src="/img/letter.jpg" alt="Invitation Envelope">
+            <img src="https://dwp9wba2tw70x.cloudfront.net/img/letter.jpg" alt="Invitation Envelope">
             <div class="invitation-text">
                 <div class="korean">소중한 분들을 초대합니다.</div>
             </div>
         </div>
         <div class="invitation-img-1">
-            <img src="/img/invi1.jpg" alt="invitaion-1">
+            <img src="https://dwp9wba2tw70x.cloudfront.net/img/invi1.jpg" alt="invitaion-1">
         </div>
         <p class="invitation-text">
             사랑이란 별다른 것이 아니라 <br>
@@ -71,7 +71,7 @@
         </p>
         <div class="invitation-text-from">신랑 원희 · 신부 상은 올림</div>
         <div class="invitation-img-2">
-            <img src="/img/invi2.jpg" alt="invitaion-2">
+            <img src="https://dwp9wba2tw70x.cloudfront.net/img/invi2.jpg" alt="invitaion-2">
         </div>
     </div>
 
@@ -89,7 +89,7 @@
             </div>
 
             <div class="name-group">
-                <div class="name-img"><img src="/img/d.png" alt="국화꽃 아이콘" style="width: 20px; vertical-align: middle;"></div>
+                <div class="name-img"><img src="https://dwp9wba2tw70x.cloudfront.net/img/d.png" alt="국화꽃 아이콘" style="width: 20px; vertical-align: middle;"></div>
                 <div class="name-text">
                     한재영 ·김묘숙의 장녀
                 </div>
@@ -108,21 +108,21 @@
         <div id="main-slider" class="splide" style="padding: 0 !important;">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide"><img src="/img/wedding/1.jpg" alt="Image 1"></li>
-                    <li class="splide__slide"><img src="/img/wedding/2.jpg" alt="Image 2"></li>
-                    <li class="splide__slide"><img src="/img/wedding/3.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img src="/img/wedding/4.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img src="/img/wedding/5.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img src="/img/wedding/6.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img src="/img/wedding/7.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img src="/img/wedding/8.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img src="/img/wedding/9.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img src="/img/wedding/10.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img src="/img/wedding/11.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img src="/img/wedding/12.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img src="/img/wedding/13.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img src="/img/wedding/14.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img src="/img/wedding/15.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/1.jpg" alt="Image 1"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/2.jpg" alt="Image 2"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/3.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/4.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/5.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/6.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/7.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/8.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/9.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/10.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/11.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/12.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/13.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/14.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/15.jpg" alt="Image 3"></li>
                 </ul>
             </div>
         </div>
@@ -131,21 +131,21 @@
         <div id="thumbnail-slider" class="splide">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/1.jpg" alt="Thumbnail 1"></li>
-                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/2.jpg" alt="Thumbnail 2"></li>
-                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/3.jpg" alt="Thumbnail 3"></li>
-                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/4.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/5.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/6.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/7.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/8.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/9.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/10.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/11.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/12.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/13.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/14.jpg" alt="Image 3"></li>
-                    <li class="splide__slide"><img class="slide-img" src="/img/wedding/15.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/1.jpg" alt="Thumbnail 1"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/2.jpg" alt="Thumbnail 2"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/3.jpg" alt="Thumbnail 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/4.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/5.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/6.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/7.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/8.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/9.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/10.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/11.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/12.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/13.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/14.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/15.jpg" alt="Image 3"></li>
                 </ul>
             </div>
         </div>
@@ -154,8 +154,8 @@
     <!-- 메이킹 필름 영상 영역 -->
     <div class="container" id="making-film-container">
         <div class="video-container">
-            <video controls playsinline controlsList="nodownload" poster="/img/thumb.jpg">
-                <source src="/video/making.mp4" type="video/mp4">
+            <video controls playsinline controlsList="nodownload" poster="https://dwp9wba2tw70x.cloudfront.net/img/thumb.jpg">
+                <source src="https://dwp9wba2tw70x.cloudfront.net/video/making.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -166,7 +166,7 @@
             <h2 class="wedding-title">WEDDING DAY</h2>
             <h2 class="wedding-date">2024.09.28</h2>
             <h2 class="wedding-time">토요일 오후 5시</h2>
-            <img src="/img/calendar.png" alt="달력 이미지" class="calendar-image">
+            <img src="https://dwp9wba2tw70x.cloudfront.net/img/calendar.png" alt="달력 이미지" class="calendar-image">
         </div>
     </div>
 
@@ -206,7 +206,7 @@
         </div>
         <div id="map" style="width: 100%; height: 300px;"></div>
         <div>
-            <img src="/img/location/location.jpg" alt="오시는 길 1" class="location-image">
+            <img src="https://dwp9wba2tw70x.cloudfront.net/img/location/location.jpg" alt="오시는 길 1" class="location-image">
         </div>
     </div>
 
@@ -221,19 +221,19 @@
     <div id="tab1" class="tab-content active">
         <h2>오시는 길 안내</h2>
         <p>웨딩홀의 주소와 오시는 길에 대한 안내 내용이 여기에 들어갑니다.</p>
-        <img src="/img/location/location.jpg" alt="오시는 길 안내">
+        <img src="https://dwp9wba2tw70x.cloudfront.net/img/location/location.jpg" alt="오시는 길 안내">
     </div>
 
     <div id="tab2" class="tab-content">
         <h2>주차 안내</h2>
         <p>웨딩홀 주차장 및 주차 가능 구역에 대한 안내 내용이 여기에 들어갑니다.</p>
-        <img src="/img/location/location.jpg" alt="주차 안내">
+        <img src="https://dwp9wba2tw70x.cloudfront.net/img/location/location.jpg" alt="주차 안내">
     </div>
 
     <div id="tab3" class="tab-content">
         <h2>식사 안내</h2>
         <p>웨딩홀에서 제공되는 식사 메뉴와 시간에 대한 안내 내용이 여기에 들어갑니다.</p>
-        <img src="/img/location/location.jpg" alt="식사 안내">
+        <img src="https://dwp9wba2tw70x.cloudfront.net/img/location/location.jpg" alt="식사 안내">
     </div>
 
     <!-- 마음 전하실 곳 -->
