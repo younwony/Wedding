@@ -170,11 +170,30 @@
     <div class="timer-contain">
         <div class="timer-overlay"></div>
         <div class="timer">
-            <h2>상은 ❤️ 원희</h2>
-            <h2>결혼식까지</h2>
-            <h1 id="countdown" class="countdown">D-0 00:00:00</h1>
+            <div class="countdown-container">
+                <div class="countdown-labels">
+                    <span class="countdown-label">DAY</span>
+                    <span class="countdown-label">HOUR</span>
+                    <span class="countdown-label">MIN</span>
+                    <span class="countdown-label">SEC</span>
+                </div>
+                <div class="countdown-values">
+                    <span id="days" class="countdown-value">61</span>
+                    <span class="countdown-separator">:</span>
+                    <span id="hours" class="countdown-value">00</span>
+                    <span class="countdown-separator">:</span>
+                    <span id="minutes" class="countdown-value">00</span>
+                    <span class="countdown-separator">:</span>
+                    <span id="seconds" class="countdown-value">00</span>
+                </div>
+            </div>
+            <h2>상은 ❤️ 원희 결혼식이 <span id="remaining-days">52</span>일 남았습니다</h2>
         </div>
     </div>
+
+
+
+
 
     <!-- 지도 -->
     <div id="location" class="mb-5">

@@ -2,12 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem; /* 좌우 여백 추가 */
+    padding: 0 2rem;
     position: relative;
     width: 100%;
-    background-color: #ffe6e9; /* 배경색 추가 */
+    background-color: #ffe6e9;
     background: url('/img/timer.jpg') no-repeat center center;
-    background-size: cover; /* 배경 이미지의 크기를 80%로 설정 */
+    background-size: cover;
     margin-bottom: 100px;
 }
 
@@ -17,7 +17,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* 반투명한 검정 오버레이 */
+    background: rgba(0, 0, 0, 0.6);
     z-index: 2;
 }
 
@@ -27,28 +27,67 @@
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    color: white; /* 글씨 색상 */
-    max-width: 90%; /* 좌우 여백을 위한 최대 너비 설정 */
-    margin: auto; /* 중앙 정렬 */
-    z-index: 3; /* 타이머가 오버레이 위에 표시되도록 설정 */
+    color: white;
+    max-width: 90%;
+    margin: auto;
+    z-index: 3;
 }
 
-.timer h1, .timer h2, .timer .countdown {
-    position: relative;
-    z-index: 4; /* 글씨가 타이머 위에 표시되도록 설정 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* 글씨 그림자 추가 */
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.timer h1 {
-    font-size: 3rem;
-    margin: 0;
+.countdown-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: white;
+    text-shadow: none;
+}
+
+.countdown-values {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.countdown-item {
+    text-align: center;
+    margin: 0 0.5rem;
+}
+
+.countdown-separator {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+}
+
+.countdown-label {
+    font-family: 'HancomMalangMalang-Regular', sans-serif;
+    display: block;
+    font-size: 1rem;
+}
+
+.countdown-value {
+    font-family: 'S-CoreDream-3Light', sans-serif; /* 에스코어드림 */
+    display: block;
+    font-size: 2rem;
+    color: white;
 }
 
 .timer h2 {
+    font-family: 'HancomMalangMalang-Regular', sans-serif;
     font-size: 1.5rem;
-    margin: 1rem 0;
-}
-
-.timer .countdown {
-    font-size: 2rem;
+    margin: 0;
+    position: relative;
+    z-index: 4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
