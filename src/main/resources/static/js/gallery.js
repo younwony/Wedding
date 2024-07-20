@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         focus       : 'center',
         pagination  : false,
         cover       : false,
+        arrows      : false,
         breakpoints : {
             600: {
                 fixedWidth : 100,

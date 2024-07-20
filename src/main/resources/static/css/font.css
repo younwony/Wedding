@@ -28,6 +28,13 @@
 }
 
 @font-face {
+    font-family: 'OoohBaby-Regular';
+    src: url('./OoohBaby-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Ownglyph_jooreeletter-Rg'; /* 온글리프 주리레터 */
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_jooreeletter-Rg.woff2') format('woff2');
     font-weight: normal;

@@ -15,7 +15,7 @@
     <link href="/css/calendar.css" rel="stylesheet">
     <link href="/css/splide.min.css" rel="stylesheet">
     <link href="/css/splide-core.min.css" rel="stylesheet">
-    <link href="/css/splide-sea-green.min.css" rel="stylesheet">
+    <link href="/css/splide-default.min.css" rel="stylesheet">
     <link href="/css/invitation.css" rel="stylesheet">
     <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Gowun+Batang&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
@@ -76,54 +76,26 @@
         <div class="name-container">
             <div class="name-group">
                 <div class="name-img"><img class="empty"/></div>
-                <div class="name-father">
-                    윤재성
+                <div class="name-text">
+                    윤재성 ·장선자의 장남
                 </div>
-                <div class="separator">·</div>
-                <div class="name">장선자</div>
-                <div class="relation">의</div>
-                <div class="role">장남</div>
-                <div class="person"></div>
+                <div class="name-target">
+                    윤원희
+                </div>
             </div>
-            <div class="name-group">
-                <div class="separator">신랑</div>
-                <div class="person">윤원희</div>
-            </div>
+
             <div class="name-group">
                 <div class="name-img"><img src="/img/d.png" alt="국화꽃 아이콘" style="width: 20px; vertical-align: middle;"></div>
-                <div class="name-father">
-                    한재영
+                <div class="name-text">
+                    한재영 ·김묘숙의 장녀
                 </div>
-                <div class="separator">·</div>
-                <div class="name">김묘숙</div>
-                <div class="relation">의</div>
-                <div class="role">장녀</div>
-                <div class="person"> </div>
+                <div class="name-target">
+                    한상은
+                </div>
             </div>
-            <div class="name-group">
-                <div class="separator">신부</div>
-                <div class="person">한상은</div>
-            </div>
+            <button class="congrats-button">축하 연락하기 </button>
         </div>
     </div>
-
-    <div class="mb-5 text-center" id="wedding-info">
-        <div class="date-text">
-            <h2 class="wedding-title">Wedding Day</h2>
-            <h2 class="wedding-date">2024.09.28. 토요일 17:00 PM</h2>
-            <h3 class="wedding-location">양재 엘블레스 B1 다이아몬드홀</h3>
-        </div>
-    </div>
-    <div class="calendar-container" id="calendar"></div>
-    <div class="timer-contain">
-        <div class="timer-overlay"></div>
-        <div class="timer">
-            <h2>상은 ❤️ 원희</h2>
-            <h2>결혼식까지</h2>
-            <h1 id="countdown" class="countdown">D-0 00:00:00</h1>
-        </div>
-    </div>
-
 
     <!-- 웨딩 사진 갤러리 -->
     <div class="container" id="gallery-container">
@@ -172,6 +144,24 @@
                     <li class="splide__slide"><img class="slide-img" src="/img/wedding/15.jpg" alt="Image 3"></li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+
+    <div class="mb-5 text-center" id="wedding-info">
+        <div class="date-text">
+            <h2 class="wedding-title">Wedding Day</h2>
+            <h2 class="wedding-date">2024.09.28. 토요일 17:00 PM</h2>
+            <h3 class="wedding-location">양재 엘블레스 B1 다이아몬드홀</h3>
+        </div>
+    </div>
+    <div class="calendar-container" id="calendar"></div>
+    <div class="timer-contain">
+        <div class="timer-overlay"></div>
+        <div class="timer">
+            <h2>상은 ❤️ 원희</h2>
+            <h2>결혼식까지</h2>
+            <h1 id="countdown" class="countdown">D-0 00:00:00</h1>
         </div>
     </div>
 

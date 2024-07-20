@@ -14,11 +14,12 @@
 
 /* 제목 스타일 */
 .gallery-title {
-    font-size: 2rem;
-    color: rgba(217, 83, 79, 0.75);
+    font-size: 3rem;
+    color: #000000;
     text-align: center;
     margin-bottom: 20px;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'OoohBaby-Regular', sans-serif;
+    font-weight: 400;
 }
 
 /* '더보기' 링크 스타일 */
