@@ -1,29 +1,30 @@
+<%@ page import="java.util.Date" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
+<%pageContext.setAttribute("timeStamp", new SimpleDateFormat("yyyyMMddHHmmss").format(new Date())) ;%>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>윤원희 ❤️ 한상은 결혼합니다.</title>
-    <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/index.css" rel="stylesheet">
-    <link href="/css/gallery.css" rel="stylesheet">
-    <link href="/css/timer.css" rel="stylesheet">
-    <link href="/css/font.css" rel="stylesheet">
-    <link href="/css/tab.css" rel="stylesheet">
-    <link href="/css/swiper-bundle.min.css" rel="stylesheet">
-    <link href="/css/calendar.css" rel="stylesheet">
-    <link href="/css/splide.min.css" rel="stylesheet">
-    <link href="/css/splide-core.min.css" rel="stylesheet">
-    <link href="/css/splide-default.min.css" rel="stylesheet">
-    <link href="/css/invitation.css" rel="stylesheet">
+    <link href="/css/bootstrap/bootstrap.min.css?val=${timeStamp}" rel="stylesheet">
+    <link href="/css/index.css?val=${timeStamp}" rel="stylesheet">
+    <link href="/css/gallery.css?val=${timeStamp}" rel="stylesheet">
+    <link href="/css/timer.css?val=${timeStamp}" rel="stylesheet">
+    <link href="/css/font.css?val=${timeStamp}" rel="stylesheet">
+    <link href="/css/tab.css?val=${timeStamp}" rel="stylesheet">
+    <link href="/css/swiper-bundle.min.css?val=${timeStamp}" rel="stylesheet">
+    <link href="/css/calendar.css?val=${timeStamp}" rel="stylesheet">
+    <link href="/css/splide.min.css?val=${timeStamp}" rel="stylesheet">
+    <link href="/css/splide-core.min.css?val=${timeStamp}" rel="stylesheet">
+    <link href="/css/splide-default.min.css?val=${timeStamp}" rel="stylesheet">
+    <link href="/css/invitation.css?val=${timeStamp}" rel="stylesheet">
     <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Gowun+Batang&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js'></script>
-
-
 </head>
 <body>
 
@@ -153,7 +154,7 @@
     <!-- 메이킹 필름 영상 영역 -->
     <div class="container" id="making-film-container">
         <div class="video-container">
-            <video controls playsinline controlsList="nodownload">
+            <video controls playsinline controlsList="nodownload" poster="/img/thumb.jpg">
                 <source src="/video/making.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -311,14 +312,14 @@
 
 </div>
 
-<script src="/js/swiper-bundle.min.js"></script>
-<script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
-<script src="/js/splide.min.js"></script>
-<script src="/js/index.js"></script>
-<script src="/js/gallery.js"></script>
-<script src="/js/timer.js"></script>
-<script src="/js/tab.js"></script>
-<script src="/js/sakura.js"></script>
-<script src="/js/calendar.js"></script>
+<script src="/js/swiper-bundle.min.js?val=${timeStamp}"></script>
+<script src="/js/bootstrap/bootstrap.bundle.min.js?val=${timeStamp}"></script>
+<script src="/js/splide.min.js?val=${timeStamp}"></script>
+<script src="/js/index.js?val=${timeStamp}"></script>
+<script src="/js/gallery.js?val=${timeStamp}"></script>
+<script src="/js/timer.js?val=${timeStamp}"></script>
+<script src="/js/tab.js?val=${timeStamp}"></script>
+<script src="/js/sakura.js?val=${timeStamp}"></script>
+<script src="/js/calendar.js?val=${timeStamp}"></script>
 </body>
 </html>
