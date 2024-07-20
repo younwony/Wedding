@@ -147,6 +147,16 @@
         </div>
     </div>
 
+    <!-- 메이킹 필름 영상 영역 -->
+    <div class="container" id="making-film-container">
+        <h2 class="film-title">Making Film</h2>
+        <div class="video-container">
+            <video>
+                <source src="/video/making.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
 
     <div class="mb-5 text-center" id="wedding-info">
         <div class="date-text">
