@@ -14,6 +14,13 @@
 }
 
 @font-face {
+    font-family: 'S-CoreDream-2ExtraLight'; /* 에스코어드림 200 */
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'HancomMalangMalang-Regular'; /* 한컴 말랑말랑 */
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/HancomMalangMalang-Regular.woff2') format('woff2');
     font-weight: 400;

@@ -156,3 +156,15 @@ window.onload = function () {
         });
     });
 }
+
+document.getElementById('copy-address-btn').addEventListener('click', function() {
+    const address = document.getElementById('location-details').innerText;
+    const textarea = document.createElement('textarea');
+    textarea.value = address;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+
+    alert('주소가 복사되었습니다: ' + address);
+});

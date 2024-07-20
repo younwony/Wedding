@@ -191,20 +191,21 @@
         </div>
     </div>
 
-
-
-
-
     <!-- 지도 -->
     <div id="location" class="mb-5">
+        <h2 id="location-title-text">LOCATION</h2>
         <h2 id="location-title">오시는 길</h2>
-        <p id="location-description">양재 엘블레스</p>
-        <p id="location-details">1층 레터홀<br>제주특별자치도 서귀포시 중앙로 105</p>
+        <p id="location-description">엘블레스 B1, 다이아몬드홀</p>
+        <div id="address-container">
+            <p id="location-details">서울 서초구 강남대로 213</p>
+            <svg id="copy-address-btn" style="display: block; vertical-align: middle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.4445 7.89062H9.44906C8.59052 7.89062 7.89453 8.58661 7.89453 9.44516V16.4406C7.89453 17.2991 8.59052 17.9951 9.44906 17.9951H16.4445C17.303 17.9951 17.999 17.2991 17.999 16.4406V9.44516C17.999 8.58661 17.303 7.89062 16.4445 7.89062Z" stroke="#444444" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.3318 12.1045H3.55453C3.14225 12.1045 2.74684 11.9407 2.45531 11.6492C2.16378 11.3576 2 10.9622 2 10.5499V3.55453C2 3.14225 2.16378 2.74684 2.45531 2.45531C2.74684 2.16378 3.14225 2 3.55453 2H10.5499C10.9622 2 11.3576 2.16378 11.6492 2.45531C11.9407 2.74684 12.1045 3.14225 12.1045 3.55453V4.3318" stroke="#444444" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
         <div id="map" style="width: 100%; height: 300px;"></div>
         <div>
             <img src="/img/location/location.jpg" alt="오시는 길 1" class="location-image">
         </div>
     </div>
+
 
 
     <div class="tabs">
