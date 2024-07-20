@@ -35,6 +35,13 @@
 }
 
 @font-face {
+    font-family: 'Hicks Bryant';
+    src: url('./Hicks Bryant.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'OoohBaby-Regular';
     src: url('./OoohBaby-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -58,22 +65,30 @@
 
 /* title info */
 .title-message {
-    font-family: 'Meddon';
-    font-weight: 400;
-    font-size: 2.8rem;
+    font-family: 'Hicks Bryant';
+    font-weight: 200;
+    font-size: 3.5rem;
     text-align: right;
-    padding : 0 10px;
-    color: #ff7373; /* 파스텔 핑크 색상 적용 */
+    color: #ffffff; /* 화이트 색상 적용 */
+    transform: rotate(-10deg);  /* 10도 기울기 */
+    display: inline-block;
+    text-shadow: -0.1px -0.1px #9D9A8B, 0.1px -0.1px #9D9A8B, -0.1px 0.1px #9D9A8B, 0.1px 0.1px #9D9A8B; /* 그림자 효과 */
+}
+
+@media (max-width: 385px) {
+    .title-message {
+        font-size: 3rem;
+    }
 }
 
 .small-font {
-    font-size: 1.3rem; /* 원하는 크기로 설정 */
+    font-size: 1.0rem; /* 원하는 크기로 설정 */
 }
 
 .title-name {
     font-family: 'GowunDodum-Regular', sans-serif;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 /* wedding calender info */

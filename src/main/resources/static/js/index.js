@@ -168,3 +168,39 @@ document.getElementById('copy-address-btn').addEventListener('click', function()
 
     alert('주소가 복사되었습니다: ' + address);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const text1 = document.getElementById('animated-text-1');
+    const str1 = text1.textContent;
+    text1.innerHTML = '';
+
+    const text2 = document.getElementById('animated-text-2');
+    const str2 = text2.textContent;
+    text2.innerHTML = '';
+
+    const delay = 0.1; // 각 글자 애니메이션 지연 시간을 초 단위로 설정 (예: 0.1초)
+
+    // 첫 번째 줄 애니메이션 적용
+    for (let i = 0; i < str1.length; i++) {
+        const span = document.createElement('span');
+        span.className = 'letter';
+        span.style.animationDelay = `${i * delay}s`;
+        span.textContent = str1[i];
+        if (str1[i] === ' ') {
+            span.style.width = '0.8rem'; // 공백을 위한 고정 폭 설정
+        }
+        text1.appendChild(span);
+    }
+
+    // 두 번째 줄 애니메이션 적용
+    for (let i = 0; i < str2.length; i++) {
+        const span = document.createElement('span');
+        span.className = 'letter';
+        span.style.animationDelay = `${(str1.length + i) * delay}s`;
+        span.textContent = str2[i];
+        if (str2[i] === ' ') {
+            span.style.width = '0.8rem'; // 공백을 위한 고정 폭 설정
+        }
+        text2.appendChild(span);
+    }
+});

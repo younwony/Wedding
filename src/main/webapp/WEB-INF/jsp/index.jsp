@@ -39,7 +39,10 @@
                 </div>
             </div>
             <div class="text-overlay-bottom">
-                <h1 class="title-message">We are getting married!</h1>
+                <h1 class="title-message">
+                    <span id="animated-text-1">We are getting</span><br>
+                    <span id="animated-text-2">married!</span>
+                </h1>
             </div>
         </div>
     </div>
