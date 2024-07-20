@@ -130,3 +130,8 @@
 .splide__slide.is-active {
     opacity: 1;
 }
+
+#gallery-container {
+    padding: 0;
+    margin-bottom: 5rem;
+}
