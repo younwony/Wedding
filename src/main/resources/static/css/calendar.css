@@ -1,51 +1,7 @@
-#calendar {
-    margin-bottom: 100px;
-}
-
-.calendar-container {
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+.calendar-image {
     width: 80%;
-}
-
-.fc-red {
-    color: red !important; /* 텍스트 색상 변경 */
-}
-
-.fc td, .fc th {
-    border: none !important; /* 달력의 줄 제거 */
-}
-
-.fc-day-number, .fc-event-title, .fc-day-header span {
-    font-size: 14px !important; /* 텍스트 크기 조정 */
-    float: none !important; /* float 속성 제거 */
-}
-
-.fc-toolbar h2 {
-    font-size: 17px !important; /* 헤더의 텍스트 크기 조정 */
-    padding-bottom: 15px; /* 헤더와 셀 사이의 간격 조정 */
-}
-
-.fc-toolbar {
-    margin-bottom: 20px; /* 헤더와 셀 사이의 간격 조정 */
-}
-
-.fc-day-top .fc-day-number {
-    display: block;
-    text-align: center;
-}
-
-.fc-content-skeleton table {
-    text-align: center;
-}
-
-.fc-row .fc-content-skeleton {
-    padding-top: 30px; /* fc-header와 fc-body 사이의 간격 조정 */
+    max-height: 500px; /* 최대 높이 설정 */
+    height: auto; /* 높이를 자동으로 조정 */
+    margin: 20px 0; /* 상/하단 여백 */
+    object-fit: contain; /* 이미지가 컨테이너 안에 맞게 조정 */
 }

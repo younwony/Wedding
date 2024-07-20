@@ -160,13 +160,13 @@
     <div class="mb-5 text-center" id="wedding-info">
         <div class="date-text">
             <h2 class="wedding-title">WEDDING DAY</h2>
-            <h2 class="wedding-date">2024.09.28.</h2>
-            <h2 class="wedding-time">토요일 17:00 PM</h2>
-            <h3 class="wedding-location">양재 엘블레스 B1 다이아몬드홀</h3>
+            <h2 class="wedding-date">2024.09.28</h2>
+            <h2 class="wedding-time">토요일 오후 5시</h2>
+            <img src="/img/calendar.png" alt="달력 이미지" class="calendar-image">
         </div>
     </div>
 
-    <div class="calendar-container" id="calendar"></div>
+
     <div class="timer-contain">
         <div class="timer-overlay"></div>
         <div class="timer">
