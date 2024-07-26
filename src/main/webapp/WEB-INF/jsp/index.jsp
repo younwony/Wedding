@@ -89,7 +89,7 @@
             </div>
 
             <div class="name-group">
-                <div class="name-img"><img src="https://dwp9wba2tw70x.cloudfront.net/img/d.png" alt="국화꽃 아이콘" style="width: 20px; vertical-align: middle;"></div>
+                <div class="name-img"><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/d.png" alt="국화꽃 아이콘" style="width: 20px; vertical-align: middle;"></div>
                 <div class="name-text">
                     한재영 ·김묘숙의 장녀
                 </div>
@@ -196,7 +196,7 @@
     </div>
 
     <!-- 지도 -->
-    <div id="location animate-fade-in" class="mb-5">
+    <div id="location" class="mb-5 animate-fade-in">
         <h2 id="location-title-text">LOCATION</h2>
         <h2 id="location-title">오시는 길</h2>
         <p id="location-description">엘블레스 B1, 다이아몬드홀</p>
@@ -204,9 +204,9 @@
             <p id="location-details">서울 서초구 강남대로 213</p>
             <svg id="copy-address-btn" style="display: block; vertical-align: middle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.4445 7.89062H9.44906C8.59052 7.89062 7.89453 8.58661 7.89453 9.44516V16.4406C7.89453 17.2991 8.59052 17.9951 9.44906 17.9951H16.4445C17.303 17.9951 17.999 17.2991 17.999 16.4406V9.44516C17.999 8.58661 17.303 7.89062 16.4445 7.89062Z" stroke="#444444" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.3318 12.1045H3.55453C3.14225 12.1045 2.74684 11.9407 2.45531 11.6492C2.16378 11.3576 2 10.9622 2 10.5499V3.55453C2 3.14225 2.16378 2.74684 2.45531 2.45531C2.74684 2.16378 3.14225 2 3.55453 2H10.5499C10.9622 2 11.3576 2.16378 11.6492 2.45531C11.9407 2.74684 12.1045 3.14225 12.1045 3.55453V4.3318" stroke="#444444" stroke-linecap="round" stroke-linejoin="round"></path></svg>
         </div>
-        <div id="map" style="width: 100%; height: 300px;"></div>
+        <div id="map"></div>
         <div style="text-align: center; margin: 30px 0;">
-            <button class="map-button" id="mapButton"><img src="https://dwp9wba2tw70x.cloudfront.net/img/map_icon.png" style="width: 20px; vertical-align: middle; margin-bottom: 5px;"> 약도 이미지 보기</button>
+            <button class="map-button" id="mapButton"><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/map.png" style="width: 20px; vertical-align: middle; margin-bottom: 5px;"> 약도 이미지 보기</button>
         </div>
 
         <!-- 네비게이션 -->
@@ -214,38 +214,41 @@
             <div class="navigation">
                 <p>원하시는 앱을 선택하시면 길안내가 시작됩니다.</p>
                 <div class="navigation-apps">
-                    <button><img src="https://dwp9wba2tw70x.cloudfront.net/img/map_icon.png" alt="네이버지도"> 네이버지도</button>
-                    <button><img src="https://dwp9wba2tw70x.cloudfront.net/img/map_icon.png" alt="티맵"> 티맵</button>
-                    <button><img src="https://dwp9wba2tw70x.cloudfront.net/img/map_icon.png" alt="카카오내비"> 카카오내비</button>
+                    <button onclick="navi('naver')"><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/naver.png" alt="네이버지도"> 네이버지도</button>
+                    <button onclick="navi('tmap')"><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/t.png" alt="티맵"> 티맵</button>
+                    <button onclick="navi('kakao')"><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/kakao.png" alt="카카오내비"> 카카오내비</button>
                 </div>
             </div>
 
             <div class="directions">
-                <h3>자가용</h3>
+                <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/car.png" alt="car"/>자가용</h3>
                 <p>네비게이션: “양재 엘블레스” 검색<br>
                     엘블레스 옆 ‘양재역 주차장’ 이용, 주차 2시간 무료<br>
-                    <em>*주차장 주소</em>: 서초구 강남대로 221 (양재동 23)<br>
-                    <em>*주차하신 후 옆 건물 스포타임 지하 1층으로 이동하시면 됩니다.</em></p>
+                    *주차장 주소 : 서초구 강남대로 221 (양재동 23)<br>
+                    *주차하신 후 옆 건물 스포타임 지하 1층으로 이동하시면 됩니다.</p>
+                <hr class="line-general">
 
-                <h3>지하철</h3>
-                <p>3호선 양재역 • 신분당선 양재역<br>
+                <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/subway.png" alt="subway"/>지하철</h3>
+                <p><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/>호선 양재역 • 신분당선 양재역<br>
                     9번출구에서 바로 연결됩니다.</p>
+                <hr class="line-general">
 
-                <h3>KTX</h3>
+                <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/ktx.png" alt="ktx"/>KTX</h3>
                 <p>서울역 (양재역까지 약 40분 소요)<br>
-                    4호선 서울역에서 회현역 방면으로 탑승,<br>
-                    3호선 충무로역에서 환승하여 양재역에서 하차</p>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/4.png" alt="4"/>호선 서울역에서 회현역 방면으로 탑승,<br>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/>호선 충무로역에서 환승하여 양재역에서 하차</p>
                 <p>용산역 (양재역까지 약 40분 소요)<br>
-                    경의중앙선 용산역에서 이촌역 방면으로 탑승,<br>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/gm.png" alt="gm"/>경의중앙선 용산역에서 이촌역 방면으로 탑승,<br>
                     (덕소행 15:51, 용문행 16:01, 팔당행 16:23)<br>
-                    3호선 옥수역에서 환승하여 양재역에서 하차</p>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/>호선 옥수역에서 환승하여 양재역에서 하차</p>
+                <hr class="line-general">
 
-                <h3>SRT</h3>
+                <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/srt.png" alt="srt"/>SRT</h3>
                 <p>수서역 (양재역까지 약 15분 소요)<br>
-                    3호선 수서역에서 탑승하여 양재역에서 하차</p>
-
-                <h3>고속버스</h3>
-                <p>3호선 고속터미널역에서 탑승하여 양재역에서 하차<br>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/>호선 수서역에서 탑승하여 양재역에서 하차</p>
+                <hr class="line-general">
+                <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/bus.png" alt="bus"/>고속버스</h3>
+                <p><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/>호선 고속터미널역에서 탑승하여 양재역에서 하차<br>
                     (양재역까지 약 10분 소요)</p>
             </div>
         </div>
@@ -362,48 +365,48 @@
                     <h3 class="modal-congratulation-role">신랑</h3>
                     <p class="modal-congratulation-name">윤원희</p>
                     <div class="icons">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/call.jpg" alt="Phone" class="icon">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/mail.jpg" alt="Email" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
                     </div>
                 </div>
                 <div>
                     <h3 class="modal-congratulation-role">신부</h3>
                     <p class="modal-congratulation-name">한상은</p>
                     <div class="icons">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/call.jpg" alt="Phone" class="icon">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/mail.jpg" alt="Email" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
                     </div>
                 </div>
                 <div>
                     <h3 class="modal-congratulation-role">신랑 아버지</h3>
                     <p class="modal-congratulation-name">윤재성</p>
                     <div class="icons">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/call.jpg" alt="Phone" class="icon">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/mail.jpg" alt="Email" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
                     </div>
                 </div>
                 <div>
                     <h3 class="modal-congratulation-role">신부 아버지</h3>
                     <p class="modal-congratulation-name">한재영</p>
                     <div class="icons">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/call.jpg" alt="Phone" class="icon">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/mail.jpg" alt="Email" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
                     </div>
                 </div>
                 <div>
                     <h3 class="modal-congratulation-role">신랑 어머니</h3>
                     <p class="modal-congratulation-name">장선자</p>
                     <div class="icons">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/call.jpg" alt="Phone" class="icon">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/mail.jpg" alt="Email" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
                     </div>
                 </div>
                 <div>
                     <h3 class="modal-congratulation-role">신부 어머니</h3>
                     <p class="modal-congratulation-name">김묘숙</p>
                     <div class="icons">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/call.jpg" alt="Phone" class="icon">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/mail.jpg" alt="Email" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
                     </div>
                 </div>
             </div>
@@ -416,7 +419,6 @@
             <img src="https://dwp9wba2tw70x.cloudfront.net/img/location/location.jpg" alt="오시는 길 1" style="width: 100%;">
         </div>
     </div>
-
 </div>
 
 <script src="/js/swiper-bundle.min.js?val=${timeStamp}"></script>
@@ -427,6 +429,7 @@
 <script src="/js/timer.js?val=${timeStamp}"></script>
 <script src="/js/tab.js?val=${timeStamp}"></script>
 <script src="/js/sakura.js?val=${timeStamp}"></script>
+<script src="/js/navi.js?val=${timeStamp}"></script>
 <script src="/js/calendar.js?val=${timeStamp}"></script>
 </body>
 </html>
