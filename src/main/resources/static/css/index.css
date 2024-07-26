@@ -311,7 +311,7 @@ canvas {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
-    background-color: #ffb7bd;
+    background-color: #F3E8E9;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -320,7 +320,7 @@ canvas {
 }
 
 .congrats-button:hover {
-    background-color: #ffb7bd;
+    background-color: #F3E8E9;
 }
 
 .arrow {
@@ -499,7 +499,7 @@ canvas {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 85%;
     max-width: 500px;
     border-radius: 10px;
 }
@@ -557,4 +557,89 @@ canvas {
 .animate-fade-in.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* 축하 연락하기 모달*/
+/* 모달 스타일 */
+.modal-congratulation {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-congratulation .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-congratulation .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 두 열로 설정 */
+    gap: 50px;
+    justify-items: center; /* 가운데 정렬 */
+    align-items: start; /* 시작 위치에 맞춤 */
+}
+
+.modal-congratulation .contact-grid div {
+    text-align: center;
+    width: 100%; /* 각 셀이 전체 너비를 차지하도록 설정 */
+}
+
+.modal-congratulation .contact-grid h3 {
+    margin: 10px 0 5px 0;
+}
+
+.modal-congratulation .icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal-congratulation .icons .icon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* 축하 연락하기 버튼 스타일 */
+.congrats-button {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ffb7bd;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 50px;
+}
+
+.congrats-button:hover {
+    background-color: #ffb7bd;
+}
+
+.modal-congratulation-role, .modal-congratulation-name {
+    font-family: 'S-CoreDream-3Light', sans-serif;
+    font-size: 15px;
+}
+
+.modal-congratulation-name {
+    font-weight: 700;
 }

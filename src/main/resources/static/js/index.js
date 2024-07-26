@@ -227,3 +227,25 @@ $(document).ready(function() {
     checkAnimation();
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('contactModal');
+    var btn = document.getElementById('congratsButton');
+    var span = document.getElementsByClassName('close')[0];
+
+    // 버튼을 클릭하면 모달을 표시
+    btn.onclick = function() {
+        modal.style.display = 'block';
+    }
+
+    // 닫기 버튼을 클릭하면 모달을 닫기
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    // 모달 외부를 클릭하면 모달을 닫기
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+});

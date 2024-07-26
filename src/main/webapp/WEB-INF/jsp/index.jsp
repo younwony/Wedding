@@ -97,7 +97,7 @@
                     한상은
                 </div>
             </div>
-            <button class="congrats-button">축하 연락하기 </button>
+            <button class="congrats-button" id="congratsButton">축하 연락하기</button>
         </div>
     </div>
 
@@ -306,6 +306,62 @@
                 <input type="password" class="form-control" id="deletePassword" required>
             </div>
             <button type="button" id="deleteMessageBtn" class="btn btn-danger">삭제</button>
+        </div>
+    </div>
+
+    <!-- 축하 연락하기 모달 -->
+    <div id="contactModal" class="modal-congratulation">
+        <div class="modal-content">
+            <div class="contact-grid">
+                <div>
+                    <h3 class="modal-congratulation-role">신랑</h3>
+                    <p class="modal-congratulation-name">윤원희</p>
+                    <div class="icons">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/call.jpg" alt="Phone" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/mail.jpg" alt="Email" class="icon">
+                    </div>
+                </div>
+                <div>
+                    <h3 class="modal-congratulation-role">신부</h3>
+                    <p class="modal-congratulation-name">한상은</p>
+                    <div class="icons">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/call.jpg" alt="Phone" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/mail.jpg" alt="Email" class="icon">
+                    </div>
+                </div>
+                <div>
+                    <h3 class="modal-congratulation-role">신랑 아버지</h3>
+                    <p class="modal-congratulation-name">윤재성</p>
+                    <div class="icons">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/call.jpg" alt="Phone" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/mail.jpg" alt="Email" class="icon">
+                    </div>
+                </div>
+                <div>
+                    <h3 class="modal-congratulation-role">신부 아버지</h3>
+                    <p class="modal-congratulation-name">한재영</p>
+                    <div class="icons">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/call.jpg" alt="Phone" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/mail.jpg" alt="Email" class="icon">
+                    </div>
+                </div>
+                <div>
+                    <h3 class="modal-congratulation-role">신랑 어머니</h3>
+                    <p class="modal-congratulation-name">장선자</p>
+                    <div class="icons">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/call.jpg" alt="Phone" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/mail.jpg" alt="Email" class="icon">
+                    </div>
+                </div>
+                <div>
+                    <h3 class="modal-congratulation-role">신부 어머니</h3>
+                    <p class="modal-congratulation-name">김묘숙</p>
+                    <div class="icons">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/call.jpg" alt="Phone" class="icon">
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/mail.jpg" alt="Email" class="icon">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
