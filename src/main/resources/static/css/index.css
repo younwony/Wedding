@@ -560,7 +560,7 @@ canvas {
 }
 
 /* 축하 연락하기 모달*/
-/* 모달 스타일 */
+/* 축하 연락하기 모달 */
 .modal-congratulation {
     display: none;
     position: fixed;
@@ -571,26 +571,29 @@ canvas {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-congratulation .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
+    padding: 10% 0;
     border: 1px solid #888;
     width: 80%;
-    height: 70%;
     max-width: 500px;
     border-radius: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-congratulation .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 두 열로 설정 */
-    gap: 50px;
-    justify-items: center; /* 가운데 정렬 */
-    align-items: start; /* 시작 위치에 맞춤 */
+    gap: 30px;
+    width: 100%; /* 그리드가 전체 너비를 차지하도록 설정 */
 }
 
 .modal-congratulation .contact-grid div {
@@ -614,32 +617,11 @@ canvas {
     cursor: pointer;
 }
 
-/* 축하 연락하기 버튼 스타일 */
-.congrats-button {
-    display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #ffb7bd;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-bottom: 50px;
-}
-
-.congrats-button:hover {
-    background-color: #ffb7bd;
-}
-
 .modal-congratulation-role, .modal-congratulation-name {
     font-family: 'S-CoreDream-3Light', sans-serif;
     font-size: 15px;
 }
-
 .modal-congratulation-name {
-    font-weight: 700;
+    font-weight: bold;
+
 }
