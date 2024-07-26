@@ -255,38 +255,62 @@
     </div>
 
 
-    <div class="tabs animate-fade-in">
-        <button class="tab-link active" data-tab="tab1">오시는 길 안내</button>
-        <button class="tab-link" data-tab="tab2">주차 안내</button>
-        <button class="tab-link" data-tab="tab3">식사 안내</button>
-    </div>
+    <div class="tab-info-container animate-fade-in">
+        <h2 class="tab-info-container-title">INFORMATION</h2>
+        <h2 class="tab-info-container-title">예식 정보 및 안내사항</h2>
+        <div class="tabs">
+            <button class="tab-link active" data-tab="tab1">홀 안내</button>
+            <button class="tab-link" data-tab="tab2">식사 안내</button>
+            <button class="tab-link" data-tab="tab3">주차 안내</button>
+        </div>
 
-    <div id="tab1" class="tab-content active animate-fade-in">
-        <h2>홀 안내</h2>
-        <p>
-            식사는 결혼식 및 촬영이 끝난 후 웨딩홀 같은 층에서 뷔페식으로 진행됩니다. 부족함 없이 즐기실 수 있도록 한식을 비롯해 중식, 양식, 일식 등 다양한 메뉴가 준비되어 있습니다.
-            예식 종료 후 한 분 한 분 소중한 마음으로 인사드리겠습니다.
-            *예식 시작 30분 전부터 식사 가능합니다.
-        </p>
-    </div>
+        <div id="tab1" class="tab-content active">
+            <p>
+                양재 엘블레스 단독홀에서<br>
+                저희 두 사람의 웨딩이 진행됩니다.<br>
+                <br>즐거운 마음으로 <br>
+                함께 해주시면 감사드리겠습니다.
+            </p>
+        </div>
 
-    <div id="tab2" class="tab-content animate-fade-in">
-        <h2>식사 안내</h2>
-        <p>엘블레스 바로 옆 900대 주차가 가능한 ‘양재역 주차장’ 이용 시 2시간 무료주차가 가능합니다. 주차하신 후 옆 건물 스포타임 지하1층으로 이동하시면 됩니다.
-            *로비의 주차권 데스크에서 무료 주차권을 직접 수령해가시면 됩니다.
-        </p>
-        <button class="map-button" id="parkingButton">주차장 위치 보기</button>
-    </div>
+        <div id="tab2" class="tab-content">
+            <p>
+                식사는 결혼식 및 촬영이 끝난 후 <br>
+                웨딩홀 같은 층에서 뷔페식으로 진행됩니다.<br>
+                <br>부족함 없이 즐기실 수 있도록<br>
+                한식을 비롯해 중식, 양식, 일식 등<br>
+                다양한 메뉴가 준비되어 있습니다.<br>
 
-    <div id="tab3" class="tab-content">
-        <h2>주차 안내</h2>
-        <p>양재 엘블레스 단독홀에서 저희 두 사람의 웨딩이 진행됩니다. 즐거운 마음으로 함께 해주시면 감사드리겠습니다.</p>
+                <br>예식 종료 후 한 분 한 분 <br>
+                소중한 마음으로 인사드리겠습니다.<br>
+
+                <br>*예식 시작 30분 전부터 식사 가능합니다.
+            </p>
+        </div>
+
+        <div id="tab3" class="tab-content">
+            <p>
+                엘블레스 바로 옆 900대 주차가 가능한 <br>
+                ‘양재역 주차장’ 이용 시<br>
+                2시간 무료주차가 가능합니다. <br>
+
+                <br>주차하신 후 옆 건물 스포타임 지하1층으로<br>
+                이동하시면 됩니다.<br>
+                <br>*로비의 주차권 데스크에서 무료 주차권을 직접 수령해가시면 됩니다.
+            </p>
+            <button class="map-button" id="parkingButton">주차장 위치 보기</button>
+        </div>
     </div>
 
     <!-- 마음 전하실 곳 -->
     <div class="message-container">
-        <h2>마음 전하실 곳</h2>
-        <p>필요하신 분들을 위해<br>안내드리니 양해 부탁드립니다.<br>참석하지 못하시더라도 축복해주시는 그 마음 감사히 간직하겠습니다.</p>
+        <h2 class="message-container-account">Account</h2>
+        <h2 class="message-container-account">마음 전하실 곳</h2>
+        <p>참석이 어려워 직접 축하를<br>
+            전하지 못하는 분들을 위해 안내드리니<br>
+            넓은 마음으로 양해 부탁드립니다.<br>
+        전해주시는 진심은 소중하게 간직하여<br>
+        좋은 부부의 모습으로 보답하겠습니다.<br>
     </div>
 
     <div class="accordion animate-fade-in">

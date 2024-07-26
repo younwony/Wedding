@@ -1,10 +1,26 @@
+.tab-info-container {
+    text-align: center;
+}
+
+.tab-info-container-title {
+    font-size: 1.2rem;
+    color: #000000; /* 제목 색상 */
+    font-family: 'OoohBaby-Regular', sans-serif;
+    border-radius: 10px;
+    background-color: #fff; /* 제목 배경을 흰색으로 설정 */
+}
+
 .tabs {
     display: flex;
     justify-content: center;
     background-color: #fff;
     border-bottom: 2px solid #e0e0e0;
+    margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
+    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
 }
 .tabs button {
     background-color: transparent;
@@ -13,7 +29,6 @@
     cursor: pointer;
     padding: 14px 20px;
     transition: background-color 0.3s ease;
-    font-size: 1rem;
     color: #777;
     flex: 1; /* 탭 버튼을 동일한 너비로 설정 */
     text-align: center; /* 텍스트를 중앙 정렬 */
@@ -29,6 +44,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    text-align: center;
 }
 .tab-content.active {
     display: block;
@@ -36,4 +52,9 @@
 .tab-content img {
     max-width: 100%;
     border-radius: 10px;
+}
+.tab-content p {
+    font-family: 'S-CoreDream-3Light', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
