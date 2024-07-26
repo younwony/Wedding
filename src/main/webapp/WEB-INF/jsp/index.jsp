@@ -333,8 +333,9 @@
     </div>
 
     <!-- 축하 메시지 -->
-    <div class="mb-5">
-        <h2>축하 메시지</h2>
+    <div class="mb-5 guestbook">
+        <h2 class="guestbook-title">Guest Book</h2>
+        <h2 class="guestbook-title-sub">방명록</h2>
         <form id="guestMessageForm">
             <div class="mb-3">
                 <label for="author" class="form-label">이름</label>
