@@ -625,3 +625,19 @@ canvas {
     font-weight: bold;
 
 }
+
+
+/* Map 영역*/
+.map-button {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

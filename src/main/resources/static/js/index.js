@@ -249,3 +249,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('mapModal');
+    var btn = document.getElementById('mapButton');
+
+    // 버튼을 클릭하면 모달을 표시
+    btn.onclick = function() {
+        modal.style.display = 'block';
+    }
+
+    // 모달 외부를 클릭하면 모달을 닫기
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+});

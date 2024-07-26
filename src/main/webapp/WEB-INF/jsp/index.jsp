@@ -205,8 +205,13 @@
             <svg id="copy-address-btn" style="display: block; vertical-align: middle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.4445 7.89062H9.44906C8.59052 7.89062 7.89453 8.58661 7.89453 9.44516V16.4406C7.89453 17.2991 8.59052 17.9951 9.44906 17.9951H16.4445C17.303 17.9951 17.999 17.2991 17.999 16.4406V9.44516C17.999 8.58661 17.303 7.89062 16.4445 7.89062Z" stroke="#444444" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.3318 12.1045H3.55453C3.14225 12.1045 2.74684 11.9407 2.45531 11.6492C2.16378 11.3576 2 10.9622 2 10.5499V3.55453C2 3.14225 2.16378 2.74684 2.45531 2.45531C2.74684 2.16378 3.14225 2 3.55453 2H10.5499C10.9622 2 11.3576 2.16378 11.6492 2.45531C11.9407 2.74684 12.1045 3.14225 12.1045 3.55453V4.3318" stroke="#444444" stroke-linecap="round" stroke-linejoin="round"></path></svg>
         </div>
         <div id="map" style="width: 100%; height: 300px;"></div>
-        <div>
-            <img src="https://dwp9wba2tw70x.cloudfront.net/img/location/location.jpg" alt="오시는 길 1" class="location-image">
+        <div style="text-align: center; margin: 30px 0;">
+            <button class="map-button" id="mapButton"><img src="https://dwp9wba2tw70x.cloudfront.net/img/map_icon.png" style="width: 20px; vertical-align: middle; margin-bottom: 5px;"> 약도 이미지 보기</button>
+        </div>
+
+        <!-- 네비게이션 -->
+        <div class="navi">
+
         </div>
     </div>
 
@@ -218,25 +223,29 @@
     </div>
 
     <div id="tab1" class="tab-content active animate-fade-in">
-        <h2>오시는 길 안내</h2>
-        <p>웨딩홀의 주소와 오시는 길에 대한 안내 내용이 여기에 들어갑니다.</p>
-        <img src="https://dwp9wba2tw70x.cloudfront.net/img/location/location.jpg" alt="오시는 길 안내">
+        <h2>홀 안내</h2>
+        <p>
+            식사는 결혼식 및 촬영이 끝난 후 웨딩홀 같은 층에서 뷔페식으로 진행됩니다. 부족함 없이 즐기실 수 있도록 한식을 비롯해 중식, 양식, 일식 등 다양한 메뉴가 준비되어 있습니다.
+            예식 종료 후 한 분 한 분 소중한 마음으로 인사드리겠습니다.
+            *예식 시작 30분 전부터 식사 가능합니다.
+        </p>
     </div>
 
     <div id="tab2" class="tab-content animate-fade-in">
-        <h2>주차 안내</h2>
-        <p>웨딩홀 주차장 및 주차 가능 구역에 대한 안내 내용이 여기에 들어갑니다.</p>
-        <img src="https://dwp9wba2tw70x.cloudfront.net/img/location/location.jpg" alt="주차 안내">
+        <h2>식사 안내</h2>
+        <p>엘블레스 바로 옆 900대 주차가 가능한 ‘양재역 주차장’ 이용 시 2시간 무료주차가 가능합니다. 주차하신 후 옆 건물 스포타임 지하1층으로 이동하시면 됩니다.
+            *로비의 주차권 데스크에서 무료 주차권을 직접 수령해가시면 됩니다.
+        </p>
+        <button class="map-button" id="parkingButton">주차장 위치 보기</button>
     </div>
 
-    <div id="tab3" class="tab-content animate-fade-in">
-        <h2>식사 안내</h2>
-        <p>웨딩홀에서 제공되는 식사 메뉴와 시간에 대한 안내 내용이 여기에 들어갑니다.</p>
-        <img src="https://dwp9wba2tw70x.cloudfront.net/img/location/location.jpg" alt="식사 안내">
+    <div id="tab3" class="tab-content">
+        <h2>주차 안내</h2>
+        <p>양재 엘블레스 단독홀에서 저희 두 사람의 웨딩이 진행됩니다. 즐거운 마음으로 함께 해주시면 감사드리겠습니다.</p>
     </div>
 
     <!-- 마음 전하실 곳 -->
-    <div class="message-container animate-fade-in">
+    <div class="message-container">
         <h2>마음 전하실 곳</h2>
         <p>필요하신 분들을 위해<br>안내드리니 양해 부탁드립니다.<br>참석하지 못하시더라도 축복해주시는 그 마음 감사히 간직하겠습니다.</p>
     </div>
@@ -362,6 +371,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- 약도 이미지 모달 -->
+    <div id="mapModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <img src="https://dwp9wba2tw70x.cloudfront.net/img/location/location.jpg" alt="오시는 길 1" style="width: 100%;">
         </div>
     </div>
 
