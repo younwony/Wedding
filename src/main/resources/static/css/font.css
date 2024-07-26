@@ -28,6 +28,13 @@
 }
 
 @font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Meddon';
     src: url('./Meddon.ttf') format('truetype');
     font-weight: normal;

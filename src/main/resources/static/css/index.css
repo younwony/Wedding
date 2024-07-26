@@ -716,3 +716,90 @@ canvas {
     background-color: #ccc; /* 선의 색상 설정 */
     margin: 20px 0; /* 위아래 간격 설정 */
 }
+/* #last 컨테이너 스타일 */
+#last {
+    position: relative;
+    background: url('https://dwp9wba2tw70x.cloudfront.net/img/last.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.last-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.last-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* 텍스트 스타일 */
+.footer-text {
+    margin-top: 0; /* 상단에 붙이기 */
+    margin-bottom: auto; /* 자동으로 아래로 밀기 */
+    padding-top: 20px; /* 상단 여백 조정 */
+    width: 100%; /* 가로폭 꽉 채우기 */
+}
+
+.footer-text .tanks-to {
+    font-family: 'Meddon', sans-serif;
+    font-size: 1.2rem;
+    color: white; /* 제목 색상 */
+}
+
+.footer-text p {
+    font-family: 'GowunDodum-Regular', sans-serif;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* 아이콘 스타일 */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.footer-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-icons div {
+    text-align: center;
+}
+
+.footer-icons p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.footer-text {
+    margin-bottom: auto;
+}
+
+.copyright {
+    margin-top: auto;
+    font-size: 14px;
+}

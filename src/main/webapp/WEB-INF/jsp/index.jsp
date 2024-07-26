@@ -332,13 +332,6 @@
         </div>
     </div>
 
-    <!-- 공유하기 -->
-    <div class="mb-5 text-center">
-        <h2>공유하기</h2>
-        <button class="btn btn-primary" onclick="shareToKakao()">카카오톡 공유</button>
-        <button class="btn btn-secondary" onclick="shareToInstagram()">인스타그램 공유</button>
-    </div>
-
     <!-- 축하 메시지 -->
     <div class="mb-5">
         <h2>축하 메시지</h2>
@@ -362,6 +355,33 @@
             <!-- 페이지 버튼 -->
         </div>
     </div>
+
+    <!-- 마지막 인삿말 -->
+    <footer id="last">
+        <div class="last-overlay"></div>
+        <div class="last-content">
+            <div class="footer-text">
+                <h2 class="tanks-to">THANKS TO</h2>
+                <p>
+                    언제나 곁을 따뜻하게 지켜주신<br>
+                    모든 분들께 감사드립니다.
+                </p>
+            </div>
+            <div class="footer-icons">
+                <div>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/kakao-link.png" alt="카카오톡 공유 아이콘"/>
+                    <p>카카오톡으로 공유하기</p>
+                </div>
+                <div>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/m-link.png" alt="링크 복사 아이콘"/>
+                    <p>청첩장 링크 복사하기</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2024. 땅뽀.</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- 삭제 확인 모달 -->
     <div id="deleteModal" class="modal" style="display: none;">

@@ -1,13 +1,3 @@
-function shareToKakao() {
-    // 카카오톡 공유 기능 구현
-    alert("카카오톡으로 공유하기 기능을 추가하세요.");
-}
-
-function shareToInstagram() {
-    // 인스타그램 공유 기능 구현
-    alert("인스타그램으로 공유하기 기능을 추가하세요.");
-}
-
 // guestMessageList
 function showDeleteModal(messageId) {
     const modal = document.getElementById('deleteModal');
@@ -228,21 +218,14 @@ $(document).ready(function() {
 document.addEventListener('DOMContentLoaded', function() {
     var modal = document.getElementById('contactModal');
     var btn = document.getElementById('congratsButton');
-    var span = document.getElementsByClassName('close')[0];
 
     // 버튼을 클릭하면 모달을 표시
     btn.onclick = function() {
         modal.style.display = 'block';
     }
 
-    // 닫기 버튼을 클릭하면 모달을 닫기
-    span.onclick = function() {
-        modal.style.display = 'none';
-    }
-
-    // 모달 외부를 클릭하면 모달을 닫기
-    window.onclick = function(event) {
-        if (event.target == modal) {
+    modal.onclick = function(event) {
+        if (event.target === modal) {
             modal.style.display = 'none';
         }
     }
@@ -259,8 +242,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // 모달 외부를 클릭하면 모달을 닫기
-    window.onclick = function(event) {
-        if (event.target == modal) {
+    modal.onclick = function(event) {
+        if (event.target === modal) {
             modal.style.display = 'none';
         }
     }
