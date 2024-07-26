@@ -204,3 +204,26 @@ document.addEventListener('DOMContentLoaded', function() {
         text2.appendChild(span);
     }
 });
+
+$(document).ready(function() {
+    function checkAnimation() {
+        $('.animate-fade-in').each(function() {
+            var elementTop = $(this).offset().top;
+            var elementBottom = elementTop + $(this).outerHeight();
+            var viewportTop = $(window).scrollTop();
+            var viewportBottom = viewportTop + $(window).height();
+
+            if (elementBottom > viewportTop && elementTop < viewportBottom) {
+                $(this).addClass('show');
+            }
+        });
+    }
+
+    // 스크롤 및 페이지 로드 시 애니메이션 체크
+    $(window).on('scroll', checkAnimation);
+    $(window).on('load', checkAnimation);
+
+    // 페이지 로드 시 초기 체크
+    checkAnimation();
+});
+

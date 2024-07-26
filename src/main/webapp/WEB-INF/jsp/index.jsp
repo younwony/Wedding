@@ -49,7 +49,7 @@
     </div>
 
     <!-- 초대 메세지 -->
-    <div class="invitation text-center">
+    <div class="invitation text-center animate-fade-in" >
         <div class="invitation-header">
             <h1>2024년 9월 28일 토요일 오후 5시<br>양재 엘블레스 B1, 다이아몬드홀</h1>
         </div>
@@ -76,7 +76,7 @@
     </div>
 
     <!-- 정보 -->
-    <div class="names">
+    <div class="names animate-fade-in">
         <div class="name-container">
             <div class="name-group">
                 <div class="name-img"><img class="empty"/></div>
@@ -102,7 +102,7 @@
     </div>
 
     <!-- 웨딩 사진 갤러리 -->
-    <div class="container" id="gallery-container">
+    <div class="container animate-fade-in" id="gallery-container">
         <h2 class="gallery-title">Gallery</h2>
 
         <div id="main-slider" class="splide" style="padding: 0 !important;">
@@ -152,7 +152,7 @@
     </div>
 
     <!-- 메이킹 필름 영상 영역 -->
-    <div class="container" id="making-film-container">
+    <div class="container animate-fade-in" id="making-film-container">
         <div class="video-container">
             <video controls playsinline controlsList="nodownload" poster="https://dwp9wba2tw70x.cloudfront.net/img/thumb.jpg">
                 <source src="https://dwp9wba2tw70x.cloudfront.net/video/making.mp4" type="video/mp4">
@@ -161,7 +161,7 @@
         </div>
     </div>
 
-    <div class="mb-5 text-center" id="wedding-info">
+    <div class="mb-5 text-center animate-fade-in" id="wedding-info">
         <div class="date-text">
             <h2 class="wedding-title">WEDDING DAY</h2>
             <h2 class="wedding-date">2024.09.28</h2>
@@ -171,7 +171,7 @@
     </div>
 
 
-    <div class="timer-contain">
+    <div class="timer-contain animate-fade-in">
         <div class="timer-overlay"></div>
         <div class="timer">
             <div class="countdown-container">
@@ -196,7 +196,7 @@
     </div>
 
     <!-- 지도 -->
-    <div id="location" class="mb-5">
+    <div id="location animate-fade-in" class="mb-5">
         <h2 id="location-title-text">LOCATION</h2>
         <h2 id="location-title">오시는 길</h2>
         <p id="location-description">엘블레스 B1, 다이아몬드홀</p>
@@ -211,38 +211,37 @@
     </div>
 
 
-
-    <div class="tabs">
+    <div class="tabs animate-fade-in">
         <button class="tab-link active" data-tab="tab1">오시는 길 안내</button>
         <button class="tab-link" data-tab="tab2">주차 안내</button>
         <button class="tab-link" data-tab="tab3">식사 안내</button>
     </div>
 
-    <div id="tab1" class="tab-content active">
+    <div id="tab1" class="tab-content active animate-fade-in">
         <h2>오시는 길 안내</h2>
         <p>웨딩홀의 주소와 오시는 길에 대한 안내 내용이 여기에 들어갑니다.</p>
         <img src="https://dwp9wba2tw70x.cloudfront.net/img/location/location.jpg" alt="오시는 길 안내">
     </div>
 
-    <div id="tab2" class="tab-content">
+    <div id="tab2" class="tab-content animate-fade-in">
         <h2>주차 안내</h2>
         <p>웨딩홀 주차장 및 주차 가능 구역에 대한 안내 내용이 여기에 들어갑니다.</p>
         <img src="https://dwp9wba2tw70x.cloudfront.net/img/location/location.jpg" alt="주차 안내">
     </div>
 
-    <div id="tab3" class="tab-content">
+    <div id="tab3" class="tab-content animate-fade-in">
         <h2>식사 안내</h2>
         <p>웨딩홀에서 제공되는 식사 메뉴와 시간에 대한 안내 내용이 여기에 들어갑니다.</p>
         <img src="https://dwp9wba2tw70x.cloudfront.net/img/location/location.jpg" alt="식사 안내">
     </div>
 
     <!-- 마음 전하실 곳 -->
-    <div class="message-container">
+    <div class="message-container animate-fade-in">
         <h2>마음 전하실 곳</h2>
         <p>필요하신 분들을 위해<br>안내드리니 양해 부탁드립니다.<br>참석하지 못하시더라도 축복해주시는 그 마음 감사히 간직하겠습니다.</p>
     </div>
 
-    <div class="accordion">
+    <div class="accordion animate-fade-in">
         <div class="card">
             <button class="accordion-btn" type="button">
                 신랑측 <span class="icon">&#9660;</span>
