@@ -136,8 +136,6 @@ function setFullHeight() {
     firstContent.style.height = window.innerHeight + 'px';
 }
 
-window.addEventListener('resize', setFullHeight);
-window.addEventListener('load', setFullHeight);
 window.onload = function () {
     loadKakaoMapScript();
     getGuestMessageList();
