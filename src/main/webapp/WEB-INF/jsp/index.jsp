@@ -211,7 +211,43 @@
 
         <!-- 네비게이션 -->
         <div class="navi">
+            <div class="navigation">
+                <p>원하시는 앱을 선택하시면 길안내가 시작됩니다.</p>
+                <div class="navigation-apps">
+                    <button><img src="https://dwp9wba2tw70x.cloudfront.net/img/map_icon.png" alt="네이버지도"> 네이버지도</button>
+                    <button><img src="https://dwp9wba2tw70x.cloudfront.net/img/map_icon.png" alt="티맵"> 티맵</button>
+                    <button><img src="https://dwp9wba2tw70x.cloudfront.net/img/map_icon.png" alt="카카오내비"> 카카오내비</button>
+                </div>
+            </div>
 
+            <div class="directions">
+                <h3>자가용</h3>
+                <p>네비게이션: “양재 엘블레스” 검색<br>
+                    엘블레스 옆 ‘양재역 주차장’ 이용, 주차 2시간 무료<br>
+                    <em>*주차장 주소</em>: 서초구 강남대로 221 (양재동 23)<br>
+                    <em>*주차하신 후 옆 건물 스포타임 지하 1층으로 이동하시면 됩니다.</em></p>
+
+                <h3>지하철</h3>
+                <p>3호선 양재역 • 신분당선 양재역<br>
+                    9번출구에서 바로 연결됩니다.</p>
+
+                <h3>KTX</h3>
+                <p>서울역 (양재역까지 약 40분 소요)<br>
+                    4호선 서울역에서 회현역 방면으로 탑승,<br>
+                    3호선 충무로역에서 환승하여 양재역에서 하차</p>
+                <p>용산역 (양재역까지 약 40분 소요)<br>
+                    경의중앙선 용산역에서 이촌역 방면으로 탑승,<br>
+                    (덕소행 15:51, 용문행 16:01, 팔당행 16:23)<br>
+                    3호선 옥수역에서 환승하여 양재역에서 하차</p>
+
+                <h3>SRT</h3>
+                <p>수서역 (양재역까지 약 15분 소요)<br>
+                    3호선 수서역에서 탑승하여 양재역에서 하차</p>
+
+                <h3>고속버스</h3>
+                <p>3호선 고속터미널역에서 탑승하여 양재역에서 하차<br>
+                    (양재역까지 약 10분 소요)</p>
+            </div>
         </div>
     </div>
 

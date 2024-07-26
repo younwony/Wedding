@@ -641,3 +641,43 @@ canvas {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
+/* navi 영역*/
+/* CSS */
+.navi {
+    margin-top: 20px;
+}
+
+.navigation {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navigation-apps {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navigation-apps button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.navigation-apps img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.directions h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.directions p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
