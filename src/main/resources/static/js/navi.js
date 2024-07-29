@@ -1,13 +1,13 @@
 function navi(target) {
     switch (target) {
         case 'kakao' :
-            alert('카카오 지도로 이동합니다.');
+            location.href = 'https://map.kakao.com/link/to/607282159';
             break;
         case 'naver' :
-            alert('네이버 지도로 이동합니다.');
+            location.href = 'nmap://search?query=양재 엘블레스&amp;appname=https://ourfirstletter.com';
             break;
         case 'tmap' :
-            alert('T맵으로 이동합니다.');
+            location.href = 'tmap://search?name=양재 엘블레스';
             break;
     }
 }
