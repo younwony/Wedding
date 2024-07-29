@@ -410,48 +410,60 @@
                     <h3 class="modal-congratulation-role">신랑</h3>
                     <p class="modal-congratulation-name">윤원희</p>
                     <div class="icons">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
+                        <a href="tel:01035552320">
+                            <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
+                        </a>
+                        <a href="sms:01035552320">
+                            <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
+                        </a>
                     </div>
                 </div>
                 <div>
                     <h3 class="modal-congratulation-role">신부</h3>
                     <p class="modal-congratulation-name">한상은</p>
                     <div class="icons">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
+                        <a href="tel:01063490671">
+                            <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
+                        </a>
+                        <a href="sms:01063490671">
+                            <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
+                        </a>
                     </div>
                 </div>
                 <div>
                     <h3 class="modal-congratulation-role">신랑 아버지</h3>
                     <p class="modal-congratulation-name">윤재성</p>
                     <div class="icons">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
-                    </div>
-                </div>
-                <div>
-                    <h3 class="modal-congratulation-role">신부 아버지</h3>
-                    <p class="modal-congratulation-name">한재영</p>
-                    <div class="icons">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
-                    </div>
-                </div>
-                <div>
-                    <h3 class="modal-congratulation-role">신랑 어머니</h3>
-                    <p class="modal-congratulation-name">장선자</p>
-                    <div class="icons">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
+                        <a href="tel:01075210521">
+                            <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
+                        </a>
+                        <a href="sms:01075210521">
+                            <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
+                        </a>
                     </div>
                 </div>
                 <div>
                     <h3 class="modal-congratulation-role">신부 어머니</h3>
                     <p class="modal-congratulation-name">김묘숙</p>
                     <div class="icons">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
-                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
+                        <a href="tel:01063490671">
+                            <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
+                        </a>
+                        <a href="sms:01063490671">
+                            <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="modal-congratulation-role">신랑 어머니</h3>
+                    <p class="modal-congratulation-name">장선자</p>
+                    <div class="icons">
+                        <a href="tel:01091034742">
+                            <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
+                        </a>
+                        <a href="sms:01091034742">
+                            <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
+                        </a>
                     </div>
                 </div>
             </div>
