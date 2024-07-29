@@ -229,26 +229,26 @@
                 <hr class="line-general">
 
                 <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/subway.png" alt="subway"/>지하철</h3>
-                <p><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/>호선 양재역 • 신분당선 양재역<br>
+                <p><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 양재역</span> • <span class="subway-s">신분당선 양재역</span><br>
                     9번출구에서 바로 연결됩니다.</p>
                 <hr class="line-general">
 
                 <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/ktx.png" alt="ktx"/>KTX</h3>
                 <p>서울역 (양재역까지 약 40분 소요)<br>
-                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/4.png" alt="4"/>호선 서울역에서 회현역 방면으로 탑승,<br>
-                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/>호선 충무로역에서 환승하여 양재역에서 하차</p>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/4.png" alt="4"/><span class="subway-4">호선 서울역</span>에서 회현역 방면으로 탑승,<br>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 충무로역</span>에서 환승하여 양재역에서 하차</p>
                 <p>용산역 (양재역까지 약 40분 소요)<br>
-                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/gm.png" alt="gm"/>경의중앙선 용산역에서 이촌역 방면으로 탑승,<br>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/gm.png" alt="gm"/><span class="subway-g">경의중앙선 용산역</span>에서 이촌역 방면으로 탑승,<br>
                     (덕소행 15:51, 용문행 16:01, 팔당행 16:23)<br>
-                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/>호선 옥수역에서 환승하여 양재역에서 하차</p>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 옥수역</span>에서 환승하여 양재역에서 하차</p>
                 <hr class="line-general">
 
                 <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/srt.png" alt="srt"/>SRT</h3>
                 <p>수서역 (양재역까지 약 15분 소요)<br>
-                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/>호선 수서역에서 탑승하여 양재역에서 하차</p>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 수서역</span>에서 탑승하여 양재역에서 하차</p>
                 <hr class="line-general">
                 <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/bus.png" alt="bus"/>고속버스</h3>
-                <p><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/>호선 고속터미널역에서 탑승하여 양재역에서 하차<br>
+                <p><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 고속터미널역</span>에서 탑승하여 양재역에서 하차<br>
                     (양재역까지 약 10분 소요)</p>
             </div>
         </div>
