@@ -1,3 +1,4 @@
+Kakao.init('79116702bafec0462b6167ef14ca127b');
 // guestMessageList
 function showDeleteModal(messageId) {
     const modal = document.getElementById('deleteModal');
@@ -248,3 +249,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+function shareKakao() {
+    Kakao.Share.sendScrap({
+        requestUrl: 'https://developers.kakao.com',
+    });
+}
+function clip(){
+    var url = 'http://ddangbbo.com/';
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = url;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("청첩장 링크가 복사되었습니다.")
+}

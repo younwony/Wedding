@@ -787,19 +787,26 @@ canvas {
 
 /* 아이콘 스타일 */
 .footer-icons {
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     margin-top: 20px;
 }
 
-.footer-icons img {
-    width: 24px;
-    height: 24px;
+.footer-icons svg {
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.cls-1 {
+    fill: white;
 }
 
 .footer-icons div {
+    margin: 10px 0;
+    display: flex;
     text-align: center;
 }
 
