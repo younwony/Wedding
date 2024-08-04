@@ -56,6 +56,13 @@
 }
 
 @font-face {
+    font-family: 'Will-Love';
+    src: url('./Will Love.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Ownglyph_jooreeletter-Rg'; /* 온글리프 주리레터 */
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_jooreeletter-Rg.woff2') format('woff2');
     font-weight: normal;
@@ -104,10 +111,10 @@
 }
 
 .wedding-title {
-    font-family: 'OoohBaby-Regular', sans-serif;
+    font-family: 'Will-Love', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    color: #000000;
+    color: #0000006b;
 }
 
 .wedding-date {

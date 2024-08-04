@@ -35,7 +35,7 @@
 
 .invitation-text .korean {
     font-family: 'Ownglyph_jooreeletter-Rg', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 p.invitation-text {
@@ -44,7 +44,7 @@ p.invitation-text {
     text-align: center;
     margin: 2rem 50px;
     margin-bottom: 25px !important;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 500;
     color: #333;
 }
@@ -52,6 +52,6 @@ p.invitation-text {
 .invitation-text-from {
     font-family: 'OwnglyphMoogungChae', sans-serif; /* 온글리프 무궁채 */
     margin-bottom: 3rem;
-    font-size: 20px;
+    font-size: 21px;
     color: #333;
 }

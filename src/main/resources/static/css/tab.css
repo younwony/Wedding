@@ -5,9 +5,9 @@
 }
 
 .tab-info-container-title {
-    font-size: 1.2rem;
-    color: #000000; /* 제목 색상 */
-    font-family: 'OoohBaby-Regular', sans-serif;
+    font-size: 20px;
+    color: #0000006b; /* 제목 색상 */
+    font-family: 'Will-Love', sans-serif;
     border-radius: 15px;
     background-color: #fff; /* 제목 배경을 흰색으로 설정 */
 }

@@ -103,7 +103,7 @@
 
     <!-- 웨딩 사진 갤러리 -->
     <div class="container animate-fade-in" id="gallery-container">
-        <h2 class="gallery-title">GALLERY</h2>
+        <h2 class="gallery-title">Gallery</h2>
 
         <div id="main-slider" class="splide" style="padding: 0 !important;">
             <div class="splide__track">
@@ -154,7 +154,7 @@
     <!-- 메이킹 필름 영상 영역 -->
     <div class="container animate-fade-in" id="making-film-container">
         <div class="movie-date-text">
-            <h2 class="movie-title">MOVIE</h2>
+            <h2 class="movie-title">Movie</h2>
         </div>
         <div class="video-container">
             <video controls playsinline controlsList="nodownload" poster="https://dwp9wba2tw70x.cloudfront.net/img/thumb.jpg">
@@ -166,7 +166,7 @@
 
     <div class="mb-5 text-center animate-fade-in" id="wedding-info">
         <div class="date-text">
-            <h2 class="wedding-title">WEDDING DAY</h2>
+            <h2 class="wedding-title">Wedding Day</h2>
             <h2 class="wedding-date">2024.09.28</h2>
             <h2 class="wedding-time">토요일 오후 5시</h2>
             <img src="https://dwp9wba2tw70x.cloudfront.net/img/calendar.png" alt="달력 이미지" class="calendar-image">
@@ -200,9 +200,9 @@
 
     <!-- 지도 -->
     <div id="location" class="mb-5 animate-fade-in">
-        <h2 id="location-title-text">LOCATION</h2>
+        <h2 id="location-title-text">Location</h2>
         <h2 id="location-title">오시는 길</h2>
-        <p id="location-description">엘블레스 B1, 다이아몬드홀</p>
+        <p id="location-description">양재 엘블레스 B1, 다이아몬드홀</p>
         <div id="address-container">
             <p id="location-details">서울 서초구 강남대로 213</p>
             <svg id="copy-address-btn" style="display: block; vertical-align: middle" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.4445 7.89062H9.44906C8.59052 7.89062 7.89453 8.58661 7.89453 9.44516V16.4406C7.89453 17.2991 8.59052 17.9951 9.44906 17.9951H16.4445C17.303 17.9951 17.999 17.2991 17.999 16.4406V9.44516C17.999 8.58661 17.303 7.89062 16.4445 7.89062Z" stroke="#444444" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.3318 12.1045H3.55453C3.14225 12.1045 2.74684 11.9407 2.45531 11.6492C2.16378 11.3576 2 10.9622 2 10.5499V3.55453C2 3.14225 2.16378 2.74684 2.45531 2.45531C2.74684 2.16378 3.14225 2 3.55453 2H10.5499C10.9622 2 11.3576 2.16378 11.6492 2.45531C11.9407 2.74684 12.1045 3.14225 12.1045 3.55453V4.3318" stroke="#444444" stroke-linecap="round" stroke-linejoin="round"></path></svg>
@@ -240,6 +240,7 @@
                 <p>서울역 (양재역까지 약 40분 소요)<br>
                     <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/4.png" alt="4"/><span class="subway-4">호선 서울역</span>에서 회현역 방면으로 탑승,<br>
                     <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 충무로역</span>에서 환승하여 양재역에서 하차</p>
+                <br>
                 <p>용산역 (양재역까지 약 40분 소요)<br>
                     <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/gm.png" alt="gm"/><span class="subway-g">경의중앙선 용산역</span>에서 이촌역 방면으로 탑승,<br>
                     (덕소행 15:51, 용문행 16:01, 팔당행 16:23)<br>
@@ -259,7 +260,7 @@
 
 
     <div class="tab-info-container animate-fade-in">
-        <h2 class="tab-info-container-title">INFORMATION</h2>
+        <h2 class="tab-info-container-title">Information</h2>
         <h2 class="tab-info-container-sub-title">예식 정보 및 안내사항</h2>
         <div class="tabs">
             <button class="tab-link active" data-tab="tab1">홀 안내</button>
@@ -308,7 +309,7 @@
 
     <!-- 마음 전하실 곳 -->
     <div class="message-container">
-        <h2 class="message-container-account">ACCOUNT</h2>
+        <h2 class="message-container-account">Account</h2>
         <h2 class="message-container-account-sub">마음 전하실 곳</h2>
         <p>참석이 어려워 직접 축하를<br>
             전하지 못하는 분들을 위해 안내드리니<br>
@@ -352,7 +353,7 @@
             <div class="content">
                 <div class="content-inner">
                     <div class="account-info">
-                        <p>신부 <strong>한상은</strong> <br>국민 0123-45-6789101</p>
+                        <p>신부 <strong>한상은</strong> <br>국민 069102-04-157897</p>
                         <button class="copy-btn">복사</button>
                     </div>
                     <div class="account-info">
@@ -394,7 +395,7 @@
         <div class="last-overlay"></div>
         <div class="last-content">
             <div class="footer-text">
-                <h2 class="tanks-to">THANKS TO</h2>
+                <h2 class="tanks-to">Thanks To.</h2>
                 <p>
                     언제나 곁을 따뜻하게 지켜주신<br>
                     양가 부모님과 행복을 응원해 주신<br>

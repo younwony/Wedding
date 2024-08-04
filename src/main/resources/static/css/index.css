@@ -163,10 +163,10 @@ canvas {
 }
 
 .movie-title {
-    font-family: 'OoohBaby-Regular', sans-serif;
+    font-family: 'Will-Love', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    color: #000000;
+    color: #0000006b;
 }
 
 .video-container {
@@ -218,9 +218,9 @@ canvas {
 }
 
 .guestbook-title {
-    font-family: 'OoohBaby-Regular', sans-serif;
+    font-family: 'Will-Love', sans-serif;
     font-size: 20px;
-    color: #000000;
+    color: #0000006b;
     margin-bottom: 20px;
 }
 
@@ -381,8 +381,8 @@ canvas {
 
 #location-title-text {
     font-size: 20px;
-    color: #000000; /* 제목 색상 */
-    font-family: 'OoohBaby-Regular', sans-serif;
+    color: #0000006b; /* 제목 색상 */
+    font-family: 'Will-Love', sans-serif;
     border-radius: 10px;
     background-color: #fff; /* 제목 배경을 흰색으로 설정 */
 }
@@ -444,8 +444,8 @@ canvas {
 
 .message-container-account {
     font-size: 20px;
-    color: #000000; /* 제목 색상 */
-    font-family: 'OoohBaby-Regular', sans-serif;
+    color: #0000006b; /* 제목 색상 */
+    font-family: 'Will-Love', sans-serif;
     border-radius: 10px;
     background-color: #fff; /* 제목 배경을 흰색으로 설정 */
 }
@@ -486,6 +486,7 @@ canvas {
     width: 100%;
     padding: 10px 20px;
     background-color: #F3E8E9;
+    color : black;
     border: none;
     outline: none;
     cursor: pointer;
@@ -543,11 +544,13 @@ canvas {
     padding: 0px 10px;
     cursor: pointer;
     font-size: 12px;
+    color : black;
     margin-left: 10px;
 }
 
 .pay-btn:hover, .copy-btn:hover {
     background-color: #dc354536;
+    color : black;
 }
 
 .animate-fade-in {
@@ -752,6 +755,7 @@ canvas {
     flex: 1; /* 모든 버튼이 동일한 너비를 가지도록 설정 */
     cursor: pointer;
     background-color: #F3E8E9; /* 배경색을 핑크색으로 설정 */
+    color : black;
     border: 1px solid white; /* 테두리 추가 */
     border-radius: 5px; /* 둥근 테두리 */
     padding: 10px; /* 패딩 추가로 가독성 향상 */
@@ -776,6 +780,7 @@ canvas {
 .directions h3 {
     font-size: 15px;
     margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .directions p {
@@ -855,7 +860,7 @@ canvas {
 
 .footer-text p {
     font-family: 'GowunDodum-Regular', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     margin: 10px 0;
     line-height : 22px
 }
@@ -882,14 +887,14 @@ canvas {
 }
 
 .footer-icons div {
-    margin: 10px 0;
+    margin: 5px 0;
     display: flex;
     text-align: center;
 }
 
 .footer-icons p {
     margin: 5px 0 0;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .footer-text {
