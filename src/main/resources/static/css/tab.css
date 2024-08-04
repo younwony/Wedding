@@ -1,5 +1,7 @@
 .tab-info-container {
     text-align: center;
+    height: 500px;
+    border-bottom: 1px solid #ccc;
 }
 
 .tab-info-container-title {
@@ -50,7 +52,6 @@
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     text-align: center;
 }
@@ -65,4 +66,9 @@
     font-family: 'S-CoreDream-3Light', sans-serif;
     font-size: 15px;
     line-height: 1.5;
+}
+
+.tab-hall img {
+    width: 80%;
+    max-height: 180px;
 }

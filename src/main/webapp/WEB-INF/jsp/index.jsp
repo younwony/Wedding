@@ -267,13 +267,14 @@
             <button class="tab-link" data-tab="tab3">주차 안내</button>
         </div>
 
-        <div id="tab1" class="tab-content active">
+        <div id="tab1" class="tab-content tab-hall active">
             <p>
                 양재 엘블레스 단독홀에서<br>
                 저희 두 사람의 웨딩이 진행됩니다.<br>
                 <br>즐거운 마음으로 <br>
                 함께 해주시면 감사드리겠습니다.
             </p>
+            <img src="https://dwp9wba2tw70x.cloudfront.net/img/hall.jpg" alt="hall">
         </div>
 
         <div id="tab2" class="tab-content">
@@ -368,6 +369,7 @@
                 <h2 class="tanks-to">THANKS TO</h2>
                 <p>
                     언제나 곁을 따뜻하게 지켜주신<br>
+                    양가 부모님과 행복을 응원해 주신<br>
                     모든 분들께 감사드립니다.
                 </p>
             </div>

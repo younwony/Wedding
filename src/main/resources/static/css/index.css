@@ -159,7 +159,7 @@ canvas {
 }
 
 .movie-date-text {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .movie-title {
@@ -210,7 +210,6 @@ canvas {
 .main-container {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    margin-bottom: 30px;
 }
 .guestbook {
     text-align: center;
@@ -390,14 +389,14 @@ canvas {
 }
 
 #location-description {
-    font-size: 1rem;
+    font-size: 15px;
     color: #000000; /* 텍스트 색상 */
     font-family: 'S-CoreDream-2ExtraLight', sans-serif;
     margin: 0;
 }
 
 #location-details {
-    font-size: 1rem;
+    font-size: 15px;
     color: #000000; /* 텍스트 색상 */
     font-family: 'S-CoreDream-2ExtraLight', sans-serif;
     display: inline; /* 텍스트를 인라인으로 설정 */
@@ -804,18 +803,19 @@ canvas {
 
 .footer-text .tanks-to {
     font-family: 'Hicks Bryant', sans-serif;
-    font-size: 1.2rem;
+    font-size: 16px;
     color: white; /* 제목 색상 */
 }
 
 .footer-text p {
     font-family: 'GowunDodum-Regular', sans-serif;
     margin: 10px 0;
-    font-size: 16px;
 }
 
 /* 아이콘 스타일 */
 .footer-icons {
+    font-family: 'S-CoreDream-3Light', sans-serif;
+    font-size: 14px;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -823,8 +823,8 @@ canvas {
 }
 
 .footer-icons svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     margin-top: 8px;
     margin-right: 8px;
 }
