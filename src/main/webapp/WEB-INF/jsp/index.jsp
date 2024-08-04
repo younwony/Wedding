@@ -320,35 +320,45 @@
     <div class="accordion animate-fade-in">
         <div class="card">
             <button class="accordion-btn" type="button">
-                신랑측 <span class="icon">&#9660;</span>
+                신랑측
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="style-icon arrow-icon"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 9l-7 7-7-7"></path></svg>
+                </span>
             </button>
             <div class="content">
-                <div class="account-info">
-                    <p>신랑 <strong>윤원희</strong> <br>국민 0123-45-6789101</p>
-                    <button class="copy-btn">복사</button>
-                </div>
-                <div class="account-info">
-                    <p>어머니 <strong>장선자</strong> <br> 신한 0123-45-6789101</p>
-                    <button class="copy-btn">복사</button>
-                </div>
-                <div class="account-info">
-                    <p>아버지 <strong>윤재성</strong> <br> 신한 0123-45-6789101</p>
-                    <button class="copy-btn">복사</button>
+                <div class="content-inner">
+                    <div class="account-info">
+                        <p>신랑 <strong>윤원희</strong> <br>국민 0123-45-6789101</p>
+                        <button class="copy-btn">복사</button>
+                    </div>
+                    <div class="account-info">
+                        <p>어머니 <strong>장선자</strong> <br> 신한 0123-45-6789101</p>
+                        <button class="copy-btn">복사</button>
+                    </div>
+                    <div class="account-info">
+                        <p>아버지 <strong>윤재성</strong> <br> 신한 0123-45-6789101</p>
+                        <button class="copy-btn">복사</button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="card">
             <button class="accordion-btn" type="button">
-                신부측 <span class="icon">&#9660;</span>
+                신부측
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="style-icon arrow-icon"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 9l-7 7-7-7"></path></svg>
+                </span>
             </button>
             <div class="content">
-                <div class="account-info">
-                    <p>신부 <strong>한상은</strong> <br>국민 0123-45-6789101</p>
-                    <button class="copy-btn">복사</button>
-                </div>
-                <div class="account-info">
-                    <p>어머니 <strong>한묘숙</strong> <br> 신한 0123-45-6789101</p>
-                    <button class="copy-btn">복사</button>
+                <div class="content-inner">
+                    <div class="account-info">
+                        <p>신부 <strong>한상은</strong> <br>국민 0123-45-6789101</p>
+                        <button class="copy-btn">복사</button>
+                    </div>
+                    <div class="account-info">
+                        <p>어머니 <strong>김묘숙</strong> <br> 신한 0123-45-6789101</p>
+                        <button class="copy-btn">복사</button>
+                    </div>
                 </div>
             </div>
         </div>

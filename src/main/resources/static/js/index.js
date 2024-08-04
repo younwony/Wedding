@@ -136,11 +136,14 @@ window.onload = function () {
     accordionBtns.forEach(btn => {
         btn.addEventListener('click', function () {
             const content = this.nextElementSibling;
+            const contentInner = content.querySelector('.content-inner');
+
             this.classList.toggle('active');
-            if (content.style.display === "block") {
-                content.style.display = "none";
+
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
             } else {
-                content.style.display = "block";
+                content.style.maxHeight = contentInner.scrollHeight + "px";
             }
         });
     });
