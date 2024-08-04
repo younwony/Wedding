@@ -158,6 +158,17 @@ canvas {
     color: #6c757d;
 }
 
+.movie-date-text {
+    margin-bottom: 2rem;
+}
+
+.movie-title {
+    font-family: 'OoohBaby-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+
 .video-container {
     max-width: 100%;
     height: auto;
@@ -167,7 +178,7 @@ canvas {
 #map {
     width: 100%;
     height: 300px;
-    margin: 50px 0;
+    margin-top: 30px;
 }
 
 .contact-info a {
@@ -210,7 +221,7 @@ canvas {
 
 .guestbook-title {
     font-family: 'OoohBaby-Regular', sans-serif;
-    font-size: 1.5rem;
+    font-size: 20px;
     color: #000000;
     margin-bottom: 20px;
 }
@@ -293,11 +304,13 @@ canvas {
 
 .names {
     text-align: center;
+    font-size: 16px;
     margin: 20px 0;
     font-family: 'S-CoreDream-3Light', sans-serif;
 }
 
 .name-container {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,19 +331,21 @@ canvas {
 }
 
 .congrats-button {
+    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
     display: flex;
     width: 80%;
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
     font-size: 16px;
-    color: white;
+    color: black;
     background-color: #F3E8E9;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .congrats-button:hover {
@@ -355,8 +370,6 @@ canvas {
     padding: 20px;
     border-radius: 10px; /* 둥근 모서리 설정 */
     text-align: center;
-    border: 1px solid #e0e0e0; /* 연한 회색 테두리 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
 }
 
 #location-title {
@@ -365,10 +378,11 @@ canvas {
     font-family: 'S-CoreDream-2ExtraLight', sans-serif;
     border-radius: 10px;
     background-color: #fff; /* 제목 배경을 흰색으로 설정 */
+    margin-bottom: 20px;
 }
 
 #location-title-text {
-    font-size: 1.2rem;
+    font-size: 20px;
     color: #000000; /* 제목 색상 */
     font-family: 'OoohBaby-Regular', sans-serif;
     border-radius: 10px;
@@ -428,21 +442,29 @@ canvas {
     padding: 40px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .message-container-account {
-    font-size: 1.2rem;
+    font-size: 20px;
     color: #000000; /* 제목 색상 */
     font-family: 'OoohBaby-Regular', sans-serif;
     border-radius: 10px;
     background-color: #fff; /* 제목 배경을 흰색으로 설정 */
 }
+
+.message-container-account-sub {
+    font-size: 20px;
+    color: #000000; /* 제목 색상 */
+    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
+    border-radius: 10px;
+    background-color: #fff; /* 제목 배경을 흰색으로 설정 */
+}
+
 .message-container p {
     font-family: 'S-CoreDream-3Light', sans-serif;
     font-size: 15px;
     margin-top: 50px;
-    line-height: 1.5;
+    line-height: 2.0rem;
 }
 .accordion {
     width: 100%;
@@ -650,6 +672,7 @@ canvas {
     border: 1px solid white; /* 핑크빛 테두리 추가 */
     border-radius: 5px; /* 둥근 테두리 */
     cursor: pointer;
+    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
     transition: background-color 0.3s;
 }
 
@@ -660,12 +683,18 @@ canvas {
 }
 
 .navigation {
+    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
     text-align: center;
     margin-bottom: 20px;
 }
 
+.navigation p {
+    font-size: 13px;
+}
+
 .navigation-apps {
     display: flex;
+    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
     justify-content: space-between; /* 버튼 간 동일한 간격 */
     gap: 10px; /* 버튼 사이의 간격 */
 }
@@ -705,7 +734,7 @@ canvas {
 }
 
 .directions p {
-    font-size: 13px;
+    font-size: 14px;
     margin: 5px 0;
     line-height: 1.7;
 }
@@ -774,7 +803,7 @@ canvas {
 }
 
 .footer-text .tanks-to {
-    font-family: 'Meddon', sans-serif;
+    font-family: 'Hicks Bryant', sans-serif;
     font-size: 1.2rem;
     color: white; /* 제목 색상 */
 }

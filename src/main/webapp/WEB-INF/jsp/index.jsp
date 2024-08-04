@@ -103,7 +103,7 @@
 
     <!-- 웨딩 사진 갤러리 -->
     <div class="container animate-fade-in" id="gallery-container">
-        <h2 class="gallery-title">Gallery</h2>
+        <h2 class="gallery-title">GALLERY</h2>
 
         <div id="main-slider" class="splide" style="padding: 0 !important;">
             <div class="splide__track">
@@ -153,6 +153,9 @@
 
     <!-- 메이킹 필름 영상 영역 -->
     <div class="container animate-fade-in" id="making-film-container">
+        <div class="movie-date-text">
+            <h2 class="movie-title">MOVIE</h2>
+        </div>
         <div class="video-container">
             <video controls playsinline controlsList="nodownload" poster="https://dwp9wba2tw70x.cloudfront.net/img/thumb.jpg">
                 <source src="https://dwp9wba2tw70x.cloudfront.net/video/making.mp4" type="video/mp4">
@@ -191,7 +194,7 @@
                     <span id="seconds" class="countdown-value">00</span>
                 </div>
             </div>
-            <h2>상은 ❤️ 원희 결혼식이 <span id="remaining-days">52</span>일 남았습니다</h2>
+            <h2>원희 ❤️ 상은 결혼식이 <br> <span id="remaining-days">52</span>일 남았습니다</h2>
         </div>
     </div>
 
@@ -257,7 +260,7 @@
 
     <div class="tab-info-container animate-fade-in">
         <h2 class="tab-info-container-title">INFORMATION</h2>
-        <h2 class="tab-info-container-title">예식 정보 및 안내사항</h2>
+        <h2 class="tab-info-container-sub-title">예식 정보 및 안내사항</h2>
         <div class="tabs">
             <button class="tab-link active" data-tab="tab1">홀 안내</button>
             <button class="tab-link" data-tab="tab2">식사 안내</button>
@@ -304,8 +307,8 @@
 
     <!-- 마음 전하실 곳 -->
     <div class="message-container">
-        <h2 class="message-container-account">Account</h2>
-        <h2 class="message-container-account">마음 전하실 곳</h2>
+        <h2 class="message-container-account">ACCOUNT</h2>
+        <h2 class="message-container-account-sub">마음 전하실 곳</h2>
         <p>참석이 어려워 직접 축하를<br>
             전하지 못하는 분들을 위해 안내드리니<br>
             넓은 마음으로 양해 부탁드립니다.<br>

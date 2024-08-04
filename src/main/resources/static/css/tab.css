@@ -6,7 +6,15 @@
     font-size: 1.2rem;
     color: #000000; /* 제목 색상 */
     font-family: 'OoohBaby-Regular', sans-serif;
-    border-radius: 10px;
+    border-radius: 15px;
+    background-color: #fff; /* 제목 배경을 흰색으로 설정 */
+}
+
+.tab-info-container-sub-title {
+    font-size: 1.2rem;
+    color: #000000; /* 제목 색상 */
+    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
+    border-radius: 15px;
     background-color: #fff; /* 제목 배경을 흰색으로 설정 */
 }
 
@@ -19,7 +27,7 @@
     margin-bottom: 20px;
     width: 100%;
     font-family: 'S-CoreDream-2ExtraLight', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
 }
 .tabs button {

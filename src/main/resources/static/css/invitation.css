@@ -1,9 +1,9 @@
 
 .invitation-header h1 {
     font-family: 'S-CoreDream-3Light', sans-serif; /* 에스코어드림 */
-    font-size: 24px;
-    line-height: 2.5rem;
-    margin: 2rem 0;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 50px 0;
 }
 
 .invitation-img, .invitation-img-1, .invitation-img-2 {
@@ -11,7 +11,14 @@
     margin-bottom: 20px;
 }
 
-.invitation-img img, .invitation-img-1 img, .invitation-img-2 img {
+.invitation-img img {
+    width: auto;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.invitation-img-1 img, .invitation-img-2 img {
     width: 100%;
     height: auto;
     display: block;
@@ -23,45 +30,28 @@
     color: #000;
     padding: 10px;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
 .invitation-text .korean {
     font-family: 'Ownglyph_jooreeletter-Rg', sans-serif;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 p.invitation-text {
     font-family: 'Ownglyph_jooreeletter-Rg', sans-serif;
     line-height: 40px;
-    text-align: left; /* 왼쪽 정렬 */
+    text-align: center;
     margin: 2rem 50px;
-    font-size: 20px;
+    margin-bottom: 25px !important;
+    font-size: 18px;
     font-weight: 500;
     color: #333;
 }
 
 .invitation-text-from {
     font-family: 'OwnglyphMoogungChae', sans-serif; /* 온글리프 무궁채 */
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     font-size: 20px;
     color: #333;
-}
-
-@media (max-width: 600px) {
-    .invitation-header h1 {
-        font-size: 20px;
-    }
-
-    .invitation-text .english {
-        font-size: 36px;
-    }
-
-    p.invitation-text {
-        font-size: 16px;
-    }
-
-    .invitation-text-from {
-        font-size: 18px;
-    }
 }
