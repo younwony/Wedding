@@ -1,7 +1,8 @@
 .tab-info-container {
     text-align: center;
     height: 500px;
-    border-bottom: 1px solid #ccc;
+    /*border-bottom: 1px solid #ccc;*/
+    position: relative; /* ::after 가상 요소를 위한 position 설정 */
 }
 
 .tab-info-container-title {
@@ -14,8 +15,9 @@
 
 .tab-info-container-sub-title {
     font-size: 1.2rem;
+    font-weight: 500;
     color: #000000; /* 제목 색상 */
-    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
+    font-family: 'GowunDodum-Regular', sans-serif;
     border-radius: 15px;
     background-color: #fff; /* 제목 배경을 흰색으로 설정 */
 }
@@ -24,16 +26,17 @@
     display: flex;
     justify-content: center;
     background-color: #fff;
-    border-bottom: 2px solid #e0e0e0;
+    /*border-bottom: 2px solid #e0e0e0;*/
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
     font-family: 'S-CoreDream-3Light', sans-serif;
     font-size: 15px;
     font-weight: 700;
+    padding: 0 2rem 0 2rem;
 }
 .tabs button {
-    background-color: transparent;
+    background-color: #f4cdcd1f;
     border: none;
     outline: none;
     cursor: pointer;
@@ -43,9 +46,11 @@
     flex: 1; /* 탭 버튼을 동일한 너비로 설정 */
     text-align: center; /* 텍스트를 중앙 정렬 */
 }
+
 .tabs button.active {
-    color: #333;
-    border-bottom: 2px solid #d9534f;
+    background-color: transparent;
+    color: #e96d98;
+    border-bottom: 2px solid #e96d98;
 }
 .tab-content {
     display: none;
@@ -71,4 +76,14 @@
 .tab-hall img {
     width: 80%;
     max-height: 180px;
+}
+
+.tab-info-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 8rem; /* 좌측 패딩과 일치 */
+    right: 8rem; /* 우측 패딩과 일치 */
+    height: 1px;
+    background-color: #e96d987d;
 }
