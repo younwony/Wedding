@@ -466,53 +466,83 @@ canvas {
     line-height: 2.0rem;
 }
 .accordion {
+    font-family: 'Arial', sans-serif;
     width: 100%;
     max-width: 600px;
     margin: 20px auto;
-}
-.accordion .card {
-    background-color: #f9f9f9;
-    border: none;
-    border-bottom: 1px solid #e0e0e0;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 10px;
+    overflow: hidden;
 }
-.accordion .card button {
+
+.card {
+    border-bottom: 1px solid #ccc;
+}
+
+.card:last-child {
+    border-bottom: none;
+}
+
+.accordion-btn {
     width: 100%;
-    text-align: left;
     padding: 15px;
-    background-color: #f9f9f9;
+    background-color: #f1f1f1;
     border: none;
     outline: none;
-    font-size: 1rem;
-    color: #333;
     cursor: pointer;
+    font-size: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
-.accordion .card button:hover {
-    background-color: #e0e0e0;
+
+.accordion-btn .icon {
+    font-size: 24px;
 }
-.accordion .card button.active {
-    background-color: #FFB6C1; /* 연한 핑크 파스텔 색상 */
-    color: #fff;
-}
-.accordion .card button.active .icon {
+
+.accordion-btn.active .icon {
     transform: rotate(180deg);
 }
-.accordion .card button .icon {
-    transition: transform 0.3s ease;
-}
-.accordion .content {
+
+.content {
     display: none;
-    padding: 15px;
+    padding: 20px;
     background-color: #fff;
-    border-top: 1px solid #e0e0e0;
 }
-.accordion .content p {
+
+.account-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.account-info p {
     margin: 0;
 }
+
+.pay-btn, .copy-btn {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.pay-btn:hover, .copy-btn:hover {
+    background-color: #fdd835;
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 
 .modal {
     display: none;

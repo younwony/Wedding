@@ -302,7 +302,7 @@
                 이동하시면 됩니다.<br>
                 <br>*로비의 주차권 데스크에서 무료 주차권을 직접 수령해가시면 됩니다.
             </p>
-            <button class="map-button" id="parkingButton">주차장 위치 보기</button>
+            <button class="map-button" onclick="parknavi('naver')">주차장 위치 보기</button>
         </div>
     </div>
 
@@ -323,7 +323,18 @@
                 신랑측 <span class="icon">&#9660;</span>
             </button>
             <div class="content">
-                <p>계좌번호: 123-456-789<br>은행: 행복은행</p>
+                <div class="account-info">
+                    <p>신랑 <strong>윤원희</strong> <br>국민 0123-45-6789101</p>
+                    <button class="copy-btn">복사</button>
+                </div>
+                <div class="account-info">
+                    <p>어머니 <strong>장선자</strong> <br> 신한 0123-45-6789101</p>
+                    <button class="copy-btn">복사</button>
+                </div>
+                <div class="account-info">
+                    <p>아버지 <strong>윤재성</strong> <br> 신한 0123-45-6789101</p>
+                    <button class="copy-btn">복사</button>
+                </div>
             </div>
         </div>
         <div class="card">
@@ -331,7 +342,14 @@
                 신부측 <span class="icon">&#9660;</span>
             </button>
             <div class="content">
-                <p>계좌번호: 987-654-321<br>은행: 행복은행</p>
+                <div class="account-info">
+                    <p>신부 <strong>한상은</strong> <br>국민 0123-45-6789101</p>
+                    <button class="copy-btn">복사</button>
+                </div>
+                <div class="account-info">
+                    <p>어머니 <strong>한묘숙</strong> <br> 신한 0123-45-6789101</p>
+                    <button class="copy-btn">복사</button>
+                </div>
             </div>
         </div>
     </div>
@@ -463,10 +481,10 @@
                     <h3 class="modal-congratulation-role">신부 어머니</h3>
                     <p class="modal-congratulation-name">김묘숙</p>
                     <div class="icons">
-                        <a href="tel:01063490671">
+                        <a href="tel:01063230671">
                             <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
                         </a>
-                        <a href="sms:01063490671">
+                        <a href="sms:01063230671">
                             <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/mail.jpg" alt="Email" class="icon">
                         </a>
                     </div>
