@@ -63,8 +63,8 @@
             <img src="https://dwp9wba2tw70x.cloudfront.net/img/invi1.jpg" alt="invitaion-1">
         </div>
         <p class="invitation-text">
-            사랑이란 별다른 것이 아니라 <br>
-            그 사람과 함께 늙어가고 싶은 것이다. <br>
+            '사랑이란 별다른 것이 아니라 <br>
+            그 사람과 함께 늙어가고 싶은 것이다.' <br>
             평생을 함께 하고 싶은 사람을 만났습니다. <br>
             저희 두 사람이 함께 하는 새로운 시작에 <br>
             귀한 발걸음으로 축복해 주시면 감사하겠습니다. <br>

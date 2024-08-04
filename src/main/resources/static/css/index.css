@@ -45,6 +45,10 @@ body {
     object-fit: cover;
 }
 
+.splide__track--nav>.splide__list>.splide__slide.is-active {
+    border: 0px !important; /* 슬라이드 이미지 active solid 처리 제거 */
+}
+
 #petalsCanvas {
     position: absolute;
     top: 0;
@@ -372,6 +376,7 @@ canvas {
 
 #location-title {
     font-size: 1.2rem;
+    font-weight: bold;
     color: #000000; /* 제목 색상 */
     font-family: 'S-CoreDream-2ExtraLight', sans-serif;
     border-radius: 10px;
