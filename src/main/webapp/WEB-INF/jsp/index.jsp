@@ -123,6 +123,21 @@
                     <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/13.jpg" alt="Image 3"></li>
                     <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/14.jpg" alt="Image 3"></li>
                     <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/15.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/16.jpg" alt="Image 1"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/17.jpg" alt="Image 2"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/18.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/19.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/20.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/21.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/22.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/23.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/24.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/25.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/26.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/27.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/28.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/29.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/30.jpg" alt="Image 3"></li>
                 </ul>
             </div>
         </div>
@@ -146,6 +161,21 @@
                     <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/13.jpg" alt="Image 3"></li>
                     <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/14.jpg" alt="Image 3"></li>
                     <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/15.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/16.jpg" alt="Thumbnail 1"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/17.jpg" alt="Thumbnail 2"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/18.jpg" alt="Thumbnail 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/19.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/20.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/21.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/22.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/23.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/24.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/25.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/26.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/27.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/28.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/29.jpg" alt="Image 3"></li>
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/30.jpg" alt="Image 3"></li>
                 </ul>
             </div>
         </div>
@@ -197,6 +227,7 @@
             <h2>원희 ❤️ 상은 결혼식이 <br> <span id="remaining-days">52</span>일 남았습니다</h2>
         </div>
     </div>
+
 
     <!-- 지도 -->
     <div id="location" class="mb-5 animate-fade-in">
@@ -329,7 +360,7 @@
             <div class="content">
                 <div class="content-inner">
                     <div class="account-info">
-                        <p>신랑 <strong>윤원희</strong> <br>국민 0123-45-6789101</p>
+                        <p>신랑 <strong>윤원희</strong> <br>국민 274102-04-109287</p>
                         <button class="copy-btn">복사</button>
                     </div>
                     <div class="account-info">
@@ -357,7 +388,7 @@
                         <button class="copy-btn">복사</button>
                     </div>
                     <div class="account-info">
-                        <p>어머니 <strong>김묘숙</strong> <br> 신한 0123-45-6789101</p>
+                        <p>어머니 <strong>김묘숙</strong> <br> 농협 302-0208-4536-31</p>
                         <button class="copy-btn">복사</button>
                     </div>
                 </div>
