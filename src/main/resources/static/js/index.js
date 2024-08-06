@@ -11,28 +11,7 @@ function hideDeleteModal() {
     modal.style.display = 'none';
 }
 
-document.getElementById('deleteMessageBtn').addEventListener('click', function () {
-    const id = document.getElementById('deleteMessageId').value;
-    const author = document.getElementById('deleteAuthor').value;
-    const password = document.getElementById('deletePassword').value;
-
-    $.ajax({
-        type: 'DELETE',
-        url: `/api/guest-messages/${id}`,
-        contentType: 'application/json',
-        data: JSON.stringify({ author: author, password: password }),
-        success: function () {
-            alert('메시지가 성공적으로 삭제되었습니다.');
-            hideDeleteModal();
-            getGuestMessageList();
-        },
-        error: function () {
-            alert('메시지 삭제에 실패했습니다. 이름과 비밀번호를 확인하세요.');
-        }
-    });
-});
-
-function getGuestMessageList(page = 0, size = 5) {
+function getGuestMessageList(page = 0, size = 3) {
     $.ajax({
         type: 'GET',
         url: `/api/guest-messages?page=${page}&size=${size}&sort=createdAt,desc`,
@@ -43,10 +22,18 @@ function getGuestMessageList(page = 0, size = 5) {
             data.content.forEach(function (message) {
                 var messageTemplate = `
                     <div class="guestbook-entry" data-id="${message.id}">
-                        <strong>${message.author}</strong>
-                        <p>${message.content}</p>
-                        <small>${new Date(message.createdAt).toLocaleString()}</small>
-                        <button class="delete-btn" onclick="showDeleteModal('${message.id}')">삭제</button>
+                        <div class="content-header">
+                            <button class="delete-btn" onclick="showDeleteModal('${message.id}')">&times;</button>
+                        </div>
+                        <div class="content-area">
+                            <p>${message.content}</p>
+                        </div>
+                        <div class="content-footer">
+                            <div class="message-date">
+                                <small>${new Date(message.createdAt).toLocaleDateString()}</small>
+                            </div>
+                            <div class="message-author">From. ${message.author}</div>
+                        </div>
                     </div>
                 `;
                 guestMessageListDiv.append(messageTemplate);
@@ -58,45 +45,27 @@ function getGuestMessageList(page = 0, size = 5) {
 
             // 이전 버튼
             if (page > 0) {
-                const prevButton = `<button onclick="getGuestMessageList(${page - 1}, ${size})">이전</button>`;
+                const prevButton = `<button class="pagination-btn" onclick="getGuestMessageList(${page - 1}, ${size})">이전</button>`;
                 paginationDiv.append(prevButton);
             }
 
             // 페이지 번호 버튼
             for (var i = 0; i < data.totalPages; i++) {
-                const pageButton = `<button onclick="getGuestMessageList(${i}, ${size})" class="${i === page ? 'active' : ''}">${i + 1}</button>`;
+                const pageButton = `<button class="pagination-btn ${i === page ? 'active' : ''}" onclick="getGuestMessageList(${i}, ${size})">${i + 1}</button>`;
                 paginationDiv.append(pageButton);
             }
 
             // 다음 버튼
             if (page < data.totalPages - 1) {
-                const nextButton = `<button onclick="getGuestMessageList(${page + 1}, ${size})">다음</button>`;
+                const nextButton = `<button class="pagination-btn" onclick="getGuestMessageList(${page + 1}, ${size})">다음</button>`;
                 paginationDiv.append(nextButton);
             }
+
         },
     });
 }
 
 
-document.getElementById('guestMessageAddBtn').addEventListener('click', function () {
-
-    const formData = {
-        author: document.getElementById('author').value,
-        password: document.getElementById('password').value,
-        content: document.getElementById('content').value
-    };
-
-    $.ajax({
-        type: 'POST',
-        url: '/api/guest-messages',
-        contentType: 'application/json',
-        data: JSON.stringify(formData),
-        success: function (data) {
-            alert('메시지가 성공적으로 전송되었습니다.');
-            getGuestMessageList();
-        },
-    })
-});
 
 // 카카오 지도 초기화
 function initMap() {
@@ -268,3 +237,59 @@ function clip(){
     document.body.removeChild(textarea);
     alert("청첩장 링크가 복사되었습니다.")
 }
+
+$(document).ready(function() {
+    // 방명록 등록 버튼 클릭 이벤트
+    $('#guestMessageAddBtn').on('click', function() {
+        const formData = {
+            author: $('#author').val(),
+            password: $('#password').val(),
+            content: $('#content').val()
+        };
+
+        $.ajax({
+            type: 'POST',
+            url: '/api/guest-messages',
+            contentType: 'application/json',
+            data: JSON.stringify(formData),
+            success: function () {
+                alert('메시지가 성공적으로 전송되었습니다.');
+                $('#guestBookModal').modal('hide');
+                $('.modal-backdrop').remove();  // 중복 모달 방지
+                $('body').removeClass('modal-open');
+                getGuestMessageList();
+            },
+        });
+    });
+
+    // 메시지 삭제 버튼 클릭 이벤트
+    $('#deleteMessageBtn').on('click', function() {
+        const id = $('#deleteMessageId').val();
+        const author = $('#deleteAuthor').val();
+        const password = $('#deletePassword').val();
+
+        $.ajax({
+            type: 'DELETE',
+            url: `/api/guest-messages/${id}`,
+            contentType: 'application/json',
+            data: JSON.stringify({ author: author, password: password }),
+            success: function () {
+                alert('메시지가 성공적으로 삭제되었습니다.');
+                $('#deleteModal').modal('hide');
+                $('.modal-backdrop').remove();  // 중복 모달 방지
+                $('body').removeClass('modal-open');
+                getGuestMessageList();
+            },
+            error: function () {
+                alert('메시지 삭제에 실패했습니다. 이름과 비밀번호를 확인하세요.');
+            }
+        });
+    });
+});
+$(document).ready(function() {
+    // 모달이 열릴 때 기존 백드롭 제거
+    $('#guestMessageModalBtn').on('click', function() {
+        $('.modal-backdrop').remove();
+    });
+});
+

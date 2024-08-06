@@ -25,6 +25,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js'></script>
+    <!-- Bootstrap JS 추가 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
@@ -397,32 +399,53 @@
     </div>
 
     <!-- 축하 메시지 -->
-    <div class="mb-5 guestbook">
-        <h2 class="guestbook-title">Guest Book</h2>
-        <h2 class="guestbook-title-sub">방명록</h2>
-        <form id="guestMessageForm">
-            <div class="mb-3">
-                <label for="author" class="form-label">이름</label>
-                <input type="text" name="author" class="form-control" id="author" required>
-                <label for="password" class="form-label">비밀번호</label>
-                <input type="password" class="form-control" id="password" required>
+    <div class="mb-5 guestbook animate-fade-in">
+        <h2 class="guestbook-title">GUEST BOOK</h2>
+        <p class="guestbook-description">축하 메시지를 남겨주세요<br>신랑 & 신부의 행복한 앞날을 위해 따뜻한 덕담 한 말씀 남겨주세요. 소중한 추억으로 간직하겠습니다.</p>
+        <button type="button" id="guestMessageModalBtn" data-bs-toggle="modal" data-bs-target="#guestBookModal">
+            📧 축하 메시지 작성하기
+        </button>
+    </div>
+
+    <!-- Guest Book Modal -->
+    <div class="modal fade" id="guestBookModal" tabindex="-1" aria-labelledby="guestBookModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="guestBookModalLabel">Guest Book</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="guestMessageForm">
+                        <div class="mb-3">
+                            <label for="author" class="form-label">이름</label>
+                            <input type="text" name="author" class="form-control" id="author" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">비밀번호</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="content" class="form-label">메시지</label>
+                            <textarea class="form-control" id="content" rows="3" required></textarea>
+                        </div>
+                        <button type="button" id="guestMessageAddBtn" class="btn btn-success">등록</button>
+                    </form>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="content" class="form-label">메시지</label>
-                <textarea class="form-control" id="content" rows="3" required></textarea>
-            </div>
-            <button type="button" id="guestMessageAddBtn" class="btn btn-success">등록</button>
-        </form>
-        <div id="guestMessageList" class="mt-3">
-            <!-- 축하 메시지 리스트 -->
-        </div>
-        <div id="pagination" class="mt-3">
-            <!-- 페이지 버튼 -->
         </div>
     </div>
 
+    <!-- 축하 메시지 리스트 및 페이지 버튼 -->
+    <div id="guestMessageList" class="mt-3 animate-fade-in">
+        <!-- 축하 메시지 리스트 -->
+    </div>
+    <div id="pagination" class="mt-3 animate-fade-in">
+        <!-- 페이지 버튼 -->
+    </div>
+
     <!-- 마지막 인삿말 -->
-    <footer id="last">
+    <footer id="last" class="animate-fade-in">
         <div class="last-overlay"></div>
         <div class="last-content">
             <div class="footer-text">

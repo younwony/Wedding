@@ -190,18 +190,19 @@ canvas {
     color: #007bff;
 }
 
-.guestbook-entry {
-    border: 1px solid #dee2e6;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    background-color: #ffffff;
-}
-
-.guestbook-entry strong {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #333;
+#guestMessageModalBtn {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: black;
+    background-color: #F3E8E9; /* 배경색을 핑크색으로 설정 */
+    border: 1px solid white; /* 핑크빛 테두리 추가 */
+    border-radius: 5px; /* 둥근 테두리 */
+    cursor: pointer;
+    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
+    transition: background-color 0.3s;
 }
 
 .carousel-inner img {
@@ -262,55 +263,6 @@ canvas {
 #guestMessageList {
     margin-top: 30px;
 }
-
-.guestbook-entry {
-    border: 1px solid #dee2e6;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.guestbook-entry strong {
-    font-size: 1.1rem;
-    color: #007bff;
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.guestbook-entry p {
-    margin: 0;
-    font-size: 1rem;
-    color: #212529;
-}
-
-#pagination {
-    text-align: center;
-    margin-top: 20px;
-}
-
-#pagination button {
-    margin: 0 5px;
-    padding: 5px 10px;
-    border: 1px solid #007bff;
-    background-color: #ffffff;
-    color: #007bff;
-    border-radius: 0.25rem;
-    cursor: pointer;
-}
-
-#pagination button:hover {
-    background-color: #007bff;
-    color: #ffffff;
-}
-
-#pagination button.active {
-    background-color: #007bff;
-    color: #ffffff;
-    border-color: #007bff;
-}
-
 .names {
     text-align: center;
     font-size: 16px;
@@ -610,22 +562,6 @@ canvas {
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
-
-.guestbook-entry {
-    padding: 10px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.delete-btn {
-    color: #ff6b6b;
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-.delete-btn:hover {
-    text-decoration: underline;
 }
 
 .copy-icon {
@@ -936,4 +872,83 @@ canvas {
 }
 .subway-g {
     color: 	#77C4A3;
+}
+
+/* 방명록 */
+.guestbook-entry {
+    position: relative;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.content-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.delete-btn:hover {
+    color: #ff6666;
+}
+
+.content-area {
+    text-align: left;
+    padding: 10px 0;
+}
+
+.content-footer {
+    justify-content: space-between;
+    align-items: center;
+    color: #888;
+}
+
+.message-date {
+    text-align: right;
+}
+
+.message-author {
+    text-align: right;
+}
+
+
+/* 페이지 버튼 */
+
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 0.5px solid #F3E8E9;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#pagination button:hover {
+    background-color: #F3E8E9;
+    color: #ffffff;
+}
+
+#pagination button.active {
+    background-color: #F3E8E9;
+    color: #ffffff;
+    border-color: #F3E8E9;
 }
