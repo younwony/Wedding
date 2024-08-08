@@ -291,5 +291,20 @@ $(document).ready(function() {
     $('#guestMessageModalBtn').on('click', function() {
         $('.modal-backdrop').remove();
     });
-});
 
+    document.querySelectorAll('.copy-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            // 계좌번호 추출
+            const accountInfo = button.parentElement.querySelector('p').innerHTML;
+            const accountNumber = accountInfo.split('<br>')[1].trim();
+
+            // 계좌번호 클립보드에 복사
+            navigator.clipboard.writeText(accountNumber).then(() => {
+                alert('계좌번호가 복사되었습니다: ' + accountNumber);
+            }).catch(err => {
+                console.error('복사 실패:', err);
+            });
+        });
+    });
+
+});
