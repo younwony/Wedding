@@ -241,6 +241,14 @@ function clip(){
 $(document).ready(function() {
     // 방명록 등록 버튼 클릭 이벤트
     $('#guestMessageAddBtn').on('click', function() {
+
+        let content = $('#content').val();
+        if (content.trim() === '') {
+            alert('메시지를 입력해주세요.');
+            return;
+        }
+
+
         const formData = {
             author: $('#author').val(),
             password: $('#password').val(),
@@ -288,6 +296,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     // 모달이 열릴 때 기존 백드롭 제거
     $('#guestMessageModalBtn').on('click', function() {
+        $('#content').val(''); // 내용 초기화
         $('.modal-backdrop').remove();
     });
 
