@@ -412,13 +412,13 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="guestBookModalLabel">Guest Book</h5>
+                    <h5 class="modal-title" id="guestBookModalLabel">축하 메시지 작성하기</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form id="guestMessageForm">
                         <div class="mb-3">
-                            <label for="author" class="form-label">이름</label>
+                            <label for="author" class="form-label">성함</label>
                             <input type="text" name="author" class="form-control" id="author" required>
                         </div>
                         <div class="mb-3">
@@ -486,19 +486,21 @@
 
     <!-- 삭제 확인 모달 -->
     <div id="deleteModal" class="modal" style="display: none;">
-        <div class="modal-content">
-            <span class="close" onclick="hideDeleteModal()">&times;</span>
-            <h2>메시지 삭제</h2>
-            <input type="hidden" id="deleteMessageId">
-            <div class="mb-3">
-                <label for="deleteAuthor" class="form-label">이름</label>
-                <input type="text" name="deleteAuthor" class="form-control" id="deleteAuthor" required>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <input type="hidden" id="deleteMessageId">
+                <div class="modal-header">
+                    <h2 class="modal-title" >축하 메시지 삭제하기</h2>
+                    <button type="button" class="btn-close" onclick="hideDeleteModal()" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="deletePassword" class="form-label">비밀번호</label>
+                        <input type="password" class="form-control" id="deletePassword" required>
+                    </div>
+                </div>
+                <button type="button" id="deleteMessageBtn" class="btn btn-danger">삭제</button>
             </div>
-            <div class="mb-3">
-                <label for="deletePassword" class="form-label">비밀번호</label>
-                <input type="password" class="form-control" id="deletePassword" required>
-            </div>
-            <button type="button" id="deleteMessageBtn" class="btn btn-danger">삭제</button>
         </div>
     </div>
 

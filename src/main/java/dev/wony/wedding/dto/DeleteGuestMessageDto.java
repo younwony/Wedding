@@ -10,6 +10,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DeleteGuestMessageDto {
-    private String author;
     private String password;
 }

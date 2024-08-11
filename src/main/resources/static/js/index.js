@@ -265,23 +265,22 @@ $(document).ready(function() {
     // 메시지 삭제 버튼 클릭 이벤트
     $('#deleteMessageBtn').on('click', function() {
         const id = $('#deleteMessageId').val();
-        const author = $('#deleteAuthor').val();
         const password = $('#deletePassword').val();
 
         $.ajax({
             type: 'DELETE',
             url: `/api/guest-messages/${id}`,
             contentType: 'application/json',
-            data: JSON.stringify({ author: author, password: password }),
+            data: JSON.stringify({ password: password }),
             success: function () {
                 alert('메시지가 성공적으로 삭제되었습니다.');
-                $('#deleteModal').modal('hide');
+                hideDeleteModal();
                 $('.modal-backdrop').remove();  // 중복 모달 방지
                 $('body').removeClass('modal-open');
                 getGuestMessageList();
             },
             error: function () {
-                alert('메시지 삭제에 실패했습니다. 이름과 비밀번호를 확인하세요.');
+                alert('메시지 삭제에 실패했습니다. 비밀번호를 확인하세요.');
             }
         });
     });

@@ -11,12 +11,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DeleteGuestMessageRequest {
-    private String author;
     private String password;
 
     public DeleteGuestMessageDto toDto() {
         return DeleteGuestMessageDto.builder()
-                .author(this.author)
                 .password(this.password)
                 .build();
     }

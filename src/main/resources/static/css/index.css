@@ -236,22 +236,29 @@ canvas {
     font-family: 'GowunDodum-Regular', sans-serif;
 }
 
+#guestBookModalLabel {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
+}
+
 #guestMessageForm {
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
 }
 
 #guestMessageForm .form-label {
-    font-weight: bold;
-    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
 }
 
 #guestMessageForm .form-control {
     margin-bottom: 10px;
     padding: 10px;
-    font-size: 1rem;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
 }
 
 #guestMessageForm .btn {
@@ -263,6 +270,33 @@ canvas {
 #guestMessageList {
     margin-top: 30px;
 }
+
+#deleteModal .modal-content{
+    background-color: #fff;
+    margin: 10% auto;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#deleteModal .modal-header {
+    padding: 5px;
+}
+
+#deleteModal .modal-header h2{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
+}
+
+#deleteModal .form-label {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
+}
+
 .names {
     text-align: center;
     font-size: 16px;
@@ -542,10 +576,9 @@ canvas {
 
 .modal-content {
     background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
+    margin: 10% auto;
     border: 1px solid #888;
-    width: 85%;
+    width: 90%;
     max-width: 500px;
     border-radius: 10px;
 }
@@ -700,7 +733,7 @@ canvas {
     display: flex;
     align-items: center;
     justify-content: center; /* 버튼 내의 콘텐츠를 중앙 정렬 */
-    font-size: 13px;
+    font-size: 12px;
     flex: 1; /* 모든 버튼이 동일한 너비를 가지도록 설정 */
     cursor: pointer;
     background-color: #F3E8E9; /* 배경색을 핑크색으로 설정 */
