@@ -236,6 +236,13 @@ canvas {
     font-family: 'GowunDodum-Regular', sans-serif;
 }
 
+.guestbook-description {
+    font-family: 'S-CoreDream-3Light', sans-serif;
+    font-size: 15px;
+    margin-top: 50px;
+    line-height: 2.0rem;
+}
+
 #guestBookModalLabel {
     font-size: 14px;
     font-weight: 700;

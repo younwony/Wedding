@@ -401,7 +401,7 @@
     <!-- 축하 메시지 -->
     <div class="mb-5 guestbook animate-fade-in">
         <h2 class="guestbook-title">Guest Book</h2>
-        <p class="guestbook-description">축하 메시지를 남겨주세요<br>신랑 & 신부의 행복한 앞날을 위해 따뜻한 덕담 한 말씀 남겨주세요. 소중한 추억으로 간직하겠습니다.</p>
+        <p class="guestbook-description">축하 메시지를 남겨주세요<br> 신랑 & 신부의 행복한 앞날을 위해 <br> 따뜻한 덕담 한 말씀 남겨주세요. <br> 소중한 추억으로 간직하겠습니다.</p>
         <button type="button" id="guestMessageModalBtn" data-bs-toggle="modal" data-bs-target="#guestBookModal">
             📧 축하 메시지 작성하기
         </button>
