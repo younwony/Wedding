@@ -261,9 +261,10 @@ function clip(){
 function saveImage() {
     // 오시는길 이미지 저장
     html2canvas(document.getElementById('directions')).then(function(canvas) {
-        if (navigator.userAgent.includes("KAKAO")) {
-            alert("이미지 저장 기능은 카카오톡 인앱 브라우저에서 지원되지 않습니다. 다른 브라우저에서 페이지를 열어주세요.");
-            window.open(window.location.href, '_blank');
+        var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+        if (navigator.userAgent.includes("KAKAO") && isIOS) {
+            alert("이미지 저장 기능은 카카오톡 인앱 브라우저에서 지원되지 않습니다. 사파리로 이동합니다.");
+            window.location.href = "http://ddangbbo.com/";
         }else{
             var link = document.createElement('a');
             link.href = canvas.toDataURL('image/png');

@@ -1002,7 +1002,7 @@ canvas {
 
 .delete-btn {
     position: absolute;
-    right: 0; /* 오른쪽에 고정 */
+    right: -5px; /* 오른쪽에 고정 */
     top: 0; /* 상단에 고정 */
     background: none;
     border: none;
