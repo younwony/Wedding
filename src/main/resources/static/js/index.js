@@ -228,8 +228,8 @@ function shareKakao() {
     Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
-            title: '원희 💛 상은 청첩장',
-            description: '🌷우리의 결혼식🌷에 초대합니다.\n 2024.09.28 PM 5:00',
+            title: '원희 💛 상은 모바일 청첩장',
+            description: '🌷결혼식🌷에 초대합니다.\n\n2024.09.28 PM 5:00',
             imageUrl: 'https://dwp9wba2tw70x.cloudfront.net/img/main.jpg',
             link: {
                 mobileWebUrl: 'https://ddangbbo.com',
@@ -238,7 +238,7 @@ function shareKakao() {
         },
         buttons: [
             {
-                title: '땅뽀 청첩장 보기',
+                title: '청첩장 보러가기',
                 link: {
                     mobileWebUrl: 'https://ddangbbo.com',
                     webUrl: 'https://ddangbbo.com'
