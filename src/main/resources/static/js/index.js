@@ -225,9 +225,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function shareKakao() {
-    Kakao.Share.sendScrap({
-        title: '땅뽀청첩장',
-        link: 'https://ddangbbo.com',
+    Kakao.Share.sendDefault({
+        objectType: 'feed',
+        content: {
+            title: '원희 💛 상은 청첩장',
+            description: '🌷우리의 결혼식🌷에 초대합니다.\n 2024.09.28 PM 5:00',
+            imageUrl: 'https://dwp9wba2tw70x.cloudfront.net/img/main.jpg',
+            link: {
+                mobileWebUrl: 'https://ddangbbo.com',
+                webUrl: 'https://ddangbbo.com'
+            }
+        },
+        buttons: [
+            {
+                title: '땅뽀 청첩장 보기',
+                link: {
+                    mobileWebUrl: 'https://ddangbbo.com',
+                    webUrl: 'https://ddangbbo.com'
+                }
+            }
+        ]
     });
 }
 function clip(){
