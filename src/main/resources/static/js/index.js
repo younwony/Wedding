@@ -47,7 +47,7 @@ function getGuestMessageList(page = 0, size = 3) {
 
             // 이전 버튼
             if (page > 0) {
-                const prevButton = `<button class="pagination-btn" onclick="getGuestMessageList(${page - 1}, ${size})">이전</button>`;
+                const prevButton = `<button class="pagination-btn" onclick="getGuestMessageList(${page - 1}, ${size})">☜</button>`;
                 paginationDiv.append(prevButton);
             }
 
@@ -59,7 +59,7 @@ function getGuestMessageList(page = 0, size = 3) {
 
             // 다음 버튼
             if (page < data.totalPages - 1) {
-                const nextButton = `<button class="pagination-btn" onclick="getGuestMessageList(${page + 1}, ${size})">다음</button>`;
+                const nextButton = `<button class="pagination-btn" onclick="getGuestMessageList(${page + 1}, ${size})">☞</button>`;
                 paginationDiv.append(nextButton);
             }
 
@@ -130,6 +130,16 @@ document.getElementById('copy-address-btn').addEventListener('click', function()
     document.body.removeChild(textarea);
 
     alert('주소가 복사되었습니다: ' + address);
+});
+
+document.getElementById('toggleButton').addEventListener('click', function() {
+    var videoContainer = document.getElementById('videoContainer');
+    var videoBtn = document.getElementById('toggleButton');
+
+    if (videoContainer.style.display === 'none' || videoContainer.style.display === '') {
+        videoContainer.style.display = 'block';
+        videoBtn.style.display = 'none';
+    }
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -256,22 +266,6 @@ function clip(){
     document.execCommand("copy");
     document.body.removeChild(textarea);
     alert("청첩장 링크가 복사되었습니다.")
-}
-
-function saveImage() {
-    // 오시는길 이미지 저장
-    html2canvas(document.getElementById('directions')).then(function(canvas) {
-        var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-        if (navigator.userAgent.includes("KAKAO") && isIOS) {
-            alert("이미지 저장 기능은 카카오톡 인앱 브라우저에서 지원되지 않습니다. 사파리로 이동합니다.");
-            window.location.href = "http://ddangbbo.com/";
-        }else{
-            var link = document.createElement('a');
-            link.href = canvas.toDataURL('image/png');
-            link.download = '오시는길.png';
-            link.click();
-        }
-    });
 }
 
 $(document).ready(function() {

@@ -1,6 +1,6 @@
 .tab-info-container {
     text-align: center;
-    height: 500px;
+    height: 560px;
     /*border-bottom: 1px solid #ccc;*/
     position: relative; /* ::after 가상 요소를 위한 position 설정 */
     padding-top: 40px;

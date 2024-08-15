@@ -188,8 +188,9 @@
     <div class="container animate-fade-in" id="making-film-container">
         <div class="movie-date-text">
             <h2 class="movie-title">Movie</h2>
+            <button class="movie-button" id="toggleButton">메이킹필름 구경하기</button>
         </div>
-        <div class="video-container">
+        <div id="videoContainer" class="video-container" style="display: none;">
             <video controls playsinline controlsList="nodownload" poster="https://dwp9wba2tw70x.cloudfront.net/img/thumb.jpg">
                 <source src="https://dwp9wba2tw70x.cloudfront.net/video/making.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -289,8 +290,6 @@
                 <p><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 고속터미널역</span>에서 탑승하여 <span class="subway-3">양재역</span>에서 하차<br>
                     (양재역까지 약 10분 소요)</p>
             </div>
-
-            <button id="saveBtn" onclick="saveImage();">'오시는길' 이미지 저장</button>
         </div>
     </div>
 
@@ -407,7 +406,7 @@
         <img src="https://dwp9wba2tw70x.cloudfront.net/img/guest.png" alt="letter" class="title-icon" />
         <h2 class="guestbook-title">Guest Book</h2>
         <h2 class="message-container-account-sub">방명록</h2>
-        <p class="guestbook-description">신랑 & 신부의 행복한 앞날을 위해 <br> 따뜻한 덕담 한 말씀 남겨주세요. <br> 소중한 추억으로 간직하겠습니다.</p>
+        <p class="guestbook-description">신랑 · 신부의 행복한 앞날을 위해 <br> 따뜻한 덕담 한 말씀 남겨주세요. <br> 소중한 추억으로 간직하겠습니다.</p>
         <button type="button" id="guestMessageModalBtn" data-bs-toggle="modal" data-bs-target="#guestBookModal">
             📧 축하 메시지 작성하기
         </button>
