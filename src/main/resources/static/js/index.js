@@ -261,10 +261,15 @@ function clip(){
 function saveImage() {
     // 오시는길 이미지 저장
     html2canvas(document.getElementById('directions')).then(function(canvas) {
-        var link = document.createElement('a');
-        link.href = canvas.toDataURL('image/png');
-        link.download = '오시는길.png';
-        link.click();
+        if (navigator.userAgent.includes("KAKAO")) {
+            alert("이미지 저장 기능은 카카오톡 인앱 브라우저에서 지원되지 않습니다. 다른 브라우저에서 페이지를 열어주세요.");
+            window.open(window.location.href, '_blank');
+        }else{
+            var link = document.createElement('a');
+            link.href = canvas.toDataURL('image/png');
+            link.download = '오시는길.png';
+            link.click();
+        }
     });
 }
 
