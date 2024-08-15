@@ -27,6 +27,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js'></script>
     <!-- Bootstrap JS 추가 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/html2canvas_1.4.1_html2canvas.js"></script>
 </head>
 <body>
 
@@ -256,7 +257,7 @@
                 </div>
             </div>
 
-            <div class="directions">
+            <div class="directions" id="directions">
                 <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/car.png" alt="car"/>자가용</h3>
                 <p>네비게이션: “양재 엘블레스” 검색<br>
                     엘블레스 옆 ‘양재역 주차장’ 이용, 주차 2시간 무료<br>
@@ -288,6 +289,8 @@
                 <p><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 고속터미널역</span>에서 탑승하여 <span class="subway-3">양재역</span>에서 하차<br>
                     (양재역까지 약 10분 소요)</p>
             </div>
+
+            <button id="saveBtn" onclick="saveImage();">'오시는길' 이미지 저장</button>
         </div>
     </div>
 
@@ -403,7 +406,8 @@
     <div class="guestbook animate-fade-in">
         <img src="https://dwp9wba2tw70x.cloudfront.net/img/guest.png" alt="letter" class="title-icon" />
         <h2 class="guestbook-title">Guest Book</h2>
-        <p class="guestbook-description">축하 메시지를 남겨주세요<br> 신랑 & 신부의 행복한 앞날을 위해 <br> 따뜻한 덕담 한 말씀 남겨주세요. <br> 소중한 추억으로 간직하겠습니다.</p>
+        <h2 class="message-container-account-sub">방명록</h2>
+        <p class="guestbook-description">신랑 & 신부의 행복한 앞날을 위해 <br> 따뜻한 덕담 한 말씀 남겨주세요. <br> 소중한 추억으로 간직하겠습니다.</p>
         <button type="button" id="guestMessageModalBtn" data-bs-toggle="modal" data-bs-target="#guestBookModal">
             📧 축하 메시지 작성하기
         </button>

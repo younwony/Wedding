@@ -3,6 +3,7 @@
     height: 500px;
     /*border-bottom: 1px solid #ccc;*/
     position: relative; /* ::after 가상 요소를 위한 position 설정 */
+    padding-top: 40px;
 }
 
 .tab-info-container-title {

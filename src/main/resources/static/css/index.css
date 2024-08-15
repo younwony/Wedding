@@ -244,8 +244,8 @@ canvas {
 .guestbook-description {
     font-family: 'S-CoreDream-3Light', sans-serif;
     font-size: 15px;
-    margin-top: 25px;
-    line-height: 2.0rem;
+    margin-top: 30px;
+    line-height: 1.7rem;
 }
 
 #guestBookModalLabel {
@@ -808,8 +808,20 @@ canvas {
     margin-right: 5px;
 }
 
+#saveBtn {
+    position: fixed; /* 화면에 고정된 위치에 놓기 */
+    right: 20px;     /* 오른쪽에서 20px 떨어진 위치 */
+    background: none; /* 배경색 제거 */
+    color: dimgrey;     /* 글자 색상 설정 */
+    border: none;     /* 테두리 제거 */
+    text-decoration: underline; /* 밑줄 추가 */
+    cursor: pointer;  /* 마우스 커서를 포인터로 변경 */
+    font-size: 13px;  /* 글자 크기 설정 */
+    font-family: 'S-CoreDream-3Light', sans-serif;
+}
+
 .directions {
-    margin: 50px 10px;
+    margin: 50px 10px 15px 10px;
     text-align: left;
     font-family: 'S-CoreDream-3Light', sans-serif;
 }

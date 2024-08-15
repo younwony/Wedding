@@ -258,6 +258,16 @@ function clip(){
     alert("청첩장 링크가 복사되었습니다.")
 }
 
+function saveImage() {
+    // 오시는길 이미지 저장
+    html2canvas(document.getElementById('directions')).then(function(canvas) {
+        var link = document.createElement('a');
+        link.href = canvas.toDataURL('image/png');
+        link.download = '오시는길.png';
+        link.click();
+    });
+}
+
 $(document).ready(function() {
     // 방명록 등록 버튼 클릭 이벤트
     $('#guestMessageAddBtn').on('click', function() {
@@ -267,7 +277,6 @@ $(document).ready(function() {
             alert('메시지를 입력해주세요.');
             return;
         }
-
 
         const formData = {
             author: $('#author').val(),
@@ -311,6 +320,7 @@ $(document).ready(function() {
         });
     });
 });
+
 $(document).ready(function() {
     // 모달이 열릴 때 기존 백드롭 제거
     $('#guestMessageModalBtn').on('click', function() {
@@ -332,5 +342,4 @@ $(document).ready(function() {
             });
         });
     });
-
 });
