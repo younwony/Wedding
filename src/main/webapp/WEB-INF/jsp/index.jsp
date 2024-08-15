@@ -201,6 +201,7 @@
 
     <div class="mb-5 text-center animate-fade-in" id="wedding-info">
         <div class="date-text">
+            <img src="/img/ribbon-icon.png" alt="heart" class="title-icon" />
             <h2 class="wedding-title">Wedding Day</h2>
             <h2 class="wedding-date">2024.09.28</h2>
             <h2 class="wedding-time">토요일 오후 5시</h2>
@@ -259,7 +260,7 @@
                 </div>
             </div>
 
-            <div class="directions" id="directions">
+            <div class="directions zoomable" id="directions">
                 <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/car.png" alt="car"/>자가용</h3>
                 <p>네비게이션: “양재 엘블레스” 검색<br>
                     엘블레스 옆 ‘양재역 주차장’ 이용, 주차 2시간 무료<br>
