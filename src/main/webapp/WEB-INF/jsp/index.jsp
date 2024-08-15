@@ -188,7 +188,8 @@
     <div class="container animate-fade-in" id="making-film-container">
         <div class="movie-date-text">
             <h2 class="movie-title">Movie</h2>
-            <button class="movie-button" id="toggleButton">메이킹필름 구경하기</button>
+            <h2 class="tab-info-container-sub-title">촬영 영상</h2>
+            <button class="movie-button" id="toggleButton">궁금하시면 눌러보세요 😘</button>
         </div>
         <div id="videoContainer" class="video-container" style="display: none;">
             <video controls playsinline controlsList="nodownload" poster="https://dwp9wba2tw70x.cloudfront.net/img/thumb.jpg">
