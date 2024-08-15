@@ -1,4 +1,5 @@
 Kakao.init('79116702bafec0462b6167ef14ca127b');
+
 // guestMessageList
 function showDeleteModal(messageId) {
     const modal = document.getElementById('deleteModal');
@@ -14,7 +15,7 @@ function hideDeleteModal() {
 function getGuestMessageList(page = 0, size = 3) {
     $.ajax({
         type: 'GET',
-        url: `/api/guest-messages?page=${page}&size=${size}&sort=createdAt,desc`,
+        url: `/api/guest-messages?page=${page}&size=${size}&sort=id,desc`,
         success: function (data) {
             var guestMessageListDiv = $('#guestMessageList');
             guestMessageListDiv.empty();  // 기존 내용을 지움
@@ -23,7 +24,7 @@ function getGuestMessageList(page = 0, size = 3) {
                 var messageTemplate = `
                     <div class="guestbook-entry" data-id="${message.id}">
                         <div class="content-header">
-                            <img src="/img/ribbon.png" alt="ribbon" class="guestbook-img" />
+                            <img src="https://dwp9wba2tw70x.cloudfront.net/img/ribbon.png" alt="ribbon" class="guestbook-img" />
                             <button class="delete-btn" onclick="showDeleteModal('${message.id}')">&times;</button>
                         </div>
                         <div class="content-area">
@@ -225,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function shareKakao() {
     Kakao.Share.sendScrap({
-        requestUrl: 'https://developers.kakao.com',
+        requestUrl: 'https://ddangbbo.com',
     });
 }
 function clip(){
@@ -263,10 +264,8 @@ $(document).ready(function() {
             data: JSON.stringify(formData),
             success: function () {
                 alert('메시지가 성공적으로 전송되었습니다.');
-                $('#guestBookModal').modal('hide');
-                $('.modal-backdrop').remove();  // 중복 모달 방지
-                $('body').removeClass('modal-open');
                 getGuestMessageList();
+                $('#guestBookCloseBtn').click();
             },
         });
     });

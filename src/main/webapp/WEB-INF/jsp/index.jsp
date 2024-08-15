@@ -342,7 +342,7 @@
 
     <!-- 마음 전하실 곳 -->
     <div class="message-container">
-        <img src="/img/heart.png" alt="heart" class="title-icon" />
+        <img src="https://dwp9wba2tw70x.cloudfront.net/img/heart.png" alt="heart" class="title-icon" />
         <h2 class="message-container-account">Account</h2>
         <h2 class="message-container-account-sub">마음 전하실 곳</h2>
         <p>참석이 어려워 직접 축하를<br>
@@ -401,7 +401,7 @@
 
     <!-- 축하 메시지 -->
     <div class="guestbook animate-fade-in">
-        <img src="/img/guest.png" alt="letter" class="title-icon" />
+        <img src="https://dwp9wba2tw70x.cloudfront.net/img/guest.png" alt="letter" class="title-icon" />
         <h2 class="guestbook-title">Guest Book</h2>
         <p class="guestbook-description">축하 메시지를 남겨주세요<br> 신랑 & 신부의 행복한 앞날을 위해 <br> 따뜻한 덕담 한 말씀 남겨주세요. <br> 소중한 추억으로 간직하겠습니다.</p>
         <button type="button" id="guestMessageModalBtn" data-bs-toggle="modal" data-bs-target="#guestBookModal">
@@ -415,9 +415,9 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="guestBookModalLabel">
-                        <img src="/img/pencle.png" alt="pencle" style="width:15px; margin-right: 5px; margin-bottom: 2px;"/>
+                        <img src="https://dwp9wba2tw70x.cloudfront.net/img/pencle.png" alt="pencle" style="width:15px; margin-right: 5px; margin-bottom: 2px;"/>
                         축하 메시지 남기기</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" id="guestBookCloseBtn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form id="guestMessageForm">
@@ -431,7 +431,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="content" class="form-label">메시지</label>
-                            <textarea class="form-control" id="content" rows="5" placeholder="내용을 작성해주세요" required></textarea>
+                            <textarea class="form-control" id="content" rows="5" placeholder="내용을 작성해주세요" maxlength="200"></textarea>
                         </div>
                         <div class="center-container">
                             <button type="button" id="guestMessageAddBtn" class="btn btn-success">작성 완료</button>
@@ -582,7 +582,7 @@
 
     <!-- 약도 이미지 모달 -->
     <div id="mapModal" class="modal" style="display: none;">
-        <div class="modal-content">
+        <div class="modal-content-map">
             <img src="https://dwp9wba2tw70x.cloudfront.net/img/location/location.jpg" alt="오시는 길 1" style="width: 100%;">
         </div>
     </div>

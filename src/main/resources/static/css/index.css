@@ -630,6 +630,14 @@ canvas {
     border-radius: 10px;
 }
 
+.modal-content-map {
+    background-color: #fff;
+    margin: 10% auto;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 500px;
+}
+
 .close {
     color: #aaa;
     float: right;
@@ -907,7 +915,7 @@ canvas {
 .footer-icons svg {
     width: 18px;
     height: 18px;
-    margin-top: 8px;
+    margin-top: 6px;
     margin-right: 8px;
 }
 
