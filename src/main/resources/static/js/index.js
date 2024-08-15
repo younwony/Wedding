@@ -226,7 +226,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function shareKakao() {
     Kakao.Share.sendScrap({
-        requestUrl: 'https://ddangbbo.com',
+        title: '땅뽀청첩장',
+        link: 'https://ddangbbo.com',
     });
 }
 function clip(){
