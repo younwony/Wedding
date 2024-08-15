@@ -44,8 +44,8 @@
             </div>
             <div class="text-overlay-bottom">
                 <h1 class="title-message">
-                    <span id="animated-text-1">We are getting</span><br>
-                    <span id="animated-text-2">married!</span>
+                    <span id="animated-text-1">We are getting</span><br/>
+                    <span id="animated-text-2">Merried !</span>
                 </h1>
             </div>
         </div>
@@ -370,11 +370,11 @@
                         <button class="copy-btn">복사</button>
                     </div>
                     <div class="account-info">
-                        <p>어머니 <strong>장선자</strong> <br> 신한 0123-45-6789101</p>
+                        <p>어머니 <strong>장선자</strong> <br>IBK기업 12314056501013</p>
                         <button class="copy-btn">복사</button>
                     </div>
                     <div class="account-info">
-                        <p>아버지 <strong>윤재성</strong> <br> 신한 0123-45-6789101</p>
+                        <p>아버지 <strong>윤재성</strong> <br>농협 130012-51-108796</p>
                         <button class="copy-btn">복사</button>
                     </div>
                 </div>
@@ -394,7 +394,7 @@
                         <button class="copy-btn">복사</button>
                     </div>
                     <div class="account-info">
-                        <p>어머니 <strong>김묘숙</strong> <br> 농협 302-0208-4536-31</p>
+                        <p>어머니 <strong>김묘숙</strong> <br>농협 302-0208-4536-31</p>
                         <button class="copy-btn">복사</button>
                     </div>
                 </div>
@@ -500,7 +500,7 @@
             <div class="modal-content">
                 <input type="hidden" id="deleteMessageId">
                 <div class="modal-header">
-                    <h2 class="modal-title" >축하 메시지 삭제하기</h2>
+                    <h2 class="modal-title" style="margin-bottom: 5px;">축하 메시지 삭제하기</h2>
                     <button type="button" class="btn-close" onclick="hideDeleteModal()" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -521,8 +521,8 @@
         <div class="modal-content">
             <div class="contact-grid">
                 <div>
-                    <h3 class="modal-congratulation-role">신랑</h3>
-                    <p class="modal-congratulation-name">윤원희</p>
+                    <h3 class="modal-congratulation-role men">신랑</h3>
+                    <p class="modal-congratulation-name men">윤원희</p>
                     <div class="icons">
                         <a href="tel:01035552320">
                             <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
@@ -533,8 +533,8 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="modal-congratulation-role">신부</h3>
-                    <p class="modal-congratulation-name">한상은</p>
+                    <h3 class="modal-congratulation-role women">신부</h3>
+                    <p class="modal-congratulation-name women">한상은</p>
                     <div class="icons">
                         <a href="tel:01063490671">
                             <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
@@ -545,8 +545,8 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="modal-congratulation-role">신랑 아버지</h3>
-                    <p class="modal-congratulation-name">윤재성</p>
+                    <h3 class="modal-congratulation-role men">신랑 아버지</h3>
+                    <p class="modal-congratulation-name men">윤재성</p>
                     <div class="icons">
                         <a href="tel:01075210521">
                             <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
@@ -557,8 +557,8 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="modal-congratulation-role">신부 어머니</h3>
-                    <p class="modal-congratulation-name">김묘숙</p>
+                    <h3 class="modal-congratulation-role women">신부 어머니</h3>
+                    <p class="modal-congratulation-name women">김묘숙</p>
                     <div class="icons">
                         <a href="tel:01063230671">
                             <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">
@@ -569,8 +569,8 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="modal-congratulation-role">신랑 어머니</h3>
-                    <p class="modal-congratulation-name">장선자</p>
+                    <h3 class="modal-congratulation-role men">신랑 어머니</h3>
+                    <p class="modal-congratulation-name men">장선자</p>
                     <div class="icons">
                         <a href="tel:01091034742">
                             <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/call.jpg" alt="Phone" class="icon">

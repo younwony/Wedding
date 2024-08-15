@@ -49,6 +49,13 @@
 }
 
 @font-face {
+    font-family: 'Selopaty Campble';
+    src: url('./Selopaty Campble.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'OoohBaby-Regular';
     src: url('./OoohBaby-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -79,12 +86,12 @@
 
 /* title info */
 .title-message {
-    font-family: 'Hicks Bryant';
-    font-weight: 200;
-    font-size: 3.5rem;
+    font-family: 'Selopaty Campble';
+    font-weight: 100;
+    font-size: 2.5rem;
     text-align: right;
-    color: #ffffff; /* 화이트 색상 적용 */
-    transform: rotate(-10deg);  /* 10도 기울기 */
+    color: black;
+    transform: rotate(-3deg);  /* 3도 기울기 */
     display: inline-block;
     text-shadow: -0.1px -0.1px #9D9A8B, 0.1px -0.1px #9D9A8B, -0.1px 0.1px #9D9A8B, 0.1px 0.1px #9D9A8B; /* 그림자 효과 */
 }

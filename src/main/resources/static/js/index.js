@@ -332,7 +332,7 @@ $(document).ready(function() {
         button.addEventListener('click', () => {
             // 계좌번호 추출
             const accountInfo = button.parentElement.querySelector('p').innerHTML;
-            const accountNumber = accountInfo.split('<br>')[1].trim();
+            const accountNumber = accountInfo.split('<br>')[1].trim().replaceAll('-', '');
 
             // 계좌번호 클립보드에 복사
             navigator.clipboard.writeText(accountNumber).then(() => {
