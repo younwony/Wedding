@@ -23,6 +23,7 @@ function getGuestMessageList(page = 0, size = 3) {
                 var messageTemplate = `
                     <div class="guestbook-entry" data-id="${message.id}">
                         <div class="content-header">
+                            <img src="/img/ribbon.png" alt="ribbon" class="guestbook-img" />
                             <button class="delete-btn" onclick="showDeleteModal('${message.id}')">&times;</button>
                         </div>
                         <div class="content-area">

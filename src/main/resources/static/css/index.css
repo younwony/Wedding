@@ -223,6 +223,11 @@ canvas {
     border-radius: 10px;
 }
 
+.guestbook-img {
+    width: 55%;
+    height: 38px;
+}
+
 .guestbook-title {
     font-family: 'Will-Love', sans-serif;
     font-size: 20px;
@@ -239,7 +244,7 @@ canvas {
 .guestbook-description {
     font-family: 'S-CoreDream-3Light', sans-serif;
     font-size: 15px;
-    margin-top: 50px;
+    margin-top: 25px;
     line-height: 2.0rem;
 }
 
@@ -252,6 +257,14 @@ canvas {
 #guestMessageForm {
     background-color: #ffffff;
     padding: 10px;
+}
+
+.required-label:after {
+    content: " *"; /* * 기호 추가 */
+    color: red; /* 색상 설정 */
+    font-weight: bold; /* 굵기 설정 */
+    position: relative; /* 상대 위치 설정 */
+    top: -3px; /* 위쪽으로 3px 이동 */
 }
 
 #guestMessageForm .form-label {
@@ -269,13 +282,23 @@ canvas {
 }
 
 #guestMessageForm .btn {
-    width: 100%;
-    padding: 10px;
-    font-size: 1.2rem;
+    width: 45%;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 30px;
+    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
+    background-color: #f68296;
+    border-color: #f68296;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
 }
 
 #guestMessageList {
-    margin-top: 30px;
+    margin: 20px;
 }
 
 #deleteModal .modal-content{
@@ -302,6 +325,16 @@ canvas {
     font-size: 14px;
     font-weight: 700;
     font-family: 'S-CoreDream-2ExtraLight', sans-serif;
+}
+
+#deleteModal .btn {
+    width: 45%;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 30px;
+    font-family: 'S-CoreDream-2ExtraLight', sans-serif;
+    background-color: #f68296;
+    border-color: #f68296;
 }
 
 .names {
@@ -442,7 +475,7 @@ canvas {
 .message-container {
     text-align: center;
     margin: 20px 0;
-    padding: 60px 0 10px 0;
+    padding: 60px 0 0 0;
     background-color: #fff;
     border-radius: 10px;
 }
@@ -467,7 +500,7 @@ canvas {
 .message-container p {
     font-family: 'S-CoreDream-3Light', sans-serif;
     font-size: 15px;
-    margin-top: 50px;
+    margin-top: 30px;
     line-height: 2.0rem;
 }
 .accordion {
@@ -521,6 +554,13 @@ canvas {
     height: 24px;
     stroke: #000; /* 검정색으로 아이콘 색상 설정 */
     transition: transform 0.3s ease;
+}
+
+.title-icon {
+    width: 25px;
+    transform: rotate(25deg);
+    margin-bottom: 10px;
+    opacity: 0.7;
 }
 
 .content {
@@ -921,16 +961,21 @@ canvas {
     padding: 15px;
     margin: 15px 0;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
 
-.content-header {
+.content-header{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center; /* 전체 중앙 정렬 */
+    align-items: center;
+    position: relative;
 }
 
 .delete-btn {
+    position: absolute;
+    right: 0; /* 오른쪽에 고정 */
+    top: 0; /* 상단에 고정 */
     background: none;
     border: none;
     color: #aaa;
@@ -945,13 +990,17 @@ canvas {
 
 .content-area {
     text-align: left;
-    padding: 10px 0;
+    margin: 20px 10px;
+    font-family: 'S-CoreDream-3Light', sans-serif;
+    font-size: 15px;
 }
 
 .content-footer {
     justify-content: space-between;
     align-items: center;
     color: #888;
+    font-family: 'S-CoreDream-3Light', sans-serif;
+    font-size: 13px;
 }
 
 .message-date {
