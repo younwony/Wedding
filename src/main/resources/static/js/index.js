@@ -132,16 +132,6 @@ document.getElementById('copy-address-btn').addEventListener('click', function()
     alert('주소가 복사되었습니다: ' + address);
 });
 
-document.getElementById('toggleButton').addEventListener('click', function() {
-    var videoContainer = document.getElementById('videoContainer');
-    var videoBtn = document.getElementById('toggleButton');
-
-    if (videoContainer.style.display === 'none' || videoContainer.style.display === '') {
-        videoContainer.style.display = 'block';
-        videoBtn.style.display = 'none';
-    }
-});
-
 document.addEventListener('DOMContentLoaded', function() {
     const text1 = document.getElementById('animated-text-1');
     const str1 = text1.textContent;
@@ -318,6 +308,16 @@ $(document).ready(function() {
                 alert('메시지 삭제에 실패했습니다. 비밀번호를 확인하세요.');
             }
         });
+    });
+
+    const zoomableElement = document.getElementById('directions');
+    zoomableElement.addEventListener('touchstart', function(e) {
+        // 터치 시작 시 확대 기능을 활성화합니다.
+        document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes');
+    });
+    zoomableElement.addEventListener('touchend', function(e) {
+        // 터치 종료 시 확대 기능을 비활성화합니다.
+        document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
     });
 });
 

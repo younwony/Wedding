@@ -188,10 +188,8 @@
     <div class="container animate-fade-in" id="making-film-container">
         <div class="movie-date-text">
             <h2 class="movie-title">Movie</h2>
-            <h2 class="tab-info-container-sub-title">촬영 영상</h2>
-            <button class="movie-button" id="toggleButton">궁금하시면 눌러보세요 😘</button>
         </div>
-        <div id="videoContainer" class="video-container" style="display: none;">
+        <div id="videoContainer" class="video-container">
             <video controls playsinline controlsList="nodownload" poster="https://dwp9wba2tw70x.cloudfront.net/img/thumb.jpg">
                 <source src="https://dwp9wba2tw70x.cloudfront.net/video/making.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -260,7 +258,7 @@
                 </div>
             </div>
 
-            <div class="directions zoomable" id="directions">
+            <div class="directions" id="directions">
                 <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/car.png" alt="car"/>자가용</h3>
                 <p>네비게이션: “양재 엘블레스” 검색<br>
                     엘블레스 옆 ‘양재역 주차장’ 이용, 주차 2시간 무료<br>
