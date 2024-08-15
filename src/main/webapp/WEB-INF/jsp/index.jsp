@@ -284,11 +284,11 @@
 
                 <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/srt.png" alt="srt"/>SRT</h3>
                 <p>수서역 (양재역까지 약 15분 소요)<br>
-                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 수서역</span>에서 탑승하여 <span class="subway-3">양재역</span>에서 하차</p>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 수서역</span>에서 탑승, <span class="subway-3">양재역</span>에서 하차</p>
                 <hr class="line-general">
                 <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/bus.png" alt="bus"/>고속버스</h3>
-                <p><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 고속터미널역</span>에서 탑승하여 <span class="subway-3">양재역</span>에서 하차<br>
-                    (양재역까지 약 10분 소요)</p>
+                <p>고속터미널역 (양재역까지 약 10분 소요)<br>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 고속터미널역</span>에서 탑승, <span class="subway-3">양재역</span>에서 하차<br></p>
             </div>
         </div>
     </div>
