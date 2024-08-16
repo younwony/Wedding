@@ -45,20 +45,24 @@ function getGuestMessageList(page = 0, size = 3) {
             const paginationDiv = $('#pagination');
             paginationDiv.empty();  // 기존 페이지 버튼 지움
 
+            const totalPages = data.totalPages;
+            const startPage = Math.max(0, page - 1);
+            const endPage = Math.min(totalPages - 1, page + 1);
+
             // 이전 버튼
             if (page > 0) {
                 const prevButton = `<button class="pagination-btn" onclick="getGuestMessageList(${page - 1}, ${size})">☜</button>`;
                 paginationDiv.append(prevButton);
             }
 
-            // 페이지 번호 버튼
-            for (var i = 0; i < data.totalPages; i++) {
+            // 페이지 번호 버튼 (최대 3개)
+            for (var i = startPage; i <= endPage; i++) {
                 const pageButton = `<button class="pagination-btn ${i === page ? 'active' : ''}" onclick="getGuestMessageList(${i}, ${size})">${i + 1}</button>`;
                 paginationDiv.append(pageButton);
             }
 
             // 다음 버튼
-            if (page < data.totalPages - 1) {
+            if (page < totalPages - 1) {
                 const nextButton = `<button class="pagination-btn" onclick="getGuestMessageList(${page + 1}, ${size})">☞</button>`;
                 paginationDiv.append(nextButton);
             }
@@ -66,7 +70,6 @@ function getGuestMessageList(page = 0, size = 3) {
         },
     });
 }
-
 
 
 // 카카오 지도 초기화
@@ -310,15 +313,6 @@ $(document).ready(function() {
         });
     });
 
-    const zoomableElement = document.getElementById('directions');
-    zoomableElement.addEventListener('touchstart', function(e) {
-        // 터치 시작 시 확대 기능을 활성화합니다.
-        document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes');
-    });
-    zoomableElement.addEventListener('touchend', function(e) {
-        // 터치 종료 시 확대 기능을 비활성화합니다.
-        document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
-    });
 });
 
 $(document).ready(function() {
