@@ -51,7 +51,7 @@ function getGuestMessageList(page = 0, size = 3) {
 
             // 이전 버튼
             if (page > 0) {
-                const prevButton = `<button class="pagination-btn" onclick="getGuestMessageList(${page - 1}, ${size})">☜</button>`;
+                const prevButton = `<button class="pagination-btn" onclick="getGuestMessageList(${page - 1}, ${size})"><img src="/img/arrow-l.png" alt="arrow" style="width: 30px;margin-bottom:5px;"/></button>`;
                 paginationDiv.append(prevButton);
             }
 
@@ -63,7 +63,7 @@ function getGuestMessageList(page = 0, size = 3) {
 
             // 다음 버튼
             if (page < totalPages - 1) {
-                const nextButton = `<button class="pagination-btn" onclick="getGuestMessageList(${page + 1}, ${size})">☞</button>`;
+                const nextButton = `<button class="pagination-btn" onclick="getGuestMessageList(${page + 1}, ${size})"><img src="/img/arrow-r.png" alt="arrow" style="width: 30px;margin-bottom:5px;"/></button>`;
                 paginationDiv.append(nextButton);
             }
 

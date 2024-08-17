@@ -273,22 +273,22 @@
 
                 <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/ktx.png" alt="ktx"/>KTX</h3>
                 <p>서울역 (양재역까지 약 40분 소요)<br>
-                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/4.png" alt="4"/><span class="subway-4">호선 서울역</span>에서 <span class="subway-4">회현역</span> 방면으로 탑승,<br>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/4.png" alt="4"/><span class="subway-4">호선 서울역</span>에서 회현역 방면으로 탑승,<br>
                     <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 충무로역</span>에서 환승하여 <span class="subway-3">양재역</span>에서 하차</p>
                 <br>
                 <p>용산역 (양재역까지 약 40분 소요)<br>
-                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/gm.png" alt="gm"/><span class="subway-g">경의중앙선 용산역</span>에서 <span class="subway-g">이촌역</span> 방면으로 탑승,<br>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/gm.png" alt="gm"/><span class="subway-g">경의중앙선 용산역</span>에서 이촌역 방면으로 탑승,<br>
                     (덕소행 15:51, 용문행 16:01, 팔당행 16:23)<br>
                     <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 옥수역</span>에서 환승하여 <span class="subway-3">양재역</span>에서 하차</p>
                 <hr class="line-general">
 
                 <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/srt.png" alt="srt"/>SRT</h3>
                 <p>수서역 (양재역까지 약 15분 소요)<br>
-                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 수서역</span>에서 탑승, <span class="subway-3">양재역</span>에서 하차</p>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 수서역</span>에서 일원역 방면으로 탑승(오금행), <span class="subway-3">양재역</span>에서 하차</p>
                 <hr class="line-general">
                 <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/bus.png" alt="bus"/>고속버스</h3>
                 <p>고속터미널역 (양재역까지 약 10분 소요)<br>
-                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 고속터미널역</span>에서 탑승, <span class="subway-3">양재역</span>에서 하차<br></p>
+                    <img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/3.png" alt="3"/><span class="subway-3">호선 고속터미널역</span>에서 교대역 방면으로 탑승<br>(대화행 또는 구파발행), <span class="subway-3">양재역</span>에서 하차<br></p>
             </div>
         </div>
     </div>
@@ -408,7 +408,7 @@
         <h2 class="message-container-account-sub">방명록</h2>
         <p class="guestbook-description">신랑 · 신부의 행복한 앞날을 위해 <br> 따뜻한 덕담 한 말씀 남겨주세요. <br> 소중한 추억으로 간직하겠습니다.</p>
         <button type="button" id="guestMessageModalBtn" data-bs-toggle="modal" data-bs-target="#guestBookModal">
-            📧 축하 메시지 작성하기
+            💌 축하 메시지 작성하기
         </button>
     </div>
 

@@ -1053,7 +1053,7 @@ canvas {
 #pagination button {
     margin: 0 5px;
     border: none;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.8);
     color: #333;
     border-radius: 5rem;
     cursor: pointer;
