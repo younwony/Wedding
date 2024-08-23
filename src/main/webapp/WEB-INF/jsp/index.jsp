@@ -1,6 +1,8 @@
 <%@ page import="java.util.Date" %>
 <%@ page import="java.text.SimpleDateFormat" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html lang="ko">
 <%pageContext.setAttribute("timeStamp", new SimpleDateFormat("yyyyMMddHHmmss").format(new Date())) ;%>
@@ -59,7 +61,16 @@
         <div class="invitation-img">
             <img src="https://dwp9wba2tw70x.cloudfront.net/img/letter.jpg" alt="Invitation Envelope">
             <div class="invitation-text">
-                <div class="korean">소중한 분들을 초대합니다.</div>
+                <div class="korean">
+                    <c:choose>
+                        <c:when test="${empty invitationMessage.message}">
+                            소중한 분들을 초대합니다.
+                        </c:when>
+                        <c:otherwise>
+                            ${invitationMessage.message}
+                        </c:otherwise>
+                    </c:choose>
+                </div>
             </div>
         </div>
         <div class="invitation-img-1">
@@ -84,7 +95,7 @@
             <div class="name-group">
                 <div class="name-img"><img class="empty"/></div>
                 <div class="name-text">
-                    윤재성 ·장선자의 장남
+                    윤재성 · 장선자의 장남
                 </div>
                 <div class="name-target">
                     윤원희
@@ -94,7 +105,7 @@
             <div class="name-group">
                 <div class="name-img"><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/d.png" alt="국화꽃 아이콘" style="width: 20px; vertical-align: middle;"></div>
                 <div class="name-text">
-                    한재영 ·김묘숙의 장녀
+                    한재영 · 김묘숙의 장녀
                 </div>
                 <div class="name-target">
                     한상은
@@ -260,7 +271,7 @@
 
             <div class="directions" id="directions">
                 <h3><img src="https://dwp9wba2tw70x.cloudfront.net/img/icon/car.png" alt="car"/>자가용</h3>
-                <p>네비게이션: “양재 엘블레스” 검색<br>
+                <p>네비게이션: “양재역 주차장” 검색<br>
                     엘블레스 옆 ‘양재역 주차장’ 이용, 주차 2시간 무료<br>
                     *주차장 주소 : 서초구 강남대로 221 (양재동 23)<br>
                     *주차하신 후 옆 건물 스포타임 지하 1층으로 이동하시면 됩니다.</p>
@@ -466,7 +477,7 @@
                 </p>
             </div>
             <div class="footer-icons">
-                <a onclick="shareKakao()">
+                <a onclick="shareKakao(${invitationMessage.target})">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 191.94">
                             <g>

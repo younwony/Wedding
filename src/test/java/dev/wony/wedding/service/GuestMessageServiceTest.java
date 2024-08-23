@@ -1,7 +1,7 @@
 package dev.wony.wedding.service;
 
 import dev.wony.wedding.domain.GuestMessage;
-import dev.wony.wedding.dto.GuestMessageDto;
+import dev.wony.wedding.domain.GuestMessageDto;
 import dev.wony.wedding.repository.GuestMessageRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

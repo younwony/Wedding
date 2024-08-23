@@ -227,7 +227,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function shareKakao() {
+function shareKakao(target) {
+
+    let url = 'https://ddangbbo.com';
+
+    if(target) {
+        url = url + "/?target=" + target;
+    }
+
     Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
@@ -235,21 +242,22 @@ function shareKakao() {
             description: '우리 결혼식에 초대할게요!\n2024.09.28  PM 5:00',
             imageUrl: 'https://dwp9wba2tw70x.cloudfront.net/img/main.jpg',
             link: {
-                mobileWebUrl: 'https://ddangbbo.com',
-                webUrl: 'https://ddangbbo.com'
+                mobileWebUrl: url,
+                webUrl: url
             }
         },
         buttons: [
             {
                 title: '청첩장 보러가기',
                 link: {
-                    mobileWebUrl: 'https://ddangbbo.com',
-                    webUrl: 'https://ddangbbo.com'
+                    mobileWebUrl: url,
+                    webUrl: url
                 }
             }
         ]
     });
 }
+
 function clip(){
     var url = 'http://ddangbbo.com/';
     var textarea = document.createElement("textarea");

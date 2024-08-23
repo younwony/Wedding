@@ -1,7 +1,7 @@
 package dev.wony.wedding.repository;
 
 import dev.wony.wedding.domain.GuestMessage;
-import dev.wony.wedding.dto.GuestMessageDto;
+import dev.wony.wedding.domain.GuestMessageDto;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 package dev.wony.wedding.controller.api;
 
 import dev.wony.wedding.request.DeleteGuestMessageRequest;
-import dev.wony.wedding.dto.GuestMessageDto;
+import dev.wony.wedding.domain.GuestMessageDto;
 import dev.wony.wedding.request.GuestMessageRequest;
 import dev.wony.wedding.response.GuestMessageResponse;
 import dev.wony.wedding.response.GuestMessageResponses;

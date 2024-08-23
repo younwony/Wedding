@@ -1,7 +1,7 @@
 package dev.wony.wedding.request;
 
 
-import dev.wony.wedding.dto.GuestMessageDto;
+import dev.wony.wedding.domain.GuestMessageDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
