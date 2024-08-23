@@ -15,4 +15,5 @@ public class InvitationMessage {
     private Long id;
     private String target;
     private String message;
+    private String thanksTo;
 }

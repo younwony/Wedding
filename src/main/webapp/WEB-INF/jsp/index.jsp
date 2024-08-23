@@ -471,9 +471,16 @@
             <div class="footer-text">
                 <h2 class="tanks-to">Thanks To.</h2>
                 <p>
-                    언제나 곁을 따뜻하게 지켜주신<br>
-                    양가 부모님과 행복을 응원해 주신<br>
-                    모든 분들께 감사드립니다.
+                    <c:choose>
+                        <c:when test="${empty invitationMessage.thanksTo}">
+                            언제나 곁을 따뜻하게 지켜주신<br>
+                            양가 부모님과 행복을 응원해 주신<br>
+                            모든 분들께 감사드립니다.
+                        </c:when>
+                        <c:otherwise>
+                            ${invitationMessage.thanksTo}
+                        </c:otherwise>
+                    </c:choose>
                 </p>
             </div>
             <div class="footer-icons">
