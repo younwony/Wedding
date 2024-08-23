@@ -477,7 +477,7 @@
                 </p>
             </div>
             <div class="footer-icons">
-                <a onclick="shareKakao(${invitationMessage.target})">
+                <a onclick="shareKakao('${invitationMessage.target}', ${admin})">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 191.94">
                             <g>

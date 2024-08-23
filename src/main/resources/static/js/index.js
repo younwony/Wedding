@@ -227,12 +227,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function shareKakao(target) {
+function shareKakao(target, admin) {
 
     let url = 'https://ddangbbo.com';
 
-    if(target) {
-        url = url + "/?target=" + target;
+    if(target && admin) {
+        url = url + '/?target=' + target;
     }
 
     Kakao.Share.sendDefault({

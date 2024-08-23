@@ -19,10 +19,12 @@ public class WeddingController {
     @GetMapping("/")
     public String index(
             @RequestParam(value = "target", required = false) String target,
+            @RequestParam(value = "admin", required = false) boolean admin,
             Model model
     ) {
         InvitationMessageDto invitationMessage = invitationMessageService.getInvitationMessage(target);
         model.addAttribute("invitationMessage", invitationMessage);
+        model.addAttribute("admin", admin);
         return "index";
     }
 }
