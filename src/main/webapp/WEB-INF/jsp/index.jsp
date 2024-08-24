@@ -122,6 +122,7 @@
         <div id="main-slider" class="splide" style="padding: 0 !important;">
             <div class="splide__track">
                 <ul class="splide__list">
+                    <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/0.jpg" alt="Image 1"></li>
                     <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/1.jpg" alt="Image 1"></li>
                     <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/2.jpg" alt="Image 2"></li>
                     <li class="splide__slide"><img src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/3.jpg" alt="Image 3"></li>
@@ -160,6 +161,7 @@
         <div id="thumbnail-slider" class="splide">
             <div class="splide__track">
                 <ul class="splide__list">
+                    <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/0.jpg" alt="Thumbnail 0"></li>
                     <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/1.jpg" alt="Thumbnail 1"></li>
                     <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/2.jpg" alt="Thumbnail 2"></li>
                     <li class="splide__slide"><img class="slide-img" src="https://dwp9wba2tw70x.cloudfront.net/img/wedding/3.jpg" alt="Thumbnail 3"></li>
