@@ -227,11 +227,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function shareKakao(target, admin) {
+function shareKakao(target) {
 
     let url = 'https://ddangbbo.com';
 
-    if(target && admin) {
+    if(target) {
         url = url + '/?target=' + target;
     }
 
@@ -258,8 +258,11 @@ function shareKakao(target, admin) {
     });
 }
 
-function clip(){
+function clip(target){
     var url = 'http://ddangbbo.com/';
+    if(target){
+        url = url + '?target=' + target;
+    }
     var textarea = document.createElement("textarea");
     document.body.appendChild(textarea);
     textarea.value = url;

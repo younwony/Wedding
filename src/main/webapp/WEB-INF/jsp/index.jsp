@@ -486,7 +486,7 @@
                 </p>
             </div>
             <div class="footer-icons">
-                <a onclick="shareKakao('${invitationMessage.target}', ${admin})">
+                <a onclick="shareKakao('${invitationMessage.target}')">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 191.94">
                             <g>
@@ -496,7 +496,7 @@
                         <p>카카오톡으로 공유하기</p>
                     </div>
                 </a>
-                <a onclick="clip()">
+                <a onclick="clip('${invitationMessage.target}')">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd"
