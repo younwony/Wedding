@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://43.200.125.37/ddangbbo
+    url: jdbc:mysql://3.36.74.62/ddangbbo
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: wony
     password: ENC(i47xn1yWuGTFwz65qahHJydFMrc2O9ZR)
