@@ -56,6 +56,7 @@ class GuestMessageServiceTest {
     @DisplayName("방명록을 수정한다")
     void updateGuestMessage() {
         // given
+        GuestMessage savedGuestMessage = guestMessageRepository.save(guestMessage);
         GuestMessageDto updateGuestMessageDto = GuestMessageDto.builder()
                 .title("update title")
                 .content("update content")
@@ -64,10 +65,13 @@ class GuestMessageServiceTest {
                 .build();
 
         // when
-        GuestMessage updateGuestMessage = guestMessageRepository.save(updateGuestMessageDto.toEntity());
-        GuestMessageDto updateResultGuestMessageDto = GuestMessageDto.fromEntity(updateGuestMessage);
+        GuestMessage findGuestMessage = guestMessageRepository.findById(savedGuestMessage.getId()).orElseThrow();
+        findGuestMessage.update(updateGuestMessageDto.getTitle(), updateGuestMessageDto.getContent());
+        GuestMessage updatedGuestMessage = guestMessageRepository.save(findGuestMessage);
+        GuestMessageDto updateResultGuestMessageDto = GuestMessageDto.fromEntity(updatedGuestMessage);
 
         // then
+        assertThat(updateResultGuestMessageDto.getId()).isEqualTo(savedGuestMessage.getId());
         assertThat(updateResultGuestMessageDto.getTitle()).isEqualTo(updateGuestMessageDto.getTitle());
         assertThat(updateResultGuestMessageDto.getContent()).isEqualTo(updateGuestMessageDto.getContent());
     }
