@@ -47,7 +47,7 @@
             <div class="text-overlay-bottom">
                 <h1 class="title-message">
                     <span id="animated-text-1">We are getting</span><br/>
-                    <span id="animated-text-2">Merried !</span>
+                    <span id="animated-text-2">Married !</span>
                 </h1>
             </div>
         </div>
@@ -74,7 +74,7 @@
             </div>
         </div>
         <div class="invitation-img-1">
-            <img src="https://dwp9wba2tw70x.cloudfront.net/img/invi1.jpg" alt="invitaion-1">
+            <img src="https://dwp9wba2tw70x.cloudfront.net/img/invi1.jpg" alt="invitation-1">
         </div>
         <p class="invitation-text">
             '사랑이란 별다른 것이 아니라 <br>
@@ -85,7 +85,7 @@
         </p>
         <div class="invitation-text-from">신랑 원희 · 신부 상은 올림</div>
         <div class="invitation-img-2">
-            <img src="https://dwp9wba2tw70x.cloudfront.net/img/invi2.jpg" alt="invitaion-2">
+            <img src="https://dwp9wba2tw70x.cloudfront.net/img/invi2.jpg" alt="invitation-2">
         </div>
     </div>
 
