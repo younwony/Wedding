@@ -46,7 +46,8 @@
 │  Java 17 / Spring Boot 3.2.5                                        │
 │  ├── Spring Web MVC (REST API)                                      │
 │  ├── Spring Data JPA (ORM)                                          │
-│  ├── Jasypt 3.0.4 (Encryption)                                      │
+│  ├── Spring Security (Password Encoding - BCrypt)                   │
+│  ├── Jasypt 3.0.4 (DB Password Encryption)                          │
 │  └── Lombok (Boilerplate Reduction)                                 │
 ├─────────────────────────────────────────────────────────────────────┤
 │                        DATABASE                                      │
@@ -154,7 +155,9 @@ Wedding/
 │   ├── main/
 │   │   ├── java/dev/wony/wedding/
 │   │   │   ├── config/
-│   │   │   │   └── JasyptConfig.java         # Jasypt 암호화 설정
+│   │   │   │   ├── JasyptConfig.java         # Jasypt 암호화 설정
+│   │   │   │   ├── SecurityConfig.java       # Spring Security 설정
+│   │   │   │   └── GlobalExceptionHandler.java # 전역 예외 처리
 │   │   │   ├── controller/
 │   │   │   │   ├── api/
 │   │   │   │   │   ├── GuestMessageController.java  # 게스트북 REST API
@@ -552,9 +555,31 @@ java -jar -Dspring.profiles.active=prod wedding-0.0.1-SNAPSHOT.war
 
 | 항목 | 설명 |
 |------|------|
+| 게스트북 비밀번호 해싱 | BCrypt (Spring Security) |
 | DB 비밀번호 암호화 | Jasypt (PBEWithMD5AndDES) |
-| 게스트북 권한 관리 | 비밀번호 기반 수정/삭제 |
+| 게스트북 권한 관리 | 비밀번호 기반 수정/삭제 (수정/삭제 모두 검증) |
+| API 응답 보안 | Response에서 비밀번호 필드 제외 |
+| 예외 처리 | GlobalExceptionHandler로 일관된 에러 응답 |
 | CDN 호스팅 | CloudFront를 통한 정적 리소스 분리 |
+
+### 비밀번호 처리 흐름
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                     비밀번호 보안 흐름                            │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  [생성 시]                                                       │
+│  평문 비밀번호 → BCrypt 해싱 → DB 저장                           │
+│                                                                  │
+│  [수정/삭제 시]                                                   │
+│  입력 비밀번호 → BCrypt.matches() → 검증 성공 시 작업 수행       │
+│                                                                  │
+│  [조회 시]                                                        │
+│  DB → DTO → Response (password 필드 제외)                        │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
 
 ### 설정 파일 암호화 예시
 ```yaml
@@ -742,6 +767,7 @@ jasypt.encryptor.password: ddangbbo  # DB 비밀번호 복호화 키
 | `GuestMessageRepositoryTest` | 게스트 메시지 Repository CRUD 테스트 |
 | `InvitationMessageRepositoryTest` | 초대 메시지 Repository 테스트 |
 | `GuestMessageServiceTest` | Service 계층 테스트 |
+| `GuestMessageControllerTest` | Controller 통합 테스트 (MockMvc) |
 | `WeddingApplicationTests` | 컨텍스트 로드 테스트 |
 
 ---
@@ -749,7 +775,7 @@ jasypt.encryptor.password: ddangbbo  # DB 비밀번호 복호화 키
 ## 향후 개선 사항
 
 - [ ] HTTPS 적용
-- [ ] 게스트 메시지 비밀번호 해싱 (현재 평문 저장)
+- [x] ~~게스트 메시지 비밀번호 해싱~~ (BCrypt 적용 완료)
 - [ ] API Rate Limiting
 - [ ] 관리자 페이지 추가
 - [ ] 다국어 지원
