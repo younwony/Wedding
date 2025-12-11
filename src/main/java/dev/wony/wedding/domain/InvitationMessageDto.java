@@ -30,4 +30,13 @@ public class InvitationMessageDto {
                 .thanksTo("")
                 .build();
     }
+
+    public InvitationMessage toEntity() {
+        return InvitationMessage.builder()
+                .id(this.id)
+                .target(this.target)
+                .message(this.message)
+                .thanksTo(this.thanksTo)
+                .build();
+    }
 }

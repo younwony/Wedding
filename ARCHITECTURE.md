@@ -51,7 +51,7 @@
 ├─────────────────────────────────────────────────────────────────────┤
 │                        DATABASE                                      │
 ├─────────────────────────────────────────────────────────────────────┤
-│  MySQL 8.0                                                          │
+│  MySQL 8.0 (Production) / H2 (Local Development)                    │
 ├─────────────────────────────────────────────────────────────────────┤
 │                        EXTERNAL APIs                                 │
 ├─────────────────────────────────────────────────────────────────────┤
@@ -182,8 +182,10 @@ Wedding/
 │   │   │   │   └── InvitationMessageService.java    # 초대 메시지 비즈니스 로직
 │   │   │   └── WeddingApplication.java              # Spring Boot 메인
 │   │   ├── resources/
-│   │   │   ├── application.yml                      # 개발 환경 설정
+│   │   │   ├── application.yml                      # 기본 환경 설정 (MySQL)
+│   │   │   ├── application-local.yml                # 로컬 개발용 (H2)
 │   │   │   ├── application-prod.yml                 # 운영 환경 설정
+│   │   │   ├── data.sql                             # 초기 데이터 (H2용)
 │   │   │   └── static/
 │   │   │       ├── css/                             # 스타일시트
 │   │   │       ├── js/                              # JavaScript 파일
@@ -191,11 +193,16 @@ Wedding/
 │   │   │       └── video/                           # 비디오 파일
 │   │   └── webapp/WEB-INF/jsp/
 │   │       └── index.jsp                            # 메인 뷰 템플릿
-│   └── test/java/dev/wony/wedding/
-│       ├── config/JasyptConfigTest.java
-│       ├── repository/GuestMessageRepositoryTest.java
-│       ├── service/GuestMessageServiceTest.java
-│       └── WeddingApplicationTests.java
+│   └── test/
+│       ├── java/dev/wony/wedding/
+│       │   ├── config/JasyptConfigTest.java
+│       │   ├── repository/
+│       │   │   ├── GuestMessageRepositoryTest.java
+│       │   │   └── InvitationMessageRepositoryTest.java
+│       │   ├── service/GuestMessageServiceTest.java
+│       │   └── WeddingApplicationTests.java
+│       └── resources/
+│           └── application.yml                      # 테스트용 설정 (H2)
 ├── .github/workflows/
 │   └── deploy.yml                                   # GitHub Actions CI/CD
 ├── build.gradle                                     # Gradle 빌드 설정
@@ -650,23 +657,55 @@ jasypt:
 ### 필수 요구사항
 - Java 17+
 - Gradle 8.x
-- MySQL 8.0
+- MySQL 8.0 (운영) 또는 H2 (로컬 개발)
+
+### Profile 구성
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                     프로파일 구조                                 │
+├─────────────────────────────────────────────────────────────────┤
+│  application.yml       │  기본 설정 (MySQL - 원격 서버)          │
+│  application-local.yml │  로컬 개발용 (H2 인메모리)              │
+│  application-prod.yml  │  운영 환경 (MySQL - localhost)         │
+└─────────────────────────────────────────────────────────────────┘
+```
 
 ### 실행 방법
+
+#### 방법 1: H2 인메모리 DB로 로컬 실행 (권장)
 ```bash
 # 1. 프로젝트 클론
 git clone https://github.com/your-repo/wedding.git
 cd wedding
 
-# 2. 의존성 설치 및 빌드
-./gradlew build
+# 2. local 프로파일로 실행
+./gradlew bootRun --args='--spring.profiles.active=local'
 
-# 3. 애플리케이션 실행
-./gradlew bootRun
-
-# 4. 브라우저에서 접속
+# 3. 브라우저에서 접속
 open http://localhost:8080
+
+# 4. H2 Console 접속 (데이터 확인용)
+open http://localhost:8080/h2-console
+# JDBC URL: jdbc:h2:mem:ddangbbo
+# User: sa / Password: (빈값)
 ```
+
+#### 방법 2: MySQL DB로 실행
+```bash
+# MySQL 서버 필요
+./gradlew bootRun
+```
+
+### H2 로컬 환경 특징
+
+| 항목 | 설정 |
+|------|------|
+| 데이터베이스 | H2 인메모리 (jdbc:h2:mem:ddangbbo) |
+| DDL 전략 | create (자동 스키마 생성) |
+| 초기 데이터 | data.sql로 샘플 데이터 자동 로드 |
+| H2 Console | http://localhost:8080/h2-console |
+| MySQL 호환 | MODE=MySQL 설정으로 호환성 유지 |
 
 ### 환경 변수
 ```yaml
@@ -678,16 +717,32 @@ jasypt.encryptor.password: ddangbbo  # DB 비밀번호 복호화 키
 
 ## 테스트
 
+### 테스트 환경
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                     테스트 환경 구성                              │
+├─────────────────────────────────────────────────────────────────┤
+│  데이터베이스  │  H2 인메모리 (jdbc:h2:mem:testdb)               │
+│  DDL 전략     │  create-drop (테스트 후 자동 삭제)               │
+│  초기 데이터   │  비활성화 (sql.init.mode: never)                │
+│  트랜잭션     │  테스트 종료 후 자동 롤백                         │
+└─────────────────────────────────────────────────────────────────┘
+```
+
 ### 테스트 실행
 ```bash
 ./gradlew test
 ```
 
 ### 테스트 커버리지
-- `JasyptConfigTest`: 암호화/복호화 테스트
-- `GuestMessageRepositoryTest`: Repository 계층 테스트
-- `GuestMessageServiceTest`: Service 계층 테스트
-- `WeddingApplicationTests`: 컨텍스트 로드 테스트
+| 테스트 클래스 | 설명 |
+|--------------|------|
+| `JasyptConfigTest` | 암호화/복호화 테스트 |
+| `GuestMessageRepositoryTest` | 게스트 메시지 Repository CRUD 테스트 |
+| `InvitationMessageRepositoryTest` | 초대 메시지 Repository 테스트 |
+| `GuestMessageServiceTest` | Service 계층 테스트 |
+| `WeddingApplicationTests` | 컨텍스트 로드 테스트 |
 
 ---
 

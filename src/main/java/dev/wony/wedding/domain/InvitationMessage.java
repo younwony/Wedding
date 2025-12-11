@@ -6,8 +6,8 @@ import lombok.*;
 @Entity
 @Getter
 @NoArgsConstructor
-@Builder(access = AccessLevel.PROTECTED)
-@AllArgsConstructor(access = AccessLevel.PROTECTED)
+@Builder
+@AllArgsConstructor
 public class InvitationMessage {
 
     @Id

@@ -46,6 +46,9 @@ dependencies {
     // mysql driver
     implementation 'mysql:mysql-connector-java:8.0.27'
 
+    // H2 database for local development
+    runtimeOnly 'com.h2database:h2'
+
     // JPA
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
