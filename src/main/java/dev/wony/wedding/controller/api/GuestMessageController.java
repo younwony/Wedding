@@ -1,7 +1,7 @@
 package dev.wony.wedding.controller.api;
 
-import dev.wony.wedding.request.DeleteGuestMessageRequest;
 import dev.wony.wedding.domain.GuestMessageDto;
+import dev.wony.wedding.request.DeleteGuestMessageRequest;
 import dev.wony.wedding.request.GuestMessageRequest;
 import dev.wony.wedding.response.GuestMessageResponse;
 import dev.wony.wedding.response.GuestMessageResponses;
@@ -9,6 +9,7 @@ import dev.wony.wedding.service.GuestMessageService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,20 +30,20 @@ public class GuestMessageController {
     @PostMapping
     public ResponseEntity<GuestMessageResponse> createGuestMessage(@RequestBody GuestMessageRequest guestMessageRequest) {
         GuestMessageDto guestMessageDto = guestMessageService.createGuestMessage(guestMessageRequest.toDto());
-        GuestMessageResponse guestMessageResponse = GuestMessageResponse.fromDto(guestMessageDto);
-        return ResponseEntity.ok(guestMessageResponse);
+        GuestMessageResponse guestMessageResponse = GuestMessageResponse.from(guestMessageDto);
+        return ResponseEntity.status(HttpStatus.CREATED).body(guestMessageResponse);
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<GuestMessageResponse> updateGuestMessage(@PathVariable("id") Long id, @RequestBody GuestMessageRequest guestMessageRequest) {
         GuestMessageDto guestMessageDto = guestMessageService.updateGuestMessage(id, guestMessageRequest.toDto());
-        GuestMessageResponse guestMessageResponse = GuestMessageResponse.fromDto(guestMessageDto);
+        GuestMessageResponse guestMessageResponse = GuestMessageResponse.from(guestMessageDto);
         return ResponseEntity.ok(guestMessageResponse);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteGuestMessage(@PathVariable("id") Long id, @RequestBody DeleteGuestMessageRequest deleteGuestMessageRequest) {
-        guestMessageService.deleteGuestMessage(id, deleteGuestMessageRequest.toDto());
+    public ResponseEntity<Void> deleteGuestMessage(@PathVariable Long id, @RequestBody DeleteGuestMessageRequest deleteGuestMessageRequest) {
+        guestMessageService.deleteGuestMessage(id, deleteGuestMessageRequest.getPassword());
         return ResponseEntity.noContent().build();
     }
 }

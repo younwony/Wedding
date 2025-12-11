@@ -2,21 +2,21 @@ package dev.wony.wedding.response;
 
 import dev.wony.wedding.domain.GuestMessageDto;
 import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
 
 import java.util.List;
 
-@Data
+@Getter
 @Builder
 public class GuestMessageResponses {
 
-    private List<GuestMessageResponse> content;
-    private int totalPages;
+    private final List<GuestMessageResponse> content;
+    private final int totalPages;
 
-    public static GuestMessageResponses fromDto(List<GuestMessageDto> guestMessageDtos, int totalPages) {
+    public static GuestMessageResponses fromDto(List<GuestMessageDto> dtos, int totalPages) {
         return GuestMessageResponses.builder()
-                .content(guestMessageDtos.stream()
-                        .map(GuestMessageResponse::fromDto)
+                .content(dtos.stream()
+                        .map(GuestMessageResponse::from)
                         .toList())
                 .totalPages(totalPages)
                 .build();

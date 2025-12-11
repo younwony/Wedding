@@ -1,8 +1,11 @@
 package dev.wony.wedding.domain;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-@Data
+@Getter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -13,12 +16,12 @@ public class InvitationMessageDto {
     private String message;
     private String thanksTo;
 
-    public static InvitationMessageDto from(InvitationMessage invitationMessage) {
+    public static InvitationMessageDto fromEntity(InvitationMessage entity) {
         return InvitationMessageDto.builder()
-                .id(invitationMessage.getId())
-                .target(invitationMessage.getTarget())
-                .message(invitationMessage.getMessage())
-                .thanksTo(invitationMessage.getThanksTo())
+                .id(entity.getId())
+                .target(entity.getTarget())
+                .message(entity.getMessage())
+                .thanksTo(entity.getThanksTo())
                 .build();
     }
 

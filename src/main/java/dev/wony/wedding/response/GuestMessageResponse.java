@@ -2,27 +2,25 @@ package dev.wony.wedding.response;
 
 import dev.wony.wedding.domain.GuestMessageDto;
 import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
 
-@Data
+@Getter
 @Builder
 public class GuestMessageResponse {
 
-    private Long id;
-    private String title;
-    private String content;
-    private String author;
-    private String password;
-    private String createdAt;
+    private final Long id;
+    private final String title;
+    private final String content;
+    private final String author;
+    private final String createdAt;
 
-    public static GuestMessageResponse fromDto(GuestMessageDto guestMessageDto) {
+    public static GuestMessageResponse from(GuestMessageDto dto) {
         return GuestMessageResponse.builder()
-                .id(guestMessageDto.getId())
-                .title(guestMessageDto.getTitle())
-                .content(guestMessageDto.getContent())
-                .author(guestMessageDto.getAuthor())
-                .password(guestMessageDto.getPassword())
-                .createdAt(guestMessageDto.getCreatedAt())
+                .id(dto.getId())
+                .title(dto.getTitle())
+                .content(dto.getContent())
+                .author(dto.getAuthor())
+                .createdAt(dto.getCreatedAt())
                 .build();
     }
 }

@@ -1,13 +1,12 @@
 package dev.wony.wedding.request;
 
-
 import dev.wony.wedding.domain.GuestMessageDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Data
+@Getter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
